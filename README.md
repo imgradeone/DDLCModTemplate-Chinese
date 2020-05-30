@@ -60,7 +60,7 @@
 
 ### 中国大陆地区用户
 
-[奶牛快传（链接会于 2020-08-31 过期）](https://imgradeone.cowtransfer.com/s/5bebe9222be64e) | [蓝奏云](https://imgradeone.lanzous.com/icxhqqj) | [百度网盘 提取码 6b8z](https://pan.baidu.com/s/1LTv9N1Yfmd3cQsFTAoOSQA)
+[奶牛快传（链接会于 2020-08-31 过期）](https://imgradeone.cowtransfer.com/s/5bebe9222be64e) | [蓝奏云](https://imgradeone.lanzous.com/icxhqqj) | [百度网盘 提取码 6b8z](https://pan.baidu.com/s/1LTv9N1Yfmd3cQsFTAoOSQA) | [城通网盘（仅供赞助用途）](https://ct.imgradeone.xyz/file/24390393-446444253)
 
 <details>
   <summary>百度网盘用户亦可点击展开扫描小程序码下载</summary>
