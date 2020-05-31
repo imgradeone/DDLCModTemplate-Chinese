@@ -2,20 +2,15 @@
 label example_chapter:
     stop music fadeout 2.0
 
-    # setup scene with background and music
     scene bg club_day
     with dissolve_scene_full
     play music t3
 
-    # Say statements
-    # <char name> "stuff to say"
     m "...[player]？"
 
-    # show characters and positions and stuff
     show monika 1 zorder 2 at t11
     m "你来了？"
 
-    # Character images are their name followed by number and letters
     show monika 1b zorder 2 at t11
     m "欢迎来到新开张的 Mod 俱乐部！"
 
@@ -175,9 +170,43 @@ label example_chapter:
             m 1e "那么，我会尽可能用上一些工具来帮助你的。"
             m 1k "没多久，你就可以做出成功的 Mod 了！"
 
-    m "其实我刚刚问你的那些问题，不会影响到接下来的教程..."
+    m 1a "接下来，我想知道你使用的是什么文本 / 代码编辑器。"
+    m "因为中文模板作者使用的是 Visual Studio Code，这款优秀的文本编辑器。"
+    m 1c "虽然你可以使用你喜欢的{b}任何一款{/b}文本编辑器来制作 Mod，但是这款内置的教程是使用 Visual Studio Code 制作的。"
+    m "如果你没有使用 VS Code，也许会有那么一点点出入，但也不影响理解。"
+
+    show monika 3a zorder 2 at t11
+
+    menu:
+        m "所以，你现在在使用什么文本编辑器呢？"
+        "就是 Visual Studio Code！":
+            m 1b "那可太棒了！"
+            m "你现在已经和我在同一条路了！"
+            m 1e "当然，你可能会意识到，VS Code 对于 Ren'Py 的代码高亮有那么一点点问题。"
+            m 1a "不过，我们可以安装插件！"
+            m "看到侧边栏上那几个方块状的图标了吧？那个就是 Marketplace。"
+            m "点开它，然后在搜索框输入 \"RenPy\"。"
+            m "然后找到 \"Ren'Py Language\" 插件，点击安装。"
+            m "接下来，代码看上去就很舒服了！"
+        "我用的是别的...":
+            m 1l "其实也没事啦..."
+            m "因为任何文本编辑器都可以做 Mod..."
+            m "只是，代码高亮或许会有那么一点点折腾。"
+
+    m "我顺便说一下，有时一个垃圾的编辑器会毁掉你的 Mod 工程。"
+    m "有些太老的、不维护的文本编辑器，可能会没那么好用。"
+    m "而且，由于这是中文模板，所以你需要一个对中日韩输入法友好的编辑器。"
+    m "所以，Ren'Py 6 时代的 Editra 就不合适了。"
+    m "对于我，我会强烈推荐 Visual Studio Code、Atom 这类现代的文本编辑器。"
+    m 5 "而且 Atom 是 Ren'Py 7 官方推荐的编辑器哦！"
+    m 1b "最后，再强调一下，你可以使用任何编辑器。"
+    m "但是，使用的编辑器不恰当，小心被谴责哦！（逃）"# 我说的是那个在自家论坛开抵制自家编辑器板块的那个 XD
+
+    m 1a "其实我刚刚问你的那些问题，不会影响到接下来的教程..."
     m 2b "但是，我知道你要做什么类型的 Mod 了。"
-    m 2a "接下来，我们就可以一起学习制作 Mod 了！"
+    m 2a "那么，我们就可以开始一起学习了！"
+    m "相信你很快就能做出一个好玩的 Mod 了！"
+    m "当然，在此之前，一定要看好 README 哦！"
 
     $ persistent.example_seen = True
 

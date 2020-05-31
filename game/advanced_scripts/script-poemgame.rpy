@@ -297,7 +297,7 @@ label poem(transition=True):
                         else: renpy.show("y_sticker hop")
             else:
                 r = random.randint(0, 10)
-                if r == 0 and not played_baa: #1/10 chance for weird sound effect
+                if r == 0 and not played_baa: #您有 1/10 的机会让游戏喊你“爸”（迫真）
                     renpy.play("gui/sfx/baa.ogg")
                     played_baa = True
                 elif r <= 5: renpy.play(gui.activate_sound_glitch)

@@ -21,11 +21,16 @@ label start:
     $ in_sayori_kill = None
     $ allow_skipping = True
     $ config.allow_skipping = True
+    
     # 确定好 label，然后改动下面几行
     if persistent.example_seen:
         call tutorial_selection from _call_tutorial_selection
     else:
         call example_chapter from _call_example_chapter
+    # 就动注释夹起来的这几行
+
+    # 对于教程，直接使用下面一行：
+    # call meet_monika
 
     return
 

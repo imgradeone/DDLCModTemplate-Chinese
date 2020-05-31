@@ -103,6 +103,7 @@ define config.menu_clear_layers = ["front"]
 define config.gl_test_image = "white"
 
 
+
 init python:
     if len(renpy.loadsave.location.locations) > 1: del(renpy.loadsave.location.locations[1])
     renpy.game.preferences.pad_enabled = False

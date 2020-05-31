@@ -8,8 +8,9 @@ init python:
 
     items = [
         (_("重播初始介绍"),"example_chapter"),
-        (_("Route Part 1, How To Make A Mod"),"tutorial_route_p1"),
-        (_("Route Part 2, Music"),"tutorial_route_p2"),
+        (_("序：中文模板特典"),"chinese_mod"),
+        (_("第 1 关：从第一个 label 开始"),"tutorial_route_p1"),
+        (_("第 2 关：来点 BGM"),"tutorial_route_p2"),
         (_("Route Part 3, Scene"),"tutorial_route_p3"),
         (_("Route Part 4, Dialogue"),"tutorial_route_p4"),
         (_("Route Part 5, Menu"),"tutorial_route_p5"),
@@ -17,7 +18,7 @@ init python:
         (_("Route Part 7, Sprite"),"tutorial_route_p7"),
         (_("Route Part 8, Position"),"tutorial_route_p8"),
         (_("Route Part 9, Ending"),"tutorial_route_p9"),
-        (_("Advanced Stuff"),"tutorial_route_adv")
+        (_("来点高级点的！"),"tutorial_route_adv")
     ]
 
 
@@ -111,66 +112,89 @@ label end_tutorial:
 
     show monika 4a zorder 2 at t11
 
-    m "I hope I managed to teach you something!"
-    m 4b "I look foward to seeing your mods."
-    m 5a "Until next time!"
+    m "好的喵，感谢您的聆听。"
+    m 5a "咱们下次见~！"
 
     with dissolve
 
     return
 
+label chinese_mod:
 
+    show monika at thide zorder 2
+    hide monika
+
+    show sayori 1a at t11 zorder 2
+    s "好的，作为前文学部副部长，我来代表中文模板作者发一下言吧。"
+    s 1d "感谢您下载、使用这款中文 DDLC Mod 模板。"
+    s "其实，当我在各种社区，像 Reddit、Discord、百度贴吧，还有比较大的 Mod 网站 DDLCMods.com 里看到许多 Mod 的时候，我很感动。"
+    s "许多粉丝都在改写原本悲惨的 DDLC 宇宙，让我们还能一直陪着你。"
+    s 1k "感谢那些 Mod 作者，让我，还有可爱的 Natsuki，优雅的 Yuri，还有部长 Monika 度过更美妙的日常。"
+    s 1b "但是，我总感觉，有些事情不太对。"
+    s "因为，我很少看到过中文的原创 Mod。"
+    s "所以，这个 Mod 模板其实也是为了中文 DDLC Mod 的低迷现状。"
+    s "希望这款 Mod 模板可以帮助你少走点弯路。"
+    s 5a "感谢你的选择！祝写 Mod 愉快！"
+    show sayori at thide zorder 2
+    hide sayori
+
+    return
 
 
 label tutorial_route_p1:
 
     show monika 2a zorder 2 at t11
 
-    m "There’s no better way to become better at poetry than writing poems."
-    m "And in the same way, there’s no better way to become better at modding than making mods."
-    m 3a "So, let’s make a mod together! I have got the perfect idea."
-    m 5a "Let’s make my own route!"
-    m 5b "The one the game never gave us..."
-    m 1a "Of course, as both and I are new at programming, we should keep it simple."
-    m 1h "We’ll need Ren’Py but unfortunately I can’t access it from here."
-    m 3a "So I’m counting on you to help me."
-    m 4a "Make sure you follow exactly my instructions, okay? In coding, a single mistake can totally break a program."
-    m "First, verify that you installed Ren’Py. Then make a copy of Doki Doki Literature Club’s directory and put it in the directory of Ren’Py."
-    m "Rename the directory of the game 'DDLC Monika Route'."
-    m "Put the files of DDLC Mod Template inside DDLC Monika Route’s directory."
-    m "Try to launch Ren’Py and then try to start DDLC Monika Route."
-    m 4f "If there’s an error then you might have made a mistake with the files..."
-    m 4o "Unfortunately, I can’t help you...If it works then we can go the next step."
-    m 2a "Go to DDLC Monika Route’s game directory and delete 'tutorial.rpy' and 'tutorial.rpyc'. That file just contains this tutorial but we won’t need it to make my route."
-    m 3a "Then you need to edit 'script.rpy'. You can edit it with any text editor. Open the file and navigate to lines 26-29."
-    m "Replace those lines with \n' \ \ \ call monika_route from _call_monika_route'"
-    m 3b "By the way, you should notice there are 4 spaces before that line."
-    m 4a "Be very careful about the number of spaces! In Ren’Py and Python spaces are very important. I won’t go into details now, but indenting lines with spaces is very important."
-    m "And it does have to be spaces. Tabs don't work the same way."
-    m "Once the line is replaced, save the file. Create an empty text file. Rename it monika_route_script.rpy. Check if the extension is .rpy. Rpy file is the type of files used for Ren’Py scripts."
-    m "Open monika_route_script.rpy and write \n'label monika_route:'."
-    m "Then jump a line and write \n' \ \ \ return'\n Save the file."
-    m 4i "Alright, we managed to finish the first part of our mod. Let me explain the meaning of what you just wrote."
-    m 1a "In a book, each chapter are followed one after another. Chapter two is written after chapter two and so on. But in Ren’Py this is different."
-    m "The order isn’t determined by the place of each chapter in the scripts but by the keywords 'label', 'call' and 'jump'"
-    m "When the game begins and when you click on New Game, the game jumps to the chapter whose label is 'start'. Then the game reads and executes what is inside the block under the label 'start'."
-    m "When it reaches the keyword 'call' or 'jump', the game proceeds to the chapter whose label followed the keyword."
-    m 2b "In the case of our mod, when the game reads ' \ \ \ call monika_route from _call_ monika_route', it jumps to the chapter labeled monika_route."
-    m 3a "Please don’t mind 'from _call_monika_route', it’s quite advanced stuff and I don’t understand it well too."
-    m 4b "The chapter monika_route is defined in the file we created, monika_route_script.rpy. But as you can see, there is nothing inside it except from 'return'."
-    m "The keyword 'return' makes the game goes back to the latest chapter that was accessed through 'call'. If it doesn't exist, the game goes back to the main menu."
-    m 4a "If you try to play the mod, you’ll see nothing when you click New Game. That’s because the game returns to the main menu as soon as it jumps to monika_route."
-    m 1e "Okay! Let’s stop here for now. I hope I didn’t overwhelm you with information..."
-    m 2a "If there’s still an error when you try playing the mod, there's a script named t1.rpy inside the folder named monika_route_answer. t1.rpy is what you should have written in monika_route_script.rpy."
-    m "You can copy-paste the content of t1.rpy to monika_route_script.rpy but don’t forget to delete the # character in front of each line."
-    m "In Python and Ren’Py, the # character tells your computer not to read and execute the line. A line with a # in front of it is nothing more than a comment that only you can read."
-    m 5a "This is all for now! When you are ready, begin the second part! I'm waiting for you."
+    m "一个 Mod 的根，就是一个小小的 label。"
+    m "没有它，Ren'Py 就没法让我们享受充满交互感的游戏。"
+    m "那么 label 到底是什么呢？"
+    m "简单来说，label 就是一个脚本集，游戏就是通过一个个 label 实现各种操作逻辑的。"
+    m "通过 jump、call 来呼唤这些 label，游戏就会加载出正确的内容。"
+    m "那么知道了 label 这种东西的含义后，我们就可以开始写 Mod 了。"
+    m 2c "但是写 Mod 时，你还需要当心。"
+    m "因为一个错误，有可能导致 Mod 无法运行。"
+    m "而且由于技术力限制，你可能很难找到错误所对应的地方。"
+    m "还请大佬能给个 Pull Request 进行解决呐..."
+    m 3a "接下来，我们就可以做一个 Mod 了！"
+    m 1a "不过，既然大家都要虚心，那么咱们还是来点简单的吧。"
+    m 1h "因为我没有能直接调用 Ren'Py 的超能力，所以你一定要跟紧我啊！"
+    m "首先，我也知道你已经跟着 README 一步步做了。"
+    m "那么，给你的工程文件夹命名吧！我们这里以 \"Forever Life\" 为例。"
+    m 2a "接下来，你可以直接把 'tutorial.rpy' 和 'tutorial.rpyc' 删掉了。它们只是这个教程的组成部分，接下来用不到。当然，你也可以留着。"
+    m 3a "接下来用你最爱的编辑器打开 'script.rpy' 这个文件。"
+    m "跳转到第 26 行。你应该可以看到我贴心的注释。接下来，你只需要改动第 26 - 29 行，也就是注释包住的地方。"
+    m "接下来，删掉这几行，然后新开一行。你可能需要再打 4 个空格。"
+    m "如果你使用 VS Code，那么它应该就已经把 4 个空格的缩进整好了。实在没有，可以按 Tab 键补全。"
+    m "输入：\n' \ \ \ call meet_monika'\n（不要把引号也打进去）"
+    m "顺便插一句嘴：Python 对空格十分敏感，所以一定要记得空格！"
+    m "而且，传统的“Tab”缩进会导致 Mod 罢工哦！"
+    m 1j "...抱歉，扯远了..."
+    m "接下来，保存文件。"
+    m 3a "然后，再新建一个文件，命名为 'meet_monika.rpy'，记得扩展名！"
+    m "顺便，.rpy 文件就是 Ren'Py 里的脚本源代码文件。"
+    m "打开刚刚创建的文件，输入：\n'label meet_monika:'"
+    m "换行，然后：\n' \ \ \ return'"
+    m "保存。"
+    m 4i "好的，这就是一个异常简单的，啥都没有的 label 了！"
+    m 1a "接下来，我就解释一下 Ren'Py 的跳转逻辑吧。"
+    m 3a "你刚刚写的 call meet_monika 其实就是一个跳转到 label 'meet_monika' 的操作。"
+    m "在 Ren'Py 里，跳转可以使用 call 或者 jump，但两者有很大不同。"
+    m "call 相当于打开一个新的子窗口，可以通过 return 来返回上一级。"
+    m "但 jump 相当于在当前页面打开新页面，return 之后就相当于整个窗口被关掉。"
+    m 1a "至于 call 后面加 from 从句的事情，反正我懒得做，毕竟打包时 Ren'Py 会自动补全的。"
+    m 4b "但是，如果你直接着急地尝试自己的 Mod，恐怕你只能在主菜单反复横跳，因为刚刚的 label 没有东西。"
+    m "如果出现报错，你有可能需要检查一下自己有没有打错什么东西，毕竟我动不了你的文本编辑器..."
+    m 2a "不过，如果你还是没法解决的话，那么可以去 answers 文件夹里找到答案喵。"
+    m "顺便解释一下那些带井号的东西：它们是 Python 里的注释。为了避免冲突，我就暂时把这些东西注释掉了。"
+    m 5a "好的，这就是第 1 关了！消化一下，咱们第 2 关见！"
 
     return
 
 label tutorial_route_p2:
 
     show monika 5a zorder 2 at t11
+
+    m "首先，先让我缓一下，中文汉化在路上了，先放英文版。QwQ"
 
     m "Hi again [player]!"
     m 1a "If the last part was a bit too hard, don’t worry, this part is easier."
@@ -275,7 +299,6 @@ label tutorial_route_p4:
     menu:
         m "You think so, right?"
         "Yes":
-
             pass
         "Yes":
             pass
@@ -667,17 +690,18 @@ label tutorial_route_adv:
     python:
         adv_items = [
             ("Navigation Buttons", "tutorial_route_adv_hkb"),
-            ("Poemgame", "tutorial_route_adv_poemgame")
+            ("Edited 风格文本框", "tutorial_route_adv_edited"),
+            ("Poemgame（测试）", "tutorial_route_adv_poemgame")
         ]
 
-    m 5a "So you want to learn the {i}advanced{/i} stuff?"
-    m 3a "Alright!"
+    m 5a "你现在想来点高级的？"
+    m 3a "可以！"
 
 label tutorial_route_adv_repeat:
 
     show monika 3a at tcommon(950)
     window show
-    $ renpy.say(m, "What do you want to know?", interact=False)
+    $ renpy.say(m, "你想尝试些什么？", interact=False)
 
     call screen tutorial_choice(adv_items)
     window auto
@@ -725,8 +749,14 @@ label tutorial_route_adv_hkb:
 
     return
 
+label tutorial_route_adv_edited:
+
+    m "咕~"
+
+    return
 
 label tutorial_route_adv_poemgame:
+    m "Poemgame 仍为测试项目。"
     m 3a "Alright, let's look at the specially-modified poemgame developed by the Monika After Story team."
     m "This version of the poemgame allows you to do the following:"
     m "1. Add me to the poemgame, provided you have a list of words for me."

@@ -5,6 +5,8 @@ translate None strings:
     old "%b %d, %H:%M"
     new "%m月%d日, %H:%M"
 
+    old "Page %s"
+    new "第 %s 页"
 
 translate None strings:
 
@@ -112,15 +114,15 @@ translate None strings:
 
     # renpy/common/00layout.rpy:443
     old "Are you sure you want to quit?"
-    new "您确定您要退出吗？"
+    new "您确定要退出吗？\n未保存的进度将会丢失。"
 
     # renpy/common/00layout.rpy:444
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-    new "您确定您想回到主菜单吗？\n未保存的进度将会丢失。"
+    new "您确定要回到主菜单吗？\n未保存的进度将会丢失。"
 
     # renpy/common/00layout.rpy:441
     old "Are you sure you want to overwrite your save?"
-    new "您确定您要覆盖此存档？"
+    new "您确定要覆盖此存档？"
 
      # renpy/common/00layout.rpy:442
     old "Loading will lose unsaved progress.\nAre you sure you want to do this?"
@@ -128,7 +130,7 @@ translate None strings:
 
      # renpy/common/00layout.rpy:440
     old "Are you sure you want to delete this save?"
-    new "您确定您要删掉这份存档吗？"
+    new "您确定要删除这份存档吗？"
 
 
 translate None strings:

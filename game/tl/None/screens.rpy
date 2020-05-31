@@ -176,3 +176,9 @@ translate None strings:
     # game/screens.rpy:453
     old "Voice Sustain"
     new "保持语音播放"
+
+    old "empty slot"
+    new "空存档位"
+
+    old "%A, %B %d %Y, %H:%M"
+    new "%Y 年 %m 月 %d 日 %A %H:%M"
