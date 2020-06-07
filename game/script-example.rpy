@@ -29,17 +29,18 @@ label example_chapter:
     else:
         m 2b "虽然你只是个玩家，但是学写 Mod 也不是不可以..."
         m "啊哈..."
-        m "您可以在  找到这个模板，改动世界线。"
+        m "您可以在 {a=https://github.com/imgradeone/DDLCModTemplete-Chinese}这里{/a} 找到这个模板，改动世界线。"
 
-    m 1a "接下来就是把 DDLC /game 文件夹下的东西丢进模板里了。"
+    m 1a "接下来就是下载 DDLC，然后把 DDLC /game 文件夹下的东西丢进模板里了。你可以 {a=https://ddlc.moe/}点击这里{/a} 下载。"
     if config.developer:
         m 1b "诶，等一下，我忘记你已经看过 README 了..."
         m 1l "emm，无意冒犯（（（"
     else:
         m 1b "相信你也会做的吧。"
 
-    m 1a "接下来需要下载 Ren'Py SDK。"
+    m 1a "接下来需要下载 Ren'Py SDK，你可以 {a=https://www.renpy.org/release/6.99.12}点击这里{/a} 下载。"
     m 2a "而且必须是 6.99.12 版哦！"
+    m "因为 DDLC 不兼容 Ren'Py 7，安装 Mod 时可能会有兼容性问题。"
     if config.developer:
         m 2j "不过我们现在准备得差不多了。"
     else:
@@ -78,7 +79,6 @@ label example_chapter:
             pause 3.0
             show monika 1m zorder 2 at t11
             m "..."
-            with Dissolve(0.3)
             m 1m "讲真，你也看到我写了那么多 bug 了..."
             m "那么，接下来，你就是我的师父！"
             hide bsod
@@ -174,6 +174,7 @@ label example_chapter:
     m "因为中文模板作者使用的是 Visual Studio Code，这款优秀的文本编辑器。"
     m 1c "虽然你可以使用你喜欢的{b}任何一款{/b}文本编辑器来制作 Mod，但是这款内置的教程是使用 Visual Studio Code 制作的。"
     m "如果你没有使用 VS Code，也许会有那么一点点出入，但也不影响理解。"
+    m "您可以 {a=https://code.visualstudio.com/}点击这里{/a} 下载 VS Code。"
 
     show monika 3a zorder 2 at t11
 
@@ -188,6 +189,7 @@ label example_chapter:
             m "点开它，然后在搜索框输入 \"RenPy\"。"
             m "然后找到 \"Ren'Py Language\" 插件，点击安装。"
             m "接下来，代码看上去就很舒服了！"
+            m "您也可以 {a=https://marketplace.visualstudio.com/items?itemName=LuqueDaniel.languague-renpy}点击这里{/a} 进行安装。"
         "我用的是别的...":
             m 1l "其实也没事啦..."
             m "因为任何文本编辑器都可以做 Mod..."
@@ -197,10 +199,12 @@ label example_chapter:
     m "有些太老的、不维护的文本编辑器，可能会没那么好用。"
     m "而且，由于这是中文模板，所以你需要一个对中日韩输入法友好的编辑器。"
     m "所以，Ren'Py 6 时代的 Editra 就不合适了。"
+    m "当然，HBuilder 其实也可以编辑，但需要手动设置 Python 高亮。"
     m "对于我，我会强烈推荐 Visual Studio Code、Atom 这类现代的文本编辑器。"
-    m 5 "而且 Atom 是 Ren'Py 7 官方推荐的编辑器哦！"
-    m 1b "最后，再强调一下，你可以使用任何编辑器。"
-    m "但是，使用的编辑器不恰当，小心被谴责哦！（逃）"# 我说的是那个在自家论坛开抵制自家编辑器板块的那个 XD
+    m 5 "而且 Atom 是 Ren'Py 7 官方推荐的编辑器哦！您可以 {a=https://atom.io/}点击这里{/a} 下载 Atom。"
+    m 3a "如果你实在讨厌微软，却又喜欢 VS Code，你可以尝试社区的 VSCodium。您可以 {a=https://vscodium.com/}点击这里{/a} 下载 VSCodium。"
+    m 1b "最后，再强调一下，你可以使用 任何 编辑器。"
+    m "{s}但是，使用的编辑器不恰当，小心被谴责哦！（逃）{/s}"# 我说的是那个在自家论坛开抵制自家编辑器板块的那个 XD
 
     m 1a "其实我刚刚问你的那些问题，不会影响到接下来的教程..."
     m 2b "但是，我知道你要做什么类型的 Mod 了。"

@@ -114,3 +114,9 @@
 ## TODO
 
 - [ ] 教程翻译
+
+## 特别感谢
+
+- Team Salvato http://teamsalvato.com / https://ddlc.moe
+- Monika After Story Team http://www.monikaafterstory.com
+- 所有中文字体作者

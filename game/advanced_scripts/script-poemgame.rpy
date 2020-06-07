@@ -318,7 +318,7 @@ label poem(transition=True):
             unsorted_pointlist = {"sayori": sPointTotal, "natsuki": nPointTotal, "yuri": yPointTotal}
             pointlist = sorted(unsorted_pointlist, key=unsorted_pointlist.get)
 
-            # Set poemwinner to the highest scorer
+            # Set  to the highest scorer
             poemwinner[chapter] = pointlist[2]
         else:
             if nPointTotal > yPointTotal: poemwinner[chapter] = "natsuki"

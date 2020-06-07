@@ -22,7 +22,7 @@ image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign
 
 
 image menu_logo:
-    "/mod_assets/DDLCModTemplateLogo.png"
+    "/mod_assets/DDLCModTemplateLogoCN.png"
     subpixel True
     xcenter 240
     ycenter 120

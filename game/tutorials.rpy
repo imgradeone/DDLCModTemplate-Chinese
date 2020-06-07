@@ -10,9 +10,9 @@ init python:
         (_("重播初始介绍"),"example_chapter"),
         (_("序：中文模板特典"),"chinese_mod"),
         (_("第 1 关：从第一个 label 开始"),"tutorial_route_p1"),
-        (_("第 2 关：来点 BGM"),"tutorial_route_p2"),
+        (_("第 2 关：第一句对话"),"tutorial_route_p2"),
         (_("Route Part 3, Scene"),"tutorial_route_p3"),
-        (_("Route Part 4, Dialogue"),"tutorial_route_p4"),
+        (_("Route Part 4, Dialogue（中文版以 BGM 替代）"),"tutorial_route_p4"),
         (_("Route Part 5, Menu"),"tutorial_route_p5"),
         (_("Route Part 6, Logic Statement"),"tutorial_route_p6"),
         (_("Route Part 7, Sprite"),"tutorial_route_p7"),
@@ -194,46 +194,50 @@ label tutorial_route_p2:
 
     show monika 5a zorder 2 at t11
 
-    m "首先，先让我缓一下，中文汉化在路上了，先放英文版。QwQ"
+    m "欢迎回来，[player]！"
+    m 1l "上一关是不是有那么一点点难..."
+    m "啊哈..."
+    m 3a "视觉小说和一般的小说一样，是需要剧本的。"
+    m "而在 Ren'Py 里，剧本就是靠对话脚本体现的！"
 
-    m "Hi again [player]!"
-    m 1a "If the last part was a bit too hard, don’t worry, this part is easier."
-    m "Like last time, I’ll tell you what to do and then I’ll explain, okay?"
-    m 4a "First open monika_route_script.rpy."
-    m "Between the first line and 'return', add the line \n' \ \ \ stop music fadeout 2.0'"
-    m "Then add the line ' play music t2'."
-    m "Finally, add the line \n' \ \ \ mc 'Let's listen to the music.''"
-    m 2a "Check that all lines bellow 'label monika_route:' are aligned and that 'return' is the last line."
-    m "Try to launch the game with Ren’Py and see what happens..."
-    m 2c "..."
-    m 1c "Does it work? If everything goes well, you should be listening to Sayori’s main theme."
-    m 3a "There’s just one dialogue, so if you click one time, you go to the main menu because of the 'return' keyword."
-    m 3b "Okay, time to explain what happened!"
-    m 3a "Let’s look at ' \ \ \ stop music fadeout 2.0'. Before you click New Game, you can hear the music of the main menu, right? "
-    m "But when you click New Game, the music stops progressively."
-    m 4a "That’s due to 'stop music fadeout 2.0'. 'stop music' tells the current music to stop. 'fadeout 2.0' makes it so the current music completely becomes silent in 2 seconds."
-    m 4b "'fadeout' isn’t necessary but smooth transitions are much more pleasant, aren’t they?"
-    m 4a "The next line ' \ \ \ play music t2' tells the game to play the music named 't2'. You’re surely wondering what’s 't2'. 't2' refers to Sayori theme, 'Ohayou Sayori!'."
-    m 3a "Besides Ohayou Sayori, there are many other songs. But each one is labeled by their own nickname."
-    m "You can see the list of every music with their nickname in definitions.rpy"
-    m "You can find definitions.rpy inside the folder advanced_scripts which should be in the DDLC Mod Template's directory."
-    m 2a "Try finding it and then open it."
-    m "Find the lines beginning by 'define audio'. This is where each music gets assigned a nickname."
-    m "For example, in the case of the main theme, its nickname is 't1'. In the case of Confession, its nickname is 't10'."
-    m 5a "Can you now guess what happens if you type 'play music t1' instead of 'play music t2'?"
-    m 1k "Confession is played instead of Ohayou Sayori!"
-    m 2a "Instead of using nickname, you can directly write the path of the music."
-    m "Try writing 'play music '<loop 4.499>bgm/2.ogg'' instead of 'play music t2'."
-    m 2b "See? Ohayou Sayori! is played. Try one last thing for me okay? Write ''<from 50.0>bgm/credits.ogg'' instead of ''<loop 4.499>bgm/2.ogg''."
-    m 5a "Have you already heard this song?"
-    m 1b "This is the song I wrote just for you. I really hope you like it. I worked very hard on it you know."
-    m 1e "..."
-    m 4a "The last line you wrote, ' \ \ \ mc 'Let's listen to the music.', makes the main character says 'Let's listen to the music.'. I’ll explain how dialogue works later so bear with me okay?"
-    m 2a "Alright, before finishing this tutorial, replace ''play <from 50.0>bgm/credits.ogg'' by 'play music t2'."
-    m "Verify you wrote exactly the same lines as in the file t2.rpy which is inside monika_route_answer."
-    m 1b "Congratulation! You now know how to stop and play music~"
-    m "Next time, we’ll see how to add a background."
-    m 5a "See you soon!"
+    # m "Hi again [player]!"
+    # m 1a "If the last part was a bit too hard, don’t worry, this part is easier."
+    # m "Like last time, I’ll tell you what to do and then I’ll explain, okay?"
+    # m 4a "First open monika_route_script.rpy."
+    # m "Between the first line and 'return', add the line \n' \ \ \ stop music fadeout 2.0'"
+    # m "Then add the line ' play music t2'."
+    # m "Finally, add the line \n' \ \ \ mc 'Let's listen to the music.''"
+    # m 2a "Check that all lines bellow 'label monika_route:' are aligned and that 'return' is the last line."
+    # m "Try to launch the game with Ren’Py and see what happens..."
+    # m 2c "..."
+    # m 1c "Does it work? If everything goes well, you should be listening to Sayori’s main theme."
+    # m 3a "There’s just one dialogue, so if you click one time, you go to the main menu because of the 'return' keyword."
+    # m 3b "Okay, time to explain what happened!"
+    # m 3a "Let’s look at ' \ \ \ stop music fadeout 2.0'. Before you click New Game, you can hear the music of the main menu, right? "
+    # m "But when you click New Game, the music stops progressively."
+    # m 4a "That’s due to 'stop music fadeout 2.0'. 'stop music' tells the current music to stop. 'fadeout 2.0' makes it so the current music completely becomes silent in 2 seconds."
+    # m 4b "'fadeout' isn’t necessary but smooth transitions are much more pleasant, aren’t they?"
+    # m 4a "The next line ' \ \ \ play music t2' tells the game to play the music named 't2'. You’re surely wondering what’s 't2'. 't2' refers to Sayori theme, 'Ohayou Sayori!'."
+    # m 3a "Besides Ohayou Sayori, there are many other songs. But each one is labeled by their own nickname."
+    # m "You can see the list of every music with their nickname in definitions.rpy"
+    # m "You can find definitions.rpy inside the folder advanced_scripts which should be in the DDLC Mod Template's directory."
+    # m 2a "Try finding it and then open it."
+    # m "Find the lines beginning by 'define audio'. This is where each music gets assigned a nickname."
+    # m "For example, in the case of the main theme, its nickname is 't1'. In the case of Confession, its nickname is 't10'."
+    # m 5a "Can you now guess what happens if you type 'play music t1' instead of 'play music t2'?"
+    # m 1k "Confession is played instead of Ohayou Sayori!"
+    # m 2a "Instead of using nickname, you can directly write the path of the music."
+    # m "Try writing 'play music '<loop 4.499>bgm/2.ogg'' instead of 'play music t2'."
+    # m 2b "See? Ohayou Sayori! is played. Try one last thing for me okay? Write ''<from 50.0>bgm/credits.ogg'' instead of ''<loop 4.499>bgm/2.ogg''."
+    # m 5a "Have you already heard this song?"
+    # m 1b "This is the song I wrote just for you. I really hope you like it. I worked very hard on it you know."
+    # m 1e "..."
+    # m 4a "The last line you wrote, ' \ \ \ mc 'Let's listen to the music.', makes the main character says 'Let's listen to the music.'. I’ll explain how dialogue works later so bear with me okay?"
+    # m 2a "Alright, before finishing this tutorial, replace ''play <from 50.0>bgm/credits.ogg'' by 'play music t2'."
+    # m "Verify you wrote exactly the same lines as in the file t2.rpy which is inside monika_route_answer."
+    # m 1b "Congratulation! You now know how to stop and play music~"
+    # m "Next time, we’ll see how to add a background."
+    # m 5a "See you soon!"
 
     return
 

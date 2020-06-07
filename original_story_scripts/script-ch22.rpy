@@ -13,6 +13,7 @@ label ch22_main:
     "Another day passes, and it's time for the club meeting already."
     "I've gotten a little more comfortable here over the past couple days."
     "Entering the clubroom, the usual scene greets me."
+    # 1/3 几率，Yuri 崩坏
     if renpy.random.randint(0,2) == 0:
         show yuri half at i11 zorder 2
         show yuri_half2 at i11 zorder 1
@@ -327,7 +328,7 @@ label ch22_end:
                                     ("gui/mouse/s_head.png", 0, 0),
                                     ]}
 
-    
+    # 死 不 瞑 目 纱 师 弟（1/3）
 
     m "Okay, everyone!"
     m "We're all done reading each other's poems, right?"

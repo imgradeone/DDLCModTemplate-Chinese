@@ -216,9 +216,9 @@ label ch5_main:
     "But she really leaves me no choice."
     "I gently open the door."
     mc "{cps=30}.......Sayo--{/cps}{nw}"
-    $ persistent.playthrough = 1    #No turning back now baby
+    $ persistent.playthrough = 1 # 晴天娃娃 卒
     $ persistent.anticheat = renpy.random.randint(100000, 999999)
-    $ delete_character("sayori")
+    $ delete_character("sayori") # 文件 删
     $ in_sayori_kill = True
     window hide(None)
     window auto
@@ -290,7 +290,7 @@ label ch5_main:
         try: sys.modules['renpy.error'].report_exception("Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...\nActually, you know what? This would probably be a lot easier if I just deleted her. She's the one who's making this so difficult. Ahaha! Well, here's goes nothing.", False)
         except: pass
     pause 6.0
-
+    # 报错
 
     "..."
     hide fake_exception
