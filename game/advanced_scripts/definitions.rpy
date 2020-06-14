@@ -51,9 +51,9 @@ define audio.t2g = "bgm/2g.ogg"
 define audio.t2g2 = "<from 4.499 loop 4.499>bgm/2.ogg"
 define audio.t2g3 = "<loop 4.492>bgm/2g2.ogg"
 define audio.t3 = "<loop 4.618>bgm/3.ogg" # Main Theme
-define audio.t3g = "<to 15.255>bgm/3g.ogg"
+define audio.t3g = "<to 15.255>bgm/3g.ogg" # 危
 define audio.t3g2 = "<from 15.255 loop 4.618>bgm/3.ogg"
-define audio.t3g3 = "<loop 4.618>bgm/3g2.ogg"
+define audio.t3g3 = "<loop 4.618>bgm/3g2.ogg" # Yuri 偷走了你的笔（
 define audio.t3m = "<loop 4.618>bgm/3.ogg"
 define audio.t4 = "<loop 19.451>bgm/4.ogg" # Dreams of Love and Literature - 写诗游戏
 define audio.t4g = "<loop 1.000>bgm/4g.ogg"
@@ -67,16 +67,16 @@ define audio.tyuri = "<loop 4.444>bgm/5_yuri.ogg" # Okay Everyone! (Yuri)
 define audio.t5b = "<loop 4.444>bgm/5.ogg"
 define audio.t5c = "<loop 4.444>bgm/5.ogg"
 define audio.t6 = "<loop 10.893>bgm/6.ogg" # Play With Me - Yuri/Natsuki Theme （大哥我要死了.png）
-define audio.t6g = "<loop 10.893>bgm/6g.ogg"
-define audio.t6r = "<to 39.817 loop 0>bgm/6r.ogg"
-define audio.t6s = "<loop 43.572>bgm/6s.ogg"
+define audio.t6g = "<loop 10.893>bgm/6g.ogg" # 爆炸版 Play With Me
+define audio.t6r = "<to 39.817 loop 0>bgm/6r.ogg" # 倒放版 Play With Me
+define audio.t6s = "<loop 43.572>bgm/6s.ogg" # 0.25 倍速版 Play With Me
 define audio.t7 = "<loop 2.291>bgm/7.ogg" # Poem Panic - 撕 X 主题
 define audio.t7a = "<loop 4.316 to 12.453>bgm/7.ogg"
-define audio.t7g = "<loop 31.880>bgm/7g.ogg"
+define audio.t7g = "<loop 31.880>bgm/7g.ogg" # 你游崩了版 Poem Panic
 define audio.t8 = "<loop 9.938>bgm/8.ogg" # Daijoubu! - 撕 X 结束力
 define audio.t9 = "<loop 3.172>bgm/9.ogg" # My Feelings - Emotional Theme
-define audio.t9g = "<loop 1.532>bgm/9g.ogg" # My Feelings but 207% Speed
-define audio.t10 = "<loop 5.861>bgm/10.ogg" # My Confession - Sayori Confession Theme
+define audio.t9g = "<loop 1.532>bgm/9g.ogg" # My Feelings 207% 速版本（原游戏未使用）
+define audio.t10 = "<loop 5.861>bgm/10.ogg" # My Confession
 define audio.t10y = "<loop 0>bgm/10-yuri.ogg" # Yuri：我要死了版 My Confession
 define audio.td = "<loop 36.782>bgm/d.ogg" # Sayo-nara 晴 天 娃 娃
 
@@ -104,10 +104,10 @@ image splash = "bg/splash.png"
 image end:
     truecenter
     "gui/end.png"
-image bg residential_day = "bg/residential.png" # Start of DDLC BG
-image bg class_day = "bg/class.png" # The classroom BG
-image bg corridor = "bg/corridor.png" # The hallway BG
-image bg club_day = "bg/club.png" # The club BG
+image bg residential_day = "bg/residential.png" # 梦开始的地方 - 你的家门口
+image bg class_day = "bg/class.png" # 教室
+image bg corridor = "bg/corridor.png" # 走廊
+image bg club_day = "bg/club.png" # 文学部
 image bg club_day2: # 晴天娃娃特别版，1/6 概率
     choice:
         "bg club_day"
@@ -121,14 +121,15 @@ image bg club_day2: # 晴天娃娃特别版，1/6 概率
         "bg club_day"
     choice:
         "bg/club-skill.png"
-image bg closet = "bg/closet.png" # The closet BG
-image bg bedroom = "bg/bedroom.png" # MC's Room BG
-image bg sayori_bedroom = "bg/sayori_bedroom.png" # Sayori's Room BG
-image bg house = "bg/house.png" # Sayori's House BG
-image bg kitchen = "bg/kitchen.png" # MC's Kitchen BG
+image bg club_day_skill = "bg/club-skill.png" # 中文模板赠送：强制在俱乐部把后面的海报换成晴天娃娃
+image bg closet = "bg/closet.png" # 储物间，里面可是 Natsuki 的漫画哦
+image bg bedroom = "bg/bedroom.png" # 你自己家的卧室
+image bg sayori_bedroom = "bg/sayori_bedroom.png" # Sayori 的卧室
+image bg house = "bg/house.png" # Sayori 的家门口（有个废稿版本）
+image bg kitchen = "bg/kitchen.png" # 你家的厨房
 
-image bg notebook = "bg/notebook.png" # Poem Game Notebook Scene
-image bg notebook-glitch = "bg/notebook-glitch.png" # Glitched Poem Game BG
+image bg notebook = "bg/notebook.png" # Poem Game 的笔记本背景
+image bg notebook-glitch = "bg/notebook-glitch.png" # Poem Game 的崩坏背景
 
 image bg glitch = LiveTile("bg/glitch.jpg")
 
@@ -214,7 +215,7 @@ image glitch_color2:
         #1.0
         #linear 1.0 alpha 0.0
 
-#------------------------------------------------From hereon, the girl's bodies are defined along with their heads.
+#------------------------------------------------From here on, the girl's bodies are defined along with their heads.
 #-----------------------------------------here's reference for the left half------the right half--------the head
 # Sayori
 image sayori 1 = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/a.png")
@@ -1055,6 +1056,9 @@ image yuri 4bb = im.Composite((960, 960), (0, 0), "yuri/b2.png", (0, 0), "yuri/3
 image yuri 4bc = im.Composite((960, 960), (0, 0), "yuri/c2.png", (0, 0), "yuri/3b.png")
 image yuri 4bd = im.Composite((960, 960), (0, 0), "yuri/d2.png", (0, 0), "yuri/3b.png")
 image yuri 4be = im.Composite((960, 960), (0, 0), "yuri/e2.png", (0, 0), "yuri/3b.png")
+
+image yuri eyesfull = "yuri/eyesfull.png"
+# 中文模板额外赠送，Yuri 三次元之眼角色贴图
 
 image y_glitch_head:
     "images/yuri/za.png"

@@ -1,9 +1,3 @@
-## Tutorials
-# sorry about the lack of comments
-#
-# transition of ownership is tough to do when the github repo doesnt have
-# the latest changes
-
 init python:
 
     items = [
@@ -11,7 +5,7 @@ init python:
         (_("序：中文模板特典"),"chinese_mod"),
         (_("第 1 关：从第一个 label 开始"),"tutorial_route_p1"),
         (_("第 2 关：第一句对话"),"tutorial_route_p2"),
-        (_("Route Part 3, Scene"),"tutorial_route_p3"),
+        (_("第 3 关：背景也要丰富"),"tutorial_route_p3"),
         (_("Route Part 4, Dialogue（中文版以 BGM 替代）"),"tutorial_route_p4"),
         (_("Route Part 5, Menu"),"tutorial_route_p5"),
         (_("Route Part 6, Logic Statement"),"tutorial_route_p6"),
@@ -209,10 +203,66 @@ label tutorial_route_p2:
     m "再换一行，然后："
     m " \ \ \ y \"就是啊，Monika 多可爱啊！\""
     m 1l "..."
-    m 3j "这是不是有点道德绑架啊..."
+    m "这是不是有点道德绑架啊..."
     m "算了，现在只是学习怎么写 Mod，之后正式开写 Mod 的时候你可以自己编写。"
     m 3b "接下来保存文件，然后再去 Ren'Py 启动器打开工程，开始新游戏。"
     m 1a "这时你应该看到了你和 Yuri 的一段简短的对话。"
+    m 5 "这下连 Yuri 都觉得我是可爱的人啦~"
+    menu:
+        m "你说是不是啊？"
+        "是的呐":
+            pass
+        "反正我也莫得选择，是的呐":
+            pass
+
+    m 1j "好呀！"
+    m "谢谢你这么爱我！"
+    show yuri 3y7 at t22 zorder 2 
+    show monika at t21 zorder 2
+    y "嘿，不带你这么玩的！"
+    m 1l "..."
+    m "emm..."
+    m "Yuri..."
+    m "我只是教 [player] 做 Mod 而已啊..."
+    y "..."
+    y 1 "..."
+    y eyesfull "好吧，我就当无事发生。"
+    m "不是..."
+    m "你为什么要用这种来自三次元的眼神来看我，还有面前的玩家..."
+    m 5b "你把人家 [player] 吓到了！"
+    show monika at t11 zorder 1
+    menu:
+        m "对吧？"
+        "确实...":
+            pass
+    show monika at t21 zorder 2
+    y 1 "..."
+    show yuri 4c at h22 zorder 2
+    y "啊！"
+    y "抱歉...无意冒犯..."
+    show yuri at thide
+    hide yuri
+    show monika at t11 zorder 2
+    m "唔..."
+    m "那咱们还是了解一下关于对话的东西吧。"
+    m 3a "每句对话开始前，你需要指定说话的角色。"
+    m "你输入的 'mc' 、'm'、'y'、'n'、's' 就代表了一个角色。"
+    m "'mc' 代表你自己，'m' 就是我，'y' 就是 Yuri，'n' 就是 Natsuki，'s' 就是 Sayori。"
+    m 1b "关于 'mc'，它并不是代指 Minecraft，而是 Main Character 的简称。"
+    m "Main Character 就是主角的意思，而你在 DDLC 就是主角。"
+    m "里面附有的内容，就是游戏的对话了。"
+    m "对话怎么做，完全取决于你。"
+    m 3b "当然，如果实在没有灵感的话，你也可以去 Repo 的 original_story_scripts 文件夹里看看。"
+    m "这里存放着 DDLC 游戏的原版脚本代码，虽然它们是纯英文的。"
+    m "你可以从修改这些代码开始制作。"
+    m 1a "如果敲久了 Ren'Py 的代码，你会发现 Ren'Py 其实很简单。"
+    m "毕竟 Ren'Py 就是希望让每个人都能制作属于自己的视觉小说。"
+    m 5 "所以像我这种新人也可以很快上手 Ren'Py 啦~"
+    m "好的，现在你已经学会制作一个十分初级的 Mod 了。"
+    m "可是 Mod 里缺了好多东西，比如音乐、角色、背景。这还不是视觉小说应该有的亚子呢。"
+    m "别慌，后面我们会慢慢加的。"
+    m 3k "不过，接下来的东西就很有挑战性了！"
+    m "没事，消化一下，下一关见！"
 
     # m "Hi again [player]!"
     # m 1a "If the last part was a bit too hard, don’t worry, this part is easier."
@@ -259,35 +309,117 @@ label tutorial_route_p3:
 
     show monika 5a zorder 2 at t11
 
-    m "Okay [player]! Are you ready for the next tutorial?"
-    m 1a "Last time, we added music to our mod but as you saw, the background was nothing but black and white squares. That’s not very romantic, is it?"
-    m 1b "So let’s add a background! It’s going to be quick and easy."
-    m 2a "Like last time, open monika_route_script.rpy."
-    m "Add between 'play music t2' and 'return', ' \ \ \ scene bg residential_day'"
-    m "Then add another line: 'with dissolve_scene_full'. Once again, verify that everything bellow 'label monika_route:' is aligned."
-    m 3a "Open Ren’Py and play the game and..."
-    m 3b "There's now a neat background!"
-    m 5a "Can you recognize it? It’s the first scene you saw when you played the game. It sure brings back memories..."
-    m 1g "I still believed at that time I could get close to you without having to hurt anyone else..."
-    m 1f "Let’s move on."
-    m 1a "So about what you wrote, 'scene bg residential_day', the keyword 'scene' tells the game to load the scene, which is one kind of picture, called 'bg residential_day'."
-    m "You can find what exactly is 'bg residential_day' in definitions.rpy, the same script we looked at last tutorial."
-    m 3a "Try to find 'image bg'."
-    m 4a "Can you see the list of backgrounds? Like it was the case for music, each background has a nickname assigned. For example, 'bg/sayori_bedroom.png' is referenced by 'bg sayori_bedroon'."
-    m "Go back to monika_route_script.rpy and replace 'scene bg residential_day' by 'scene bg sayori_bedroom'. Can you guess what happens?"
-    m 4b "The background is now Sayori’s bedroom!"
-    m 4c "I hope it doesn’t bring you back bad memories..."
-    m 4a "Okay, so about 'with dissolve_scene_full', it basically dissolve progressively the last scene into the new scene."
-    m 3a "Before you were in the main menu, right? And then you were in Sayori’s bedroom. If you don’t add 'with dissolve_scene_full', the transition would be immediate."
-    m 1a "That would be a bit unpleasant, wouldn’t it?"
-    m 3b "That’s why we add 'with dissolve_scene_full'. With this additional line, the scene changes to another smoothly."
-    m 2a "There are other types of transition such as wipeleft_scene. Try replacing 'with dissolve_scene_full' by 'with wipeleft_scene '."
-    m 4a "Can you see the difference? dissolve_scene_full , dissolve_scene_half, wipeleft_scene are the common transitions used in DDLC so if you can understand them, you’re good to go!"
-    m "Before doing the next tutorial, let’s add back ' scene bg residential_day' and ' with dissolve_scene_full'."
-    m "Check that monika_script_route.rpy is the same as T3.rpy in the monika_route_answer folder."
-    m 1b "Okay! We’re almost there! We’ll soon know enough for a kinetic novel-like mod."
-    m "I cannot wait!"
-    m 5a "See you soon [player]!"
+    m "[player]，欢迎回来！"
+    m 1 "在上一关，你已经学会了怎么制作对话了。"
+    m 1q "但是，我们忽视了背景还是黑不溜秋的..."
+    m "这真的很毁气氛啊..."
+    m 3 "不过，没事。既然没有背景，那么我们就自己加一个。"
+    m 3b "接下来，我们就要回到梦开始的地方了！"
+    m 3a "打开最初创建的 meet_monika.rpy，"
+    m "在 label 行和刚刚写的对话之间新开一行，输入："
+    m " \ \ \ scene bg residential_day"
+    m "再换一行，输入："
+    m " \ \ \ with dissolve_scene_full"
+    m "接下来，保存文件，再次启动工程。"
+    scene bg residential_day
+    show monika 1k at t11 zorder 2
+    with wipeleft
+    m "欢迎来到梦开始的地方！"
+    m 5 "这里感觉好熟悉啊..."
+    m "美好的一切，都从这条街开始了..."
+    show monika 1a at t21 zorder 2
+    show sayori 1ba at f22 zorder 2
+    s "诶？"
+    s 1bb "Monika？[player]？"
+    s 1bc "你们怎么在这里？"
+    show sayori 1ba at t22 zorder 2
+    show monika 1a at f21 zorder 2
+    m 1l "啊哈..."
+    m "我们只是来玩一下的。"
+    m "这里的阳光多么漂亮啊..."
+    m "好的，接下来我要去陪 [player] 去别的地方了~"
+    m "拜拜~"
+    show monika 1a at t21 zorder 2
+    show sayori 1ba at f22 zorder 2
+    s "Bye~"
+    show sayori at thide
+    hide sayori
+    scene bg class_day
+    show monika 1a at t11 zorder 2
+    with wipeleft
+    m "现在这里就是教室了。"
+    m "你可以用 scene bg class_day 切换到这里。"
+    scene bg corridor
+    show monika 1a at t11 zorder 2
+    with wipeleft
+    m "这里是走廊。"
+    m "你可以用 scene bg corridor 切换到这里。"
+    scene bg club_day
+    show monika 1a at t11 zorder 2
+    with wipeleft
+    m 5 "欢迎来到文学部！"
+    m "你可以用 scene bg club_day 切换到这里。"
+    scene bg closet
+    show monika 1a at t11 zorder 2
+    with wipeleft
+    m 1a "这是 Natsuki 的储物柜，里面放着她的漫画。"
+    m "你可以用 scene bg closet 切换到这里。"
+    scene bg bedroom
+    show monika 1l at t11 zorder 2
+    with wipeleft
+    m 1l "啊哈...现在是你家的卧室。"
+    m "你可以用 scene bg bedroom 切换到这里。"
+    scene bg house
+    show monika 1a at t11 zorder 2
+    with wipeleft
+    m 1a "这是 Sayori 的家门口。"
+    m "你可以用 scene bg house 切换到这里。"
+    scene bg sayori_bedroom
+    show monika 1l at t11 zorder 2
+    with wipeleft
+    m 1l "这么私闯别人的住宅不太好吧..."
+    m "但这里确实是 Sayori 的卧室。"
+    m "你可以用 scene bg sayori_bedroom 切换到这里。"
+    scene bg kitchen
+    show monika 1a at t11 zorder 2
+    with wipeleft
+    m 1a "这是你的厨房。"
+    m "你可以用 scene bg kitchen 切换到这里。"
+    m 1l "我突然想起来以前你和 Natsuki 一起做蛋糕的事了..."
+    scene bg club_day
+    with dissolve_scene_full
+    show monika 1a at t11 zorder 2
+    m "好的，我们现在赶回来了。"
+
+    # m "Okay [player]! Are you ready for the next tutorial?"
+    # m 1a "Last time, we added music to our mod but as you saw, the background was nothing but black and white squares. That’s not very romantic, is it?"
+    # m 1b "So let’s add a background! It’s going to be quick and easy."
+    # m 2a "Like last time, open monika_route_script.rpy."
+    # m "Add between 'play music t2' and 'return', ' \ \ \ scene bg residential_day'"
+    # m "Then add another line: 'with dissolve_scene_full'. Once again, verify that everything bellow 'label monika_route:' is aligned."
+    # m 3a "Open Ren’Py and play the game and..."
+    # m 3b "There's now a neat background!"
+    # m 5a "Can you recognize it? It’s the first scene you saw when you played the game. It sure brings back memories..."
+    # m 1g "I still believed at that time I could get close to you without having to hurt anyone else..."
+    # m 1f "Let’s move on."
+    # m 1a "So about what you wrote, 'scene bg residential_day', the keyword 'scene' tells the game to load the scene, which is one kind of picture, called 'bg residential_day'."
+    # m "You can find what exactly is 'bg residential_day' in definitions.rpy, the same script we looked at last tutorial."
+    # m 3a "Try to find 'image bg'."
+    # m 4a "Can you see the list of backgrounds? Like it was the case for music, each background has a nickname assigned. For example, 'bg/sayori_bedroom.png' is referenced by 'bg sayori_bedroon'."
+    # m "Go back to monika_route_script.rpy and replace 'scene bg residential_day' by 'scene bg sayori_bedroom'. Can you guess what happens?"
+    # m 4b "The background is now Sayori’s bedroom!"
+    # m 4c "I hope it doesn’t bring you back bad memories..."
+    # m 4a "Okay, so about 'with dissolve_scene_full', it basically dissolve progressively the last scene into the new scene."
+    # m 3a "Before you were in the main menu, right? And then you were in Sayori’s bedroom. If you don’t add 'with dissolve_scene_full', the transition would be immediate."
+    # m 1a "That would be a bit unpleasant, wouldn’t it?"
+    # m 3b "That’s why we add 'with dissolve_scene_full'. With this additional line, the scene changes to another smoothly."
+    # m 2a "There are other types of transition such as wipeleft_scene. Try replacing 'with dissolve_scene_full' by 'with wipeleft_scene '."
+    # m 4a "Can you see the difference? dissolve_scene_full , dissolve_scene_half, wipeleft_scene are the common transitions used in DDLC so if you can understand them, you’re good to go!"
+    # m "Before doing the next tutorial, let’s add back ' scene bg residential_day' and ' with dissolve_scene_full'."
+    # m "Check that monika_script_route.rpy is the same as T3.rpy in the monika_route_answer folder."
+    # m 1b "Okay! We’re almost there! We’ll soon know enough for a kinetic novel-like mod."
+    # m "I cannot wait!"
+    # m 5a "See you soon [player]!"
 
     return
 

@@ -9,7 +9,7 @@ label ch22_y_end:
     y "My mind has been a little hyperactive lately, so I had to take it out on your pen."
     y 2o "Ah--"
     y 2q "That is...a-a pen fell out of your backpack yesterday, so I took it home for safekeeping and..."
-    y "I, um..."
+    y "I, um..." # 实际上注意刚刚写诗的纸，已经有奇怪的液体了
     y 2y6 "I just...really like...the way...that it writes."
     y "So I wrote this...poem...with it."
     y "And now you're touching it..."
@@ -25,6 +25,7 @@ label ch23_y_end:
         alpha 0
         linear 2.0 alpha 1.0
     call showpoem(poem_y23, track="bgm/5_yuri2.ogg", revert_music=False, paper="images/bg/poem_y2.jpg", img="yuri eyes", where=truecenter) from _call_showpoem_1
+    # 现在稿纸已经是血与液的赞歌了（
     y "Do you like it??"
     y "I wrote it for you!"
     $ gtext = glitchtext(80)
@@ -96,12 +97,12 @@ label ch22_n_end2:
         alpha 0.0
         easein 4.0 alpha 1.0
     $ currentpos = get_pos(channel="music_poem")
-    $ audio.t5c = "<from " + str(currentpos) + " loop 4.444>bgm/5_ghost.ogg"
+    $ audio.t5c = "<from " + str(currentpos) + " loop 4.444>bgm/5_ghost.ogg" # 危
     stop music_poem fadeout 2.0
     $ renpy.music.play(audio.t5c, fadein=2.0, tight=True)
     show n_rects_ghost1 zorder 4
     show n_rects_ghost2 zorder 4
-    show n_rects_ghost3 zorder 4
+    show n_rects_ghost3 zorder 4 # 危
     n ghost1 "Yuri is a sick freak."
     n "That should be obvious by now."
     n "So just play with me instead."
@@ -120,7 +121,7 @@ label ch22_n_end2:
     n "Play with me."
     stop music
     hide n_rects_ghost3
-    n ghost2 "PLAY WITH ME!!!"
+    n ghost2 "PLAY WITH ME!!!" # 危
     $ style.say_dialogue = style.normal
     $ quick_menu = False
     pause 1
@@ -128,13 +129,13 @@ label ch22_n_end2:
     hide natsuki_ghost_blood
     hide n_rects_ghost1
     hide n_rects_ghost2
-    show natsuki ghost3
+    show natsuki ghost3 # 歪
     show n_rects_ghost4 onlayer front zorder 4
     show n_rects_ghost5 onlayer front zorder 4
     pause 0.5
     hide natsuki
     play sound "sfx/run.ogg"
-    show natsuki ghost4 at i11 onlayer front
+    show natsuki ghost4 at i11 onlayer front # 死
     pause 0.25
     window hide(None)
     hide natsuki onlayer front

@@ -7,7 +7,7 @@ define config.name = "DDLC 中文 Mod 模板"
 define gui.show_name = False
 
 # 版本号
-define config.version = "1.0.0"
+define config.version = "1.1.0"
 
 # text placed on about screen
 define gui.about = _("")

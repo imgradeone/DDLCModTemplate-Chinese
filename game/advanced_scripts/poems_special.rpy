@@ -41,7 +41,7 @@ label poem_special_2:
     play sound page_turn
     show poem_special2 with Dissolve(1.0)
     $ pause()
-    play sound "sfx/giggle.ogg"
+    play sound "sfx/giggle.ogg" # 此时有人正在傻笑
     $ quick_menu = True
     return
 label poem_special_3:

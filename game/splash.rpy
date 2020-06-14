@@ -309,6 +309,7 @@ label splashscreen:
     $ splash_message = splash_message_default
     $ config.main_menu_music = audio.t1
     $ renpy.music.play(config.main_menu_music)
+    # Team Salvato Logo，不需要的话可以删除下面三行
     show intro with Dissolve(0.5, alpha=True)
     pause 2.5
     hide intro with Dissolve(0.5, alpha=True)

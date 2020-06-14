@@ -674,7 +674,7 @@ label yuri_exclusive2_2_ch23:
     play music hb
     show layer master at heartbeat
     show yuri as yuri_eyes zorder 4:
-        "yuri/eyesfull.png"
+        "yuri/eyesfull.png"#还是三次元之眼
         i11
         alpha 0.0
         block:

@@ -605,7 +605,7 @@ style main_menu_title:
 
 screen game_menu_m():
     $ persistent.menu_bg_m = True
-    add "gui/menu_bg_m.png"
+    add "gui/menu_bg_m.png" # 血 溅 文 学 部（
     timer 0.3 action Hide("game_menu_m")
 
 screen game_menu(title, scroll=None):

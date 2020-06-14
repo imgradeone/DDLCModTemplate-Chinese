@@ -22,6 +22,7 @@ image noface1:
 image noface2:
     "images/sayori/noface2.png"
     xalign 0.95 yalign 0.47
+# 铁 骨 铮 铮 Sayori（
 
 label ch23_main:
     if renpy.random.randint(0,15) == 0 and not seen_eyes_this_chapter:
@@ -514,7 +515,7 @@ label yuri_kill_1:
     window auto
     $ style.say_dialogue = style.normal
 
-    play sound "sfx/yuri-kill.ogg"
+    play sound "sfx/yuri-kill.ogg" # 去世预警 + 变调版 Play With Me
     pause 1.43
     show yuri stab_1
     pause 0.75

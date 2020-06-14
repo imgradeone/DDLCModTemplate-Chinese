@@ -404,7 +404,7 @@ label ch30_stream:
     window auto
     m "I'm just kidding..."
     m "I can't do anything after all."
-    play sound ["<silence 0.9>", "<to 0.75>sfx/mscare.ogg"]
+    play sound ["<silence 0.9>", "<to 0.75>sfx/mscare.ogg"] # 危
     show monika_scare:
         alpha 0
         1.0
