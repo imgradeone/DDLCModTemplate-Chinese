@@ -1,7 +1,8 @@
+# 假二周目开头
 label ch10_main:
-    $ delete_all_saves()
+    $ delete_all_saves() # 炸档使我快乐
     $ persistent.deleted_saves = True
-    $ gtext = glitchtext(48)
+    $ gtext = glitchtext(48) # 删 Sayori 使我快乐
     stop music
     $ config.window_hide_transition = None
     scene bg residential_day
@@ -38,7 +39,7 @@ label ch10_main:
     window hide(None)
     window auto
     scene black with trueblack
-    $ delete_all_saves()
+    $ delete_all_saves() # 记忆清除
     $ persistent.playthrough = 2
     $ persistent.anticheat = renpy.random.randint(100000, 999999)
     $ anticheat = persistent.anticheat

@@ -277,7 +277,7 @@ label ch1_end:
     hide sayori
     show natsuki at f33 zorder 3
     n 1f "Well, you know what?!"
-    n "I wasn't the one whose boobs magically grew a size bigger as soon as [player] started showing up!!"
+    n "I wasn't the one whose boobs magically grew a size bigger as soon as [player] started showing up!!" # 开黄腔的 Natsuki 是屑（
     show yuri 3p at h32
     show natsuki at t33 zorder 2
     y "N-Natsuki!!"
@@ -495,7 +495,7 @@ label ch1_end_natsuki:
     show natsuki at f22 zorder 3
     n 1i "Hmph."
     n "Anyway...!"
-    n 1q "The thing about your boobs. I didn't mean it, okay?"
+    n 1q "The thing about your boobs. I didn't mean it, okay?" # 开黄腔的 Natsuki 是屑（
     n "That's all."
     "Natsuki looks away, avoiding eye contact with anyone."
     show natsuki at t22 zorder 2
@@ -753,7 +753,7 @@ label ch1_end_sayori:
     s "Natsuki's cute and there's nothing wrong with that!"
     s 1i "And Yuri's boobs are the same as they always were!"
     show sayori at hf31
-    s 1j "Big and beautiful!!"
+    s 1j "Big and beautiful!!" # 开黄腔的 Sayori 是屑（
     show sayori 1i at t31 zorder 2
     show natsuki at f33 zorder 3
     n 1o "..."

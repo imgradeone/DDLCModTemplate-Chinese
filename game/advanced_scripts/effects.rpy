@@ -225,7 +225,7 @@ init python:
                 sindex += 1
             return 0
 
-########## Blood
+########## Blood 血
 #This defines a blood effect that is later used to make displayables for blood
 #drops and spurts. Used for creepy blood drips and also for stabbing blood
 #squirts

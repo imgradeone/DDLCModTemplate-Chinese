@@ -294,7 +294,7 @@ label ch23_end:
     y "Please."
     show yuri at t33 zorder 2
     show natsuki at f31 zorder 3
-    n 1o "Like {i}you{/i} would fucking know!"
+    n 1o "Like {i}you{/i} would fucking know!" # 爆粗口的 Natsuki 是屑（
     n 1x "All you care about now is dragging [player] around with you and your stupid books."
     n 1f "You {i}and{/i} Monika!"
     show natsuki at t31 zorder 2
@@ -322,7 +322,7 @@ label ch23_end:
     n 3c "We can just--"
     show natsuki at t31 zorder 2
     show yuri at f33 zorder 3
-    y 2r "Natsuki, shut your fucking mouth and let him decide for himself."
+    y 2r "Natsuki, shut your fucking mouth and let him decide for himself." # 爆粗口的 Yuri 是屑（
     show yuri at t33 zorder 2
     show natsuki at f31 zorder 3
     n 1o "{i}You{/i} shut your mouth!"
@@ -333,13 +333,14 @@ label ch23_end:
     show monika at t32 zorder 2
     python:
         madechoice = renpy.display_menu([("Natsuki.", "natsuki"), ("Yuri.", "yuri"), ("Monika.", "monika")], screen="rigged_choice")
-
+    # 我们会强制把你的鼠标挪动 Monika 上。你大可以试试强行选另外两个。
+    # 下面是后果。
     if madechoice != "monika":
         window hide(None)
         $ musicpos = get_pos()
         stop music
         scene white
-        show yuripupils zorder 10
+        show yuripupils zorder 10 # Yuri 的三次元之眼正在凝视你
         pause 3.0
         show bg club_day:
             alpha 0.05
@@ -372,6 +373,7 @@ label ch23_end:
                 pass
             "Monika":
                 pass
+            # JUST MONIKAAAAAAAAAAAAAAAAAAAAAa
         scene bg club_day
         $ audio.t3m = "<from " + str(musicpos) + " loop 4.618>bgm/3.ogg"
         play music t3m
@@ -387,7 +389,7 @@ label ch23_end:
     m "I promise it'll be fun."
     m "Is Sunday okay with you?"
     show natsuki 1e at f31 zorder 3
-    n "Are you fucking kidding me?"
+    n "Are you fucking kidding me?" # 爆粗口的 Natsuki 是屑（
     n "This isn't fair at all!"
     show natsuki at t31 zorder 2
     show monika at f32 zorder 3
@@ -629,6 +631,7 @@ label yuri_kill_3:
     call updateconsole("os.remove(\"characters/natsuki.chr\")", "natsuki.chr deleted successfully.") from _call_updateconsole_19
     $ delete_character("natsuki")
     pause 1.0
+    # 死 DEATH
     m 2a "I'm almost done."
     m 2j "I just want to have a cupcake real quick!"
     $ gtext = glitchtext(10)

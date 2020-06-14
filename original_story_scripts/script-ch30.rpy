@@ -380,6 +380,7 @@ label ch30_postpoem:
 
 label ch30_stream:
     # obs32.exe, obs64.exe, obs.exe, xsplit.core.exe
+    # 危
     m "Hold on a second..."
     m "...You're recording this, aren't you?"
     m "Um...hi, everyone!"
@@ -428,7 +429,7 @@ label ch30_stream:
         easeout_quart 0.25 zoom 2.0
         0.30
         linear 0.10 zoom 1.0
-    m "If you gave me some time to prepare, I{nw}"
+    m "If you gave me some time to prepare, I{nw}"# Surprise MTXK
     m "Did I scare you?"
     show layer master
     show layer screens

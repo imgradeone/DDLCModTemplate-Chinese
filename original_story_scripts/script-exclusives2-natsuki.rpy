@@ -79,9 +79,9 @@ label natsuki_exclusive2_1:
     $ style.say_dialogue = style.normal
     mc "You looking for something in there?"
     $ style.say_dialogue = style.edited
-    n 4x "fucking monikammmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+    n 4x "fucking monikammmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm" # 爆粗口的 Natsuki 是屑（
     $ style.say_dialogue = style.normal
-    $ _history_list[-1].what = "Freaking Monika..."
+    $ _history_list[-1].what = "Freaking Monika..." # 放心，历史记录被我们改了
     n "She never puts my stuff back in the right spot!"
     n "What's the point in keeping your collection organized if someone else is just gonna mess it up?"
     "Natsuki slides a bunch of stacked books and boxes across the shelf."
@@ -115,7 +115,7 @@ label natsuki_exclusive2_1:
     $ style.say_dialogue = style.normal
     n "But I'll tell you one thing, [player]."
     n 4l "Consider this a lesson straight from the Literature Club:{nw}"
-    $ _history_list[-1].what = "Consider this a lesson straight from the Literature Club: Don't judge a book by its cover!"
+    $ _history_list[-1].what = "Consider this a lesson straight from the Literature Club: Don't judge a book by its cover!" # 我们必须假装 bug 没有发生过 
     $ style.say_dialogue = style.edited
     n "don't judge a bookkkkkkkkkkkkkkkkk kkkkk kk{space=20}k{space=40}k{space=120}k{space=160}k{space=200}k"
     $ style.say_dialogue = style.normal
@@ -261,7 +261,7 @@ label natsuki_exclusive2_1:
 
     show n_cg1b
     hide n_cg1_base
-
+    # 噔 噔 咚
     $ currentpos = get_pos()
     $ audio.t6g = "<from " + str(currentpos) + " loop 10.893>bgm/6g.ogg"
     play music t6g

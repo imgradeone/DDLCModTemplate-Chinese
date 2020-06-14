@@ -441,6 +441,8 @@ image sayori glitch:
     "sayori/glitch2.png"
     pause 0.01666
     repeat
+    # 你以为我是 Sayori，Ko no Monika / Yuri Da!
+    # 截图选老婆（（（
 
 # Natsuki
 image natsuki 11 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/1t.png")
@@ -822,19 +824,21 @@ image n_moving_mouth:
         ease 0.2 xzoom 0.4
         ease 0.2 xzoom 0.8
         repeat
+# Mopemope 即视感的精污三次元大嘴巴（
 
 image natsuki_ghost_blood:
     "#00000000"
     "natsuki/ghost_blood.png" with ImageDissolve("images/menu/wipedown.png", 80.0, ramplen=4, alpha=True)
     pos (620,320) zoom 0.80
+    # Natsuki 眼里流的血，带动画
 
 image natsuki ghost_base:
-    "natsuki/ghost1.png"
+    "natsuki/ghost1.png" # 没有五官的 Natsuki
 image natsuki ghost1:
     "natsuki 11"
-    "natsuki ghost_base" with Dissolve(20.0, alpha=True)
-image natsuki ghost2 = Image("natsuki/ghost2.png")
-image natsuki ghost3 = Image("natsuki/ghost3.png")
+    "natsuki ghost_base" with Dissolve(20.0, alpha=True) # 没有五官的 Natsuki（带渐变动画）
+image natsuki ghost2 = Image("natsuki/ghost2.png") # 只会龇牙的屑树（
+image natsuki ghost3 = Image("natsuki/ghost3.png") # 歪 脖 子 树
 image natsuki ghost4:
     "natsuki ghost3"
     parallel:
@@ -844,7 +848,7 @@ image natsuki ghost4:
         ease 0.025 xoffset 20
         repeat
     0.25
-    "black"
+    "black" # 歪 脖 子 树 冲 向 你
 image natsuki glitch1:
     "natsuki/glitch1.png"
     zoom 1.25
@@ -856,13 +860,14 @@ image natsuki glitch1:
     yoffset 0 zoom 1 xoffset 0 ytile 1
     "natsuki 4e"
 
-image natsuki scream = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/scream.png")
+image natsuki scream = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/scream.png") # 被吓着的 Natsuki
 image natsuki vomit = "natsuki/vomit.png"
 
 image n_blackeyes = "images/natsuki/blackeyes.png"
-image n_eye = "images/natsuki/eye.png"
+image n_eye = "images/natsuki/eye.png" # 眼珠子爆出来力（（（
 
 # Yuri
+
 image yuri 1 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/a.png")
 image yuri 2 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/a.png")
 image yuri 3 = im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/a.png")
@@ -892,6 +897,7 @@ image yuri 1u = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r
 image yuri 1v = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/v.png")
 image yuri 1w = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/w.png")
 
+# 末日风格
 image yuri 1y1 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/y1.png")
 image yuri 1y2 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/y2.png")
 image yuri 1y3 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/y3.png")
@@ -924,6 +930,7 @@ image yuri 2u = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r
 image yuri 2v = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/v.png")
 image yuri 2w = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/w.png")
 
+# 末日风格
 image yuri 2y1 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/y1.png")
 image yuri 2y2 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/y2.png")
 image yuri 2y3 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/y3.png")
@@ -956,6 +963,7 @@ image yuri 3u = im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r
 image yuri 3v = im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/v.png")
 image yuri 3w = im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/w.png")
 
+# 末日风格
 image yuri 3y1 = im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/y1.png")
 image yuri 3y2 = im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/y2.png")
 image yuri 3y3 = im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/y3.png")
@@ -1058,14 +1066,17 @@ image y_glitch_head:
     "images/yuri/zd.png"
     0.15
     repeat
+# "Nobody would cry if she killed herself."
 
+# Yuri 自裁小动画（
 image yuri stab_1 = "yuri/stab/1.png"
 image yuri stab_2 = "yuri/stab/2.png"
 image yuri stab_3 = "yuri/stab/3.png"
 image yuri stab_4 = "yuri/stab/4.png"
 image yuri stab_5 = "yuri/stab/5.png"
-image yuri stab_6 = LiveComposite((960,960), (0, 0), "yuri/stab/6-mask.png", (0, 0), "yuri stab_6_eyes", (0, 0), "yuri/stab/6.png")
 
+# stab_6 由多个图层组成，不然人家 Yuri 的眼睛怎么动的（（（
+image yuri stab_6 = LiveComposite((960,960), (0, 0), "yuri/stab/6-mask.png", (0, 0), "yuri stab_6_eyes", (0, 0), "yuri/stab/6.png")
 image yuri stab_6_eyes:
     "yuri/stab/6-eyes.png"
     subpixel True
@@ -1099,6 +1110,7 @@ image yuri oneeye2:
     subpixel True
     pause 5.0
     linear 60 xoffset -50 yoffset 20
+# 眉 飞 色 舞
 
 image yuri glitch:
     "yuri/glitch1.png"
@@ -1112,6 +1124,7 @@ image yuri glitch:
     "yuri/glitch5.png"
     pause 0.1
     repeat
+# 大崩坏
 image yuri glitch2:
     "yuri/0a.png"
     pause 0.1
@@ -1122,16 +1135,21 @@ image yuri glitch2:
     "yuri/0b.png"
     pause 0.3
     "yuri 1"
+# 小崩坏
 
+# 三次元之眼
 image yuri eyes = LiveComposite((1280, 720), (0, 0), "yuri/eyes1.png", (0, 0), "yuripupils")
+# 整体
 
+# 没眼珠版
 image yuri eyes_base = "yuri/eyes1.png"
 
+# 单独三次元眼睛，还会动的那种
 image yuripupils:
     "yuri/eyes2.png"
     yuripupils_move
 
-image yuri cuts = "yuri/cuts.png"
+image yuri cuts = "yuri/cuts.png" # 自 残
 
 image yuri dragon:
     "yuri 3"
@@ -1157,6 +1175,9 @@ image yuri dragon:
     time 0.55
     xoffset 0
     "yuri 3"
+
+# 1 0 4 9 2   x   D D L C（误）
+# 七 龙 珠 联 动（
 
 #------------------------------------------------Our beloved Monika only has her school uniform here, but that can change!
 
@@ -1268,6 +1289,7 @@ image monika g1:
     time 1.25
     xoffset 0 yoffset 0 zoom 1.00
     "monika 3"
+    # 大 眼（（（
 
 image monika g2:
     block:

@@ -197,8 +197,22 @@ label tutorial_route_p2:
     m "欢迎回来，[player]！"
     m 1l "上一关是不是有那么一点点难..."
     m "啊哈..."
+    m "我保证这关比上一关简单。"
     m 3a "视觉小说和一般的小说一样，是需要剧本的。"
-    m "而在 Ren'Py 里，剧本就是靠对话脚本体现的！"
+    m "而在 Ren'Py 里，剧本就是靠对话脚本实现的！"
+    m 3l "听到脚本这个词，也别慌..."
+    m "Ren'Py 的脚本编写其实非常容易！"
+    m 3b "接下来，跟着我开始写对话吧！"
+    m "打开上一关创建的 meet_monika.rpy 文件。"
+    m "在 label 行和 return 之间输入："
+    m " \ \ \ mc \"DDLC 太好玩了!\""
+    m "再换一行，然后："
+    m " \ \ \ y \"就是啊，Monika 多可爱啊！\""
+    m 1l "..."
+    m 3j "这是不是有点道德绑架啊..."
+    m "算了，现在只是学习怎么写 Mod，之后正式开写 Mod 的时候你可以自己编写。"
+    m 3b "接下来保存文件，然后再去 Ren'Py 启动器打开工程，开始新游戏。"
+    m 1a "这时你应该看到了你和 Yuri 的一段简短的对话。"
 
     # m "Hi again [player]!"
     # m 1a "If the last part was a bit too hard, don’t worry, this part is easier."
@@ -695,11 +709,30 @@ label tutorial_route_adv:
         adv_items = [
             ("Navigation Buttons", "tutorial_route_adv_hkb"),
             ("Edited 风格文本框", "tutorial_route_adv_edited"),
-            ("Poemgame（测试）", "tutorial_route_adv_poemgame")
+            ("Poemgame（测试）", "tutorial_route_adv_poemgame"),
+            ("Monika，请喊出我的电脑用户名！", "tutorial_route_adv_current")
         ]
 
     m 5a "你现在想来点高级的？"
     m 3a "可以！"
+
+init python:
+    import subprocess
+    import os
+    process_list = []
+    currentuser = ""
+    if renpy.windows:
+        try:
+            process_list = subprocess.check_output("wmic process get Description", shell=True).lower().replace("\r", "").replace(" ", "").split("\n")
+        except:
+            pass
+        try:
+            for name in ('LOGNAME', 'USER', 'LNAME', 'USERNAME'):
+                user = os.environ.get(name)
+                if user:
+                    currentuser = user
+        except:
+            pass
 
 label tutorial_route_adv_repeat:
 
@@ -756,6 +789,23 @@ label tutorial_route_adv_hkb:
 label tutorial_route_adv_edited:
 
     m "咕~"
+
+    return
+
+label tutorial_route_adv_current:
+
+    m 5 "好的，我马上就要喊出来了哦！"
+    m "你现在关掉直播软件还来得及！喵~"
+    $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe", "bandicam.exe", "livehime.exe"]
+    if list(set(process_list).intersection(stream_list)):
+        m "emm..."
+        m "算了，我先不说了..."
+        return
+    # 这里的进程识别有点点问题
+    m "准备了啊！"
+    m "你好，[currentuser]！你好，[player]！"
+    m 3l "..."
+    m "啊哈..."
 
     return
 
