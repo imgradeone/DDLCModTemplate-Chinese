@@ -262,7 +262,7 @@ label tutorial_route_p2:
     m "可是 Mod 里缺了好多东西，比如音乐、角色、背景。这还不是视觉小说应该有的亚子呢。"
     m "别慌，后面我们会慢慢加的。"
     m 3k "不过，接下来的东西就很有挑战性了！"
-    m "没事，消化一下，下一关见！"
+    m "没事，消化一下，下一关见！w"
 
     # m "Hi again [player]!"
     # m 1a "If the last part was a bit too hard, don’t worry, this part is easier."
