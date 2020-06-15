@@ -80,7 +80,7 @@
 ## 开始使用模板
 
 1. 去 Ren'Py 官网下载 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12)。**注意：由于模板历史原因和兼容性考虑，请务必使用 Ren'Py SDK 6.99.12 进行 Mod 制作，不要使用 Ren'Py SDK 7，这会导致 Mod 出现兼容性问题。**
-1. 前往 Releases 页面下载稳定版模板。如需开发版，可以点击页面上的 Clone & Download。
+1. 前往 Releases 页面下载稳定版模板。如需开发版，可以点击页面上的 Clone & Download。当然，我们已经将此 Repo 设置为模板 Repo，所以你也可以点击绿色的 `Use this template`，然后使用开发版模板创建新 Repo，再 Clone 到本地。
 1. 将模板文件解压到刚刚你解压 Ren'Py SDK 的文件夹里，或者在你指定的工程目录里。（默认情况下，`renpy-6.99.12.4-sdk`）
 1. 前往 [DDLC.moe](https://ddlc.moe) 或者 Steam 下载 DDLC 游戏本体，并将游戏目录下 `game` 文件夹内的 `audio.rpa`、`images.rpa` 和 `fonts.rpa` 复制到工程文件夹（即你解压模板文件的地方）。（千万不要把 `scripts.rpa` 一并复制过去，会出现冲突）
 1. 下载中文字体包，请查看 [中文字体](#中文字体) 小节。
