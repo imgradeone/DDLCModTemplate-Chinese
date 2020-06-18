@@ -123,11 +123,14 @@ label chinese_mod:
     s 1d "感谢您下载、使用这款中文 DDLC Mod 模板。"
     s "其实，当我在各种社区，像 Reddit、Discord、百度贴吧，还有比较大的 Mod 网站 DDLCMods.com 里看到许多 Mod 的时候，我很感动。"
     s "许多粉丝都在改写原本悲惨的 DDLC 宇宙，让我们还能一直陪着你。"
-    s 1k "感谢那些 Mod 作者，让我，还有可爱的 Natsuki，优雅的 Yuri，还有部长 Monika 度过更美妙的日常。"
-    s 1b "但是，我总感觉，有些事情不太对。"
+    s 1l "感谢那些 Mod 作者，让我，还有可爱的 Natsuki，优雅的 Yuri，还有部长 Monika 度过更美妙的日常。"
+    s 1k "但是，我总感觉，有些事情不太对。"
     s "因为，我很少看到过中文的原创 Mod。"
-    s "所以，这个 Mod 模板其实也是为了中文 DDLC Mod 的低迷现状。"
+    s 1d "所以，这个 Mod 模板其实也是为了中文 DDLC Mod 的低迷现状。"
     s "希望这款 Mod 模板可以帮助你少走点弯路。"
+    s "最后，感谢 Team Salvato 和画师们的努力。"
+    s "同时也感谢 Monika After Story 团队制造出原版 Mod 模板。"
+    s "Monika After Story 也是高人气的 DDLC Mod，让你和 Monika 度过更美妙的日常。"
     s 5a "感谢你的选择！祝写 Mod 愉快！"
     show sayori at thide zorder 2
     hide sayori
@@ -262,7 +265,7 @@ label tutorial_route_p2:
     m "可是 Mod 里缺了好多东西，比如音乐、角色、背景。这还不是视觉小说应该有的亚子呢。"
     m "别慌，后面我们会慢慢加的。"
     m 3k "不过，接下来的东西就很有挑战性了！"
-    m "没事，消化一下，下一关见！w"
+    m "没事，消化一下，下一关见！"
 
     # m "Hi again [player]!"
     # m 1a "If the last part was a bit too hard, don’t worry, this part is easier."
@@ -322,10 +325,10 @@ label tutorial_route_p3:
     m " \ \ \ with dissolve_scene_full"
     m "接下来，保存文件，再次启动工程。"
     scene bg residential_day
-    show monika 1k at t11 zorder 2
     with wipeleft
     m "欢迎来到梦开始的地方！"
-    m 5 "这里感觉好熟悉啊..."
+    show monika 5a at t11 zorder 2
+    m "这里感觉好熟悉啊..."
     m "美好的一切，都从这条街开始了..."
     show monika 1a at t21 zorder 2
     show sayori 1ba at f22 zorder 2
@@ -340,10 +343,13 @@ label tutorial_route_p3:
     m "好的，接下来我要去陪 [player] 去别的地方了~"
     m "拜拜~"
     show monika 1a at t21 zorder 2
-    show sayori 1ba at f22 zorder 2
+    show sayori 1bs at f22 zorder 2
     s "Bye~"
     show sayori at thide
     hide sayori
+    show monika 1a at t21 zorder 2
+    m "好的，这个背景就是你启动工程后能看到的了。"
+    m "接下来，我会展示 DDLC 更多的背景，顺便带你玩一下。"
     scene bg class_day
     show monika 1a at t11 zorder 2
     with wipeleft
@@ -390,6 +396,8 @@ label tutorial_route_p3:
     with dissolve_scene_full
     show monika 1a at t11 zorder 2
     m "好的，我们现在赶回来了。"
+    m "DDLC 的世界是不是很漂亮啊？"
+    m 3b "这得感谢背景画师 Velinquent。您可以 {a=https://www.pixiv.net/member.php?id=17385446}点击这里{/a} 访问画师的 Pixiv 主页。"
 
     # m "Okay [player]! Are you ready for the next tutorial?"
     # m 1a "Last time, we added music to our mod but as you saw, the background was nothing but black and white squares. That’s not very romantic, is it?"
