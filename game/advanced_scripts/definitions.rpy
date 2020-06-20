@@ -445,6 +445,10 @@ image sayori glitch:
     # 你以为我是 Sayori，Ko no Monika / Yuri Da!
     # 截图选老婆（（（
 
+# 模板赠送：单独调用 glitch1 / glitch2
+image sayori glitch1 = "sayori/glitch1.png"
+image sayori glitch2 = "sayori/glitch2.png"
+
 # Natsuki
 image natsuki 11 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/1t.png")
 image natsuki 1a = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/a.png")
@@ -860,6 +864,8 @@ image natsuki glitch1:
     time 0.75
     yoffset 0 zoom 1 xoffset 0 ytile 1
     "natsuki 4e"
+
+image natsuki glitch1_noanimation =  "natsuki/glitch1.png" # 赠品
 
 image natsuki scream = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/scream.png") # 被吓着的 Natsuki
 image natsuki vomit = "natsuki/vomit.png"

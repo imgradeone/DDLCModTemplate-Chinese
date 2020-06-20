@@ -1,0 +1,8 @@
+{
+    "name": "Mod 命名",
+    "description": "Mod 介绍",
+    "author": "Mod 作者",
+    "uses_sdk": true,
+    "discord": "discordID",
+    "website": "https://example.org"
+} 

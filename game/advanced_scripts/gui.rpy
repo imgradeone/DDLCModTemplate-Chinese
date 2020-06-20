@@ -65,6 +65,7 @@ define gui.name_font = "mod_assets/font/zcoolkuaile.ttf"
 
 ## The font used for out-of-game text.
 define gui.interface_font = "mod_assets/font/alipuhuireg.ttf"
+define gui.interface_text_font = "mod_assets/font/alipuhuireg.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 24

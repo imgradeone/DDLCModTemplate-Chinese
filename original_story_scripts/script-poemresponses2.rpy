@@ -25,7 +25,7 @@ label ch23_y_end:
         alpha 0
         linear 2.0 alpha 1.0
     call showpoem(poem_y23, track="bgm/5_yuri2.ogg", revert_music=False, paper="images/bg/poem_y2.jpg", img="yuri eyes", where=truecenter) from _call_showpoem_1
-    # 现在稿纸已经是血与液的赞歌了（
+    # 现在稿纸已经是血与液的赞歌了，BGM 也诡异了起来
     y "Do you like it??"
     y "I wrote it for you!"
     $ gtext = glitchtext(80)

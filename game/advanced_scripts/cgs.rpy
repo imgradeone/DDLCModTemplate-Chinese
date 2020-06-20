@@ -273,21 +273,6 @@ image y_kill = ConditionSwitch(
 
     )
 
-image ykilling = ConditionSwitch(
-    "persistent.yurikillround >= 1380", "images/cg/y_kill/3a.png",
-    "persistent.yurikillround >= 1180", "images/cg/y_kill/3c.png",
-    "persistent.yurikillround >= 1120", "images/cg/y_kill/3b.png",
-    "persistent.yurikillround >= 920", "images/cg/y_kill/3a.png",
-    "persistent.yurikillround >= 720", "images/cg/y_kill/2c.png",
-    "persistent.yurikillround >= 660", "images/cg/y_kill/2b.png",
-    "persistent.yurikillround >= 460", "images/cg/y_kill/2a.png",
-    "persistent.yurikillround >= 260", "images/cg/y_kill/1c.png",
-    "persistent.yurikillround >= 200", "images/cg/y_kill/1b.png",
-    "True", "images/cg/y_kill/1a.png",
-
-    )
-
-
 #This defines the animations for Sayori's death scene
 transform s_kill_bg_start:
     truecenter

@@ -6,7 +6,7 @@ init python:
         (_("第 1 关：从第一个 label 开始"),"tutorial_route_p1"),
         (_("第 2 关：第一句对话"),"tutorial_route_p2"),
         (_("第 3 关：背景也要丰富"),"tutorial_route_p3"),
-        (_("Route Part 4, Dialogue（中文版以 BGM 替代）"),"tutorial_route_p4"),
+        (_("第 4 关：没有 BGM 的 Mod 是没有灵魂的"),"tutorial_route_p4"),
         (_("Route Part 5, Menu"),"tutorial_route_p5"),
         (_("Route Part 6, Logic Statement"),"tutorial_route_p6"),
         (_("Route Part 7, Sprite"),"tutorial_route_p7"),
@@ -15,6 +15,7 @@ init python:
         (_("来点高级点的！"),"tutorial_route_adv")
     ]
 
+# TODO: 中文版教程
 
 define adj = ui.adjustment()
 define gui.tutorial_button_width = 500
@@ -88,7 +89,7 @@ label tutorial_selection_menu:
 
     show monika 3a at tcommon(950)
     window show
-    $ m(_("接下来我们该学些什么呢？"), interact=False)
+    $ m(_("接下来我们该学些什么呢？{a="), interact=False)
 
     call screen tutorial_choice(items)
     window auto
@@ -397,37 +398,23 @@ label tutorial_route_p3:
     show monika 1a at t11 zorder 2
     m "好的，我们现在赶回来了。"
     m "DDLC 的世界是不是很漂亮啊？"
-    m 3b "这得感谢背景画师 Velinquent。您可以 {a=https://www.pixiv.net/member.php?id=17385446}点击这里{/a} 访问画师的 Pixiv 主页。"
+    m 3b "这得感谢背景画师 Velinquent。您可以 {a=https://www.pixiv.net/member.php?id=17385446}点击这里{/a} 访问画师的 Pixiv 主页，或者 {a=https://twitter.com/VelinquenT}点击这里{/a} 访问画师的 Twitter。"
+    m "不过，你想知道我们是怎么调用背景的吗？"
+    m 5 "你可以去看看 advanced_scripts 文件夹里的 definitions.rpy。"
+    m "这里面指定了你做 Mod 时会调取的背景。"
+    m "有了这串内容，你指定背景时就可以直接使用 scene bg 加上相应名字即可了。"
 
-    # m "Okay [player]! Are you ready for the next tutorial?"
-    # m 1a "Last time, we added music to our mod but as you saw, the background was nothing but black and white squares. That’s not very romantic, is it?"
-    # m 1b "So let’s add a background! It’s going to be quick and easy."
-    # m 2a "Like last time, open monika_route_script.rpy."
-    # m "Add between 'play music t2' and 'return', ' \ \ \ scene bg residential_day'"
-    # m "Then add another line: 'with dissolve_scene_full'. Once again, verify that everything bellow 'label monika_route:' is aligned."
-    # m 3a "Open Ren’Py and play the game and..."
-    # m 3b "There's now a neat background!"
-    # m 5a "Can you recognize it? It’s the first scene you saw when you played the game. It sure brings back memories..."
-    # m 1g "I still believed at that time I could get close to you without having to hurt anyone else..."
-    # m 1f "Let’s move on."
-    # m 1a "So about what you wrote, 'scene bg residential_day', the keyword 'scene' tells the game to load the scene, which is one kind of picture, called 'bg residential_day'."
-    # m "You can find what exactly is 'bg residential_day' in definitions.rpy, the same script we looked at last tutorial."
-    # m 3a "Try to find 'image bg'."
-    # m 4a "Can you see the list of backgrounds? Like it was the case for music, each background has a nickname assigned. For example, 'bg/sayori_bedroom.png' is referenced by 'bg sayori_bedroon'."
-    # m "Go back to monika_route_script.rpy and replace 'scene bg residential_day' by 'scene bg sayori_bedroom'. Can you guess what happens?"
-    # m 4b "The background is now Sayori’s bedroom!"
-    # m 4c "I hope it doesn’t bring you back bad memories..."
-    # m 4a "Okay, so about 'with dissolve_scene_full', it basically dissolve progressively the last scene into the new scene."
-    # m 3a "Before you were in the main menu, right? And then you were in Sayori’s bedroom. If you don’t add 'with dissolve_scene_full', the transition would be immediate."
-    # m 1a "That would be a bit unpleasant, wouldn’t it?"
-    # m 3b "That’s why we add 'with dissolve_scene_full'. With this additional line, the scene changes to another smoothly."
-    # m 2a "There are other types of transition such as wipeleft_scene. Try replacing 'with dissolve_scene_full' by 'with wipeleft_scene '."
-    # m 4a "Can you see the difference? dissolve_scene_full , dissolve_scene_half, wipeleft_scene are the common transitions used in DDLC so if you can understand them, you’re good to go!"
-    # m "Before doing the next tutorial, let’s add back ' scene bg residential_day' and ' with dissolve_scene_full'."
-    # m "Check that monika_script_route.rpy is the same as T3.rpy in the monika_route_answer folder."
-    # m 1b "Okay! We’re almost there! We’ll soon know enough for a kinetic novel-like mod."
-    # m "I cannot wait!"
-    # m 5a "See you soon [player]!"
+    menu:
+        m 3a "不过，你想不想知道，如果没有这些指定项，会造成什么后果？"
+
+        "不想。":
+            m "好吧。"
+        "想！":
+            m 5b "那么你接下来调取背景时，输入的内容就会更加枯燥乏味。"
+            m 1 "..."
+
+    m 5 "那么，感谢你听到这里。"
+    m "好好温习一下，下一关很有挑战性！"
 
     return
 
