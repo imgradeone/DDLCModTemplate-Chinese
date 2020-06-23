@@ -422,6 +422,8 @@ label tutorial_route_p4:
 
     show monika 5a zorder 2 at t11
 
+    m "欢迎回来，[player]！"
+    
     m "Hi again, [player]~"
     m "Today, I’m going to teach you how to make dialogue in Ren’Py."
     m 1a "Although you already know, don’t you? We already wrote dialogue after all."
