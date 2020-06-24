@@ -1,8 +1,8 @@
 {
-    "name": "Mod 命名",
-    "description": "Mod 介绍",
-    "author": "Mod 作者",
-    "uses_sdk": true,
-    "discord": "discordID",
-    "website": "https://example.org"
+    "name": "DDLC 中文 Mod 模板",
+    "description": "您的中文 DDLC Mod 模板。一切都需要从头开始。",
+    "author": "Monika After Story 团队，imgradeone",
+    "uses_sdk": false,
+    "discord": "",
+    "website": "https://github.com/imgradeone/DDLCModTemplete-Chinese"
 } 
