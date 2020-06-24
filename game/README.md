@@ -14,7 +14,7 @@
 
 #### `overrides.rpy`
 
-该文件用于覆盖DDLC中的特定声明。 您可以使用它来更改图像和其他变量，以避免直接编辑 `/advanced_scripts` 中的文件。
+该文件用于覆盖 DDLC 中的特定定义。您可以使用它来更改图像和其他变量，还可以避免直接编辑 `/advanced_scripts` 中的文件。
 
 #### `script-example.rpy`、`tutorials.rpy`
 
