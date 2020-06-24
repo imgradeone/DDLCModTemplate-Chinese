@@ -1,4 +1,5 @@
-# 嘿，你想用中文写 DDLC Mod？那你来对地方了！
+# DDLC 中文 Mod 模板
+嘿，你想用中文写 DDLC Mod？**那你来对地方了！**
 
 这里是 DDLC 中文 Mod 模板！本模板基于 Monika After Story 团队的 [DDLCModTemplate](https://github.com/Monika-After-Story/DDLCModTemplate)，并进行了一系列汉化，以及功能追加。使用本模板制作 Mod 时，请遵循 [Team Salvato 的 IP Guidelines](http://teamsalvato.com/ip-guidelines/)。
 
@@ -8,7 +9,7 @@
 
 ## 中文字体
 
-中文版 DDLC Mod 模板使用了一些免费商用的中文字体，在此致谢。**开始 Mod 开发之路前，请务必下载这些字体，否则将无法启动工程。安装方式见 [中文字体包安装](#中文字体包安装) 小节。**
+中文版 DDLC Mod 模板使用了一些免费商用的中文字体，在此致谢。**开始 Mod 开发前，请务必下载这些字体，否则将无法启动工程。安装方式见 [中文字体包安装](#中文字体包安装) 小节。**
 
 如有需要，您也可以自行修改配置文件，以自定义字体，**但请自主承担版权风险**。
 
