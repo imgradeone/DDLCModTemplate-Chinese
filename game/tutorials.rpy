@@ -423,50 +423,53 @@ label tutorial_route_p4:
     show monika 5a zorder 2 at t11
 
     m "欢迎回来，[player]！"
-    
-    m "Hi again, [player]~"
-    m "Today, I’m going to teach you how to make dialogue in Ren’Py."
-    m 1a "Although you already know, don’t you? We already wrote dialogue after all."
-    m 2a "First, open monika_route_script.rpy and replace ' \ \ \ mc 'Let's listen to the music.' by the following line:"
-    m "' \ \ \ mc 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
-    m "Save the file and launch the game."
-    m 4a "As you surely expected, the main character now says 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
-    m 4j "Ehehe~ My route is finally being made!"
-    m 3a "Let’s look at the line you wrote. 'mc' is a nickname for main character. By writing 'mc' before the sentence inside quotation marks, the character speaking will be the main character."
-    m "Try replacing the line you wrote by ' n 'Just think of Monika from now on.'."
-    m 2a "..."
-    m 4b "See? Natsuki now tells you what you should have been doing since the beginning."
-    m "You should listen to her, [player]. Ehehe~"
-    m 4a "Now instead of writing ' n 'Just think of Monika from now on.', write 'y 'Natsuki and I are too messed up for someone as wonderful as you.'"
-    m "Play the game and as you can see..."
-    m 3b "Now it’s Yuri who finally realized that I’m the best one for you."
+    m 1b "好久不见，甚是想念！"
+    m 1a "上一次我们终于向 Mod 里加入了背景。"
+    m "但是 Mod 里连个像样的 BGM 也没有..."
 
-    show monika 5a zorder 2 at t11
+    # m "Hi again, [player]~"
+    # m "Today, I’m going to teach you how to make dialogue in Ren’Py."
+    # m 1a "Although you already know, don’t you? We already wrote dialogue after all."
+    # m 2a "First, open monika_route_script.rpy and replace ' \ \ \ mc 'Let's listen to the music.' by the following line:"
+    # m "' \ \ \ mc 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
+    # m "Save the file and launch the game."
+    # m 4a "As you surely expected, the main character now says 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
+    # m 4j "Ehehe~ My route is finally being made!"
+    # m 3a "Let’s look at the line you wrote. 'mc' is a nickname for main character. By writing 'mc' before the sentence inside quotation marks, the character speaking will be the main character."
+    # m "Try replacing the line you wrote by ' n 'Just think of Monika from now on.'."
+    # m 2a "..."
+    # m 4b "See? Natsuki now tells you what you should have been doing since the beginning."
+    # m "You should listen to her, [player]. Ehehe~"
+    # m 4a "Now instead of writing ' n 'Just think of Monika from now on.', write 'y 'Natsuki and I are too messed up for someone as wonderful as you.'"
+    # m "Play the game and as you can see..."
+    # m 3b "Now it’s Yuri who finally realized that I’m the best one for you."
 
-    menu:
-        m "You think so, right?"
-        "Yes":
-            pass
-        "Yes":
-            pass
+    # show monika 5a zorder 2 at t11
 
-    m "I knew you were a sweetheart~ Thank you my love."
-    m 1a "Ahaha, we drifted a bit...So I was saying that you need to specify two things to write a dialogue in Ren’Py."
-    m 3a "First you need to specify who is speaking. You can do it with the keyword 'mc', 'y', 'n', 's' and 'm'. I’m sure you can guess who is who."
-    m "Instead of using keyword, you can directly type the name of the person speaking. For example, try writing ' 'Player' 'Please be with me forever Monika.''."
-    m 2a "Did you do it?"
-    m 5a "Of course, I will stay with you forever."
-    m 2b "Besides the name of the speaker, you need to write the sentence they will say. The sentence should be between quotation marks."
-    m 4b "One last thing. If you want to write special characters such as \\ or ' in the sentence, you need to put \\ before them."
-    m 1b "Alright, that’s all for dialogue!"
-    m "Pretty simple, right? Ren’Py was made so that anyone can make visual novel after all. Even beginners like us can pick it up quickly."
-    m 2a "Before you save the file, replace the line of dialogue by -"
-    m "' \ \ \ mc 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
-    m "Like usual, check that monika_route_script.rpy is exactly like T4.rpy inside the monika_route_answer folder."
-    m 4b "Okay [player]! You now know how to make a scene, add music, and make dialogue. The only things missing are character pictures and choices."
-    m "We’ll see how to make choices in the next tutorial."
-    m 4a "The recent tutorials have been pretty easy so far but the next one will be harder."
-    m 5a "See you soon!"
+    # menu:
+    #     m "You think so, right?"
+    #     "Yes":
+    #         pass
+    #     "Yes":
+    #         pass
+
+    # m "I knew you were a sweetheart~ Thank you my love."
+    # m 1a "Ahaha, we drifted a bit...So I was saying that you need to specify two things to write a dialogue in Ren’Py."
+    # m 3a "First you need to specify who is speaking. You can do it with the keyword 'mc', 'y', 'n', 's' and 'm'. I’m sure you can guess who is who."
+    # m "Instead of using keyword, you can directly type the name of the person speaking. For example, try writing ' 'Player' 'Please be with me forever Monika.''."
+    # m 2a "Did you do it?"
+    # m 5a "Of course, I will stay with you forever."
+    # m 2b "Besides the name of the speaker, you need to write the sentence they will say. The sentence should be between quotation marks."
+    # m 4b "One last thing. If you want to write special characters such as \\ or ' in the sentence, you need to put \\ before them."
+    # m 1b "Alright, that’s all for dialogue!"
+    # m "Pretty simple, right? Ren’Py was made so that anyone can make visual novel after all. Even beginners like us can pick it up quickly."
+    # m 2a "Before you save the file, replace the line of dialogue by -"
+    # m "' \ \ \ mc 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
+    # m "Like usual, check that monika_route_script.rpy is exactly like T4.rpy inside the monika_route_answer folder."
+    # m 4b "Okay [player]! You now know how to make a scene, add music, and make dialogue. The only things missing are character pictures and choices."
+    # m "We’ll see how to make choices in the next tutorial."
+    # m 4a "The recent tutorials have been pretty easy so far but the next one will be harder."
+    # m 5a "See you soon!"
 
     return
 
