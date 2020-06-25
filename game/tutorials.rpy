@@ -89,7 +89,7 @@ label tutorial_selection_menu:
 
     show monika 3a at tcommon(950)
     window show
-    $ m(_("接下来我们该学些什么呢？{a="), interact=False)
+    $ m(_("接下来我们该学些什么呢？"), interact=False)
 
     call screen tutorial_choice(items)
     window auto
@@ -405,7 +405,7 @@ label tutorial_route_p3:
     m "有了这串内容，你指定背景时就可以直接使用 scene bg 加上相应名字即可了。"
 
     menu:
-        m 3a "不过，你想不想知道，如果没有这些指定项，会造成什么后果？"
+        m "不过，你想不想知道，如果没有这些指定项，会造成什么后果？"
 
         "不想。":
             m "好吧。"
