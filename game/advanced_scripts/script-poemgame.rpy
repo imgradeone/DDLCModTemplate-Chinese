@@ -55,30 +55,30 @@ init python:
     #These functions control random movements of the characters
     #Random pausing...
     def randomPauseSayori(trans, st, at):
+        global sayoriTime
         if st > sayoriTime:
-            global sayoriTime
             sayoriTime = renpy.random.random() * 4 + 4
             return None
         return 0
 
     def randomPauseNatsuki(trans, st, at):
+        global natsukiTime
         if st > natsukiTime:
-            global natsukiTime
             natsukiTime = renpy.random.random() * 4 + 4
             return None
         return 0
 
     def randomPauseYuri(trans, st, at):
+        global yuriTime
         if st > yuriTime:
-            global yuriTime
             yuriTime = renpy.random.random() * 4 + 4
             return None
         return 0
 
     #Monika is there, just hidden offscreen. Poor girl.
     def randomPauseMonika(trans, st, at):
+        global monikaTime
         if st > monikaTime:
-            global monikaTime
             monikaTime = renpy.random.random() * 4 + 4
             return None
         return 0

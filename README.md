@@ -1,14 +1,15 @@
-# 嘿，你想用中文写 DDLC Mod？那你来对地方了！
+# DDLC 中文 Mod 模板
+嘿，你想用中文写 DDLC Mod？**那你来对地方了！**
 
 这里是 DDLC 中文 Mod 模板！本模板基于 Monika After Story 团队的 [DDLCModTemplate](https://github.com/Monika-After-Story/DDLCModTemplate)，并进行了一系列汉化，以及功能追加。使用本模板制作 Mod 时，请遵循 [Team Salvato 的 IP Guidelines](http://teamsalvato.com/ip-guidelines/)。
 
 本模板实际上是从 [Inside The Dark Mod](https://github.com/imgradeone/InsideTheDark) 的中文版中衍生出来的。
 
-> 请注意：当前版本的中文模板可能尚不完善，且**尚对繁体中文缺乏支持**。部分 GUI 元素暂未被汉化。
+> 请注意：当前版本的中文模板可能尚不完善，且**尚缺乏繁体中文支持**。部分 GUI 元素暂未被汉化。
 
 ## 中文字体
 
-中文版 DDLC Mod 模板使用了一些免费商用的中文字体，在此致谢。**开始 Mod 开发之路前，请务必下载这些字体，否则将无法启动工程。安装方式见 #中文字体包安装 小节。**
+中文版 DDLC Mod 模板使用了一些免费商用的中文字体，在此致谢。**开始 Mod 开发前，请务必下载这些字体，否则将无法启动工程。安装方式见 [中文字体包安装](#中文字体包安装) 小节。**
 
 如有需要，您也可以自行修改配置文件，以自定义字体，**但请自主承担版权风险**。
 
@@ -17,14 +18,14 @@
 
 使用字重：Regular
 
-文件存放于 `game\mod_assets\font\alipuhuireg.ttf`
+文件存放于 `game/mod_assets/font/alipuhuireg.ttf`
 
 用途：游戏文字主要字体，替代原有的 Aller 字体
 
 ### 站酷字体 / 站酷快乐体
 单独下载：https://www.zcool.com.cn/special/zcoolfonts/ （记得转到免费字体区）
 
-文件存放于 `game\mod_assets\font\zcoolkuaile.ttf`
+文件存放于 `game/mod_assets/font/zcoolkuaile.ttf`
 
 用途：按钮、角色名使用字体
 
@@ -33,9 +34,9 @@
 
 使用字重：Regular
 
-文件存放于 `game\mod_assets\font\zhushi.ttf`
+文件存放于 `game/mod_assets/font/zhushi.ttf`
 
-用途：Yuri 写信字体，设置项字体，用于替代字体 `y1`（Yuri 的默认写信字体）
+用途：设置项字体，替代字体 `y1`（Yuri 的默认写信字体）
 
 ### Adobe、Google 等 / 思源宋体
 单独下载：https://source.typekit.com/source-han-serif/cn/
@@ -44,9 +45,9 @@
 
 使用字重：Regular
 
-语言：简体中文
+语言：简体中文（SC/SimplifiedChinese）
 
-文件存放于 `game\mod_assets\font\sourcehanserif.ttf`
+文件存放于 `game/mod_assets/font/sourcehanserif.ttf`
 
 用途：`edited` 文本框风格使用字体（即类似 Natsuki 说 `fxxking monikammmmmmm` 时的样式）
 
@@ -64,14 +65,13 @@
 
 <details>
   <summary>百度网盘用户亦可点击展开扫描小程序码下载</summary>
-  
-  ![](./bdwp-dl-code.png)
 
+  ![小程序码](./bdwp-dl-code.png)
 </details>
 
 ### 其他地区用户
 
-[MEGA（可能我的 MEGA 流量额不足以支撑下载，佛系吧）](https://mega.nz/file/1QwHkTga#N9yvUtQHAvqQ2szeJvhFT3CJdzL7elxfbR4AeFuAcb0) | [MediaFire](https://www.mediafire.com/file/4aciv23rhf5x8kg/font.zip/file) | [Google 云端硬盘](https://drive.google.com/open?id=1b96aSF7A6VtIh4-XuJfaEFHhVpsQZQzw)
+[MEGA（我的 MEGA 流量额可能不足以支撑下载，所以就佛系吧）](https://mega.nz/file/1QwHkTga#N9yvUtQHAvqQ2szeJvhFT3CJdzL7elxfbR4AeFuAcb0) | [MediaFire](https://www.mediafire.com/file/4aciv23rhf5x8kg/font.zip/file) | [Google 云端硬盘](https://drive.google.com/open?id=1b96aSF7A6VtIh4-XuJfaEFHhVpsQZQzw)
 
 ## 下载 Demo
 
@@ -79,13 +79,13 @@
 
 ## 开始使用模板
 
-1. 去 Ren'Py 官网下载 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12)。**注意：由于模板历史原因和兼容性考虑，请务必使用 Ren'Py SDK 6.99.12 进行 Mod 制作，不要使用 Ren'Py SDK 7，这会导致 Mod 出现兼容性问题。**
-1. 前往 Releases 页面下载稳定版模板。如需开发版，可以点击页面上的 Clone & Download。当然，我们已经将此 Repo 设置为模板 Repo，所以你也可以点击绿色的 `Use this template`，然后使用开发版模板创建新 Repo，再 Clone 到本地。
-1. 将模板文件解压到刚刚你解压 Ren'Py SDK 的文件夹里，或者在你指定的工程目录里。（默认情况下，`renpy-6.99.12.4-sdk`）
-1. 前往 [DDLC.moe](https://ddlc.moe) 或者 Steam 下载 DDLC 游戏本体，并将游戏目录下 `game` 文件夹内的 `audio.rpa`、`images.rpa` 和 `fonts.rpa` 复制到工程文件夹（即你解压模板文件的地方）。（千万不要把 `scripts.rpa` 一并复制过去，会出现冲突）
-1. 下载中文字体包，请查看 [中文字体](#中文字体) 小节。
-1. 现在，打开 Ren'Py SDK，启动工程。正常情况下，工程将会完美启动。如果出错，请检查有没有忘记导入什么东西。
-1. 接下来，开始你的写 Mod 之旅吧！
+1. 去 Ren'Py 官网下载 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12)。**注意：由于模板历史原因和兼容性考虑，请务必使用 Ren'Py SDK 6.99.12 进行 Mod 制作，不要使用 Ren'Py SDK 7，这可能会导致 Mod 出现兼容性问题。** <!-- 因模组而异 -->
+2. 前往 Releases 页面下载稳定版模板。如需开发版，可以点击页面上的 "Clone" -> "Download ZIP"。当然，我们已经将此 Repo 设置为模板，所以你也可以点击灰绿色的 `Use this template`，然后使用开发版模板创建新 Repo，再 Clone 到本地。
+3. 将模板文件解压到刚刚你解压 Ren'Py SDK 的文件夹里，或者在你指定的工程目录里。（默认情况下，是 `renpy-6.99.12.4-sdk`）
+4. 前往 [DDLC.moe](https://ddlc.moe) 或者 Steam 下载 DDLC 游戏本体，并将游戏目录下 `game` 文件夹内的 `audio.rpa`、`images.rpa` 和 `fonts.rpa` 复制到工程文件夹（即你解压模板文件的地方）。（千万不要把 `scripts.rpa` 一并复制过去，会出现冲突）
+5. 下载中文字体包，请查看 [中文字体](#中文字体) 小节。
+6. 现在，打开 Ren'Py SDK，启动工程。正常情况下，工程将会完美启动。如果出错，请检查有没有忘记导入什么东西。
+7. 接下来，开始你的写 Mod 之旅吧！
 
 > 注意：写 Mod 的时候，如果有额外资源，请务必存放在 `mod_assets` 文件夹，否则打包时资源将不会被包含在内。
 
@@ -97,7 +97,7 @@
 
 ## 模板功能
 
-原版有啥就有啥 XD
+原模板有啥就有啥 XD
 
 ## 特色功能
 
@@ -114,7 +114,7 @@
 ## TODO
 
 - [ ] 教程翻译
-- [ ] 补充原模板没有的功能，如 `ghostmenu`
+- [ ] 恢复原模板移除的功能，如 `ghostmenu`
 
 ## 特别感谢
 

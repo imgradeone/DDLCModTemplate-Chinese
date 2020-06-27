@@ -157,6 +157,7 @@ init python:
 
     # folder / files to put in archives
     build.classify("game/mod_assets/**", "mod_assets")
+    build.classify("game/gui/**", "mod_assets") # issue #1
     build.classify("game/submods/**", "submods")
     build.classify('game/**.rpyc', "scripts")
     build.classify('game/advanced_scripts/**', "scripts")
@@ -172,9 +173,6 @@ init python:
     build.classify('**.psd', None)
     build.classify('**.sublime-project', None)
     build.classify('**.sublime-workspace', None)
-    build.classify('/music/*.*', None)
-    build.classify('script-regex.txt', None)
-    build.classify('/game/10', None)
     build.classify('/game/cache/*.*', None)
     build.classify('**.rpa', None)
 
