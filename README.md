@@ -121,3 +121,9 @@
 - Team Salvato http://teamsalvato.com / https://ddlc.moe
 - Monika After Story Team http://www.monikaafterstory.com
 - 所有中文字体作者
+- Sayo-nika Team
+
+## 开源许可
+
+本模板采用 Sayo-nika 的 GitHub Action 进行远程 Mod 构建，在此致谢。
+
