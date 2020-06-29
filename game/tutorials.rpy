@@ -412,14 +412,15 @@ label tutorial_route_p3:
     return
 
 label tutorial_route_p4:
-
+    # TODO: 角色神态
     show monika 5a zorder 2 at t11
 
     m "欢迎回来，[player]！"
     m 1b "好久不见，甚是想念！"
     m 1a "上一次我们终于向 Mod 里加入了背景。"
     m "但是 Mod 里连个像样的 BGM 也没有..."
-    m "z"
+    m "这真的很枯燥啊。"
+    m ""
 
     # m "Hi again, [player]~"
     # m "Today, I’m going to teach you how to make dialogue in Ren’Py."

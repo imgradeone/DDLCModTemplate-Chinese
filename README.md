@@ -79,15 +79,15 @@
 
 ## 开始使用模板
 
-1. 去 Ren'Py 官网下载 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12)。**注意：由于模板历史原因和兼容性考虑，请务必使用 Ren'Py SDK 6.99.12 进行 Mod 制作，不要使用 Ren'Py SDK 7，这可能会导致 Mod 出现兼容性问题。** <!-- 因模组而异 -->
-2. 前往 Releases 页面下载稳定版模板。如需开发版，可以点击页面上的 "Clone" -> "Download ZIP"。当然，我们已经将此 Repo 设置为模板，所以你也可以点击灰绿色的 `Use this template`，然后使用开发版模板创建新 Repo，再 Clone 到本地。
+1. 去 Ren'Py 官网下载 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12)。**注意：由于模板历史原因和兼容性考虑，请务必使用 Ren'Py SDK 6.99.12 进行 Mod 制作，不要使用 Ren'Py SDK 7，这可能会导致 Mod 出现兼容性问题。** <!-- 因 Mod 而异 -->
+2. 前往 Releases 页面下载稳定版模板。如需开发版，可以点击页面上的 "Clone" -> "Download ZIP"。当然，我们已经将此 Repo 设置为模板，所以你也可以点击绿色的 `Use this template`，然后使用开发版模板创建新 Repo，再 Clone 到本地。
 3. 将模板文件解压到刚刚你解压 Ren'Py SDK 的文件夹里，或者在你指定的工程目录里。（默认情况下，是 `renpy-6.99.12.4-sdk`）
 4. 前往 [DDLC.moe](https://ddlc.moe) 或者 Steam 下载 DDLC 游戏本体，并将游戏目录下 `game` 文件夹内的 `audio.rpa`、`images.rpa` 和 `fonts.rpa` 复制到工程文件夹（即你解压模板文件的地方）。（千万不要把 `scripts.rpa` 一并复制过去，会出现冲突）
 5. 下载中文字体包，请查看 [中文字体](#中文字体) 小节。
 6. 现在，打开 Ren'Py SDK，启动工程。正常情况下，工程将会完美启动。如果出错，请检查有没有忘记导入什么东西。
 7. 接下来，开始你的写 Mod 之旅吧！
 
-> 注意：写 Mod 的时候，如果有额外资源，请务必存放在 `mod_assets` 文件夹，否则打包时资源将不会被包含在内。
+> 注意：写 Mod 的时候，如果有额外资源，请务必存放在 `mod_assets` 文件夹，否则打包时资源将不会被包含在内，除非你自定义 `options.rpy`。
 
 ## 打包 Mod
 
@@ -125,5 +125,5 @@
 
 ## 开源许可
 
-本模板采用 Sayo-nika 的 GitHub Action 进行远程 Mod 构建，在此致谢。
+本模板采用 [Sayo-nika 的 GitHub Action](https://github.com/Sayo-nika/quickstart-actions) 进行远程 Mod 构建，在此致谢。
 
