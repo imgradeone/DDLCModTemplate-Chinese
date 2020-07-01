@@ -799,7 +799,7 @@ screen load():
 init python:
     def FileActionMod(name, page=None, **kwargs):
         if persistent.playthrough == 1 and not persistent.deleted_saves and renpy.current_screen().screen_name[0] == "load" and FileLoadable(name):
-            return Show(screen="dialog", message="File error: \"characters/sayori.chr\"\n\nThe file is missing or corrupt.",
+            return Show(screen="dialog", message="文件错误： \"characters/sayori.chr\"\n\nThe file is missing or corrupt.",
                 ok_action=Show(screen="dialog", message="The save file is corrupt. Starting a new game.", ok_action=Function(renpy.full_restart, label="start")))
         elif persistent.playthrough == 3 and renpy.current_screen().screen_name[0] == "save":
             return Show(screen="dialog", message="There's no point in saving anymore.\nDon't worry, I'm not going anywhere.", ok_action=Hide("dialog"))
