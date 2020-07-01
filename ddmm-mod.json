@@ -1,8 +1,8 @@
 {
     "name": "DDLC 中文 Mod 模板",
-    "description": "您的中文 DDLC Mod 模板。一切都需要从头开始。",
+    "description": "您的中文 DDLC Mod 模板，拥有强大的功能。",
     "author": "Monika After Story 团队，imgradeone",
-    "uses_sdk": false,
-    "discord": "",
+    "uses_sdk": true,
+    "discord": "imgradeone#2980",
     "website": "https://github.com/imgradeone/DDLCModTemplete-Chinese"
 } 

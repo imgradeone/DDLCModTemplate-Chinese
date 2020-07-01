@@ -112,6 +112,8 @@
 - [ ] 教程翻译
 - [ ] 恢复原模板移除的功能，如 `ghostmenu`
 - [ ] Ren'Py 7 支持（有生之年？）
+- [ ] 无尽存档位按钮展示
+- [ ] 成就支持（原生 + DDMM）
 
 ## 特别感谢
 
@@ -119,6 +121,7 @@
 - Monika After Story Team http://www.monikaafterstory.com
 - 所有中文字体作者
 - Sayo-nika Team
+- Doki Doki Mod Manager Team
 
 ## 开源许可
 

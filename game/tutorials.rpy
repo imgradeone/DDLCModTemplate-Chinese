@@ -837,7 +837,8 @@ label tutorial_route_adv:
             ("Navigation Buttons", "tutorial_route_adv_hkb"),
             ("Edited 风格文本框", "tutorial_route_adv_edited"),
             ("Poemgame（测试）", "tutorial_route_adv_poemgame"),
-            ("Monika，请喊出我的电脑用户名！", "tutorial_route_adv_current")
+            ("Monika，请喊出我的电脑用户名！", "tutorial_route_adv_current"),
+            ("DDMM SDK 测试（实验中）", "_ddmm_test")
         ]
 
     m 5a "你现在想来点高级的？"

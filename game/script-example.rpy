@@ -74,7 +74,7 @@ label example_chapter:
         m "你的写代码经验怎么样呢？"
         "开玩笑，我超强的，好不好？":
             $ experience_level = 2
-            m 5 "OMG！你这句话有把我惊到。{nw}"
+            m 5 "纳尼？？？{nw}"
             scene bsod
             pause 3.0
             show monika 1m zorder 2 at t11

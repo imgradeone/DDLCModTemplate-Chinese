@@ -1,6 +1,9 @@
 ﻿
 translate None strings:
 
+    old "Page {}"
+    new "第 {} 页"
+
     # game/screens.rpy:192
     old "Start Game"
     new "开始游戏"
@@ -17,9 +20,9 @@ translate None strings:
     old "Help"
     new "帮助文档"
 
-    # game/screens.rpy:196
-    old "Quit"
-    new "退出游戏"
+    # # game/screens.rpy:196
+    # old "Quit"
+    # new "退出游戏"
 
     # game/screens.rpy:224
     old "Return"
