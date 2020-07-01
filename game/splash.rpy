@@ -13,8 +13,8 @@ init python:
     splash_message_default = "这是非官方的粉丝向 mod，与 Team Salvato 无关。"
 
     splash_messages = [
-        "Please support Doki Doki Literature Club.",
-        "Monika is watching you code."
+        "请多多支持 Dan 鸽www",
+        "Monika 在盯着你的粪代码。（笑）"
     ]
 
 
@@ -337,7 +337,8 @@ label after_load:
         stop music
         scene black
         "存档无法加载。"
-        "您是不是想作弊？"
+        "您是不是想作弊？XD"
+        
 
         $ renpy.utter_restart()
     return
