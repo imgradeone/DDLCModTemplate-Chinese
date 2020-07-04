@@ -51,7 +51,7 @@ label _ddmm_test:
     menu:
         "请选择想要测试的项。"
         "重新测试在线状态":
-            call _ddmm_test from _call_ddmm_test_1
+            pass # 像我们没做什么一样
         "注册成就": # TODO: 在 init -10 块中添加 call 之后移除这个选择
             call reg_ddmm_achievements from _call_reg_ddmm_achievements
             "已注册成就。"
