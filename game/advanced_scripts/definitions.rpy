@@ -80,7 +80,7 @@ define audio.t10 = "<loop 5.861>bgm/10.ogg" # My Confession
 define audio.t10y = "<loop 0>bgm/10-yuri.ogg" # Yuri：我要死了版 My Confession
 define audio.td = "<loop 36.782>bgm/d.ogg" # Sayo-nara 晴 天 娃 娃
 
-define audio.m1 = "<loop 0>bgm/m1.ogg" # Just Monika. - Just Monika.
+define audio.m1 = "<loop 0>bgm/m1.ogg" # Just Monika - Just Monika.
 define audio.mend = "<loop 6.424>bgm/monika-end.ogg" # I Still Love You - 你个死直娘贼，居然刀了 Monika，哼唧（（（
 
 define audio.ghostmenu = "<loop 0>bgm/ghostmenu.ogg"
@@ -442,7 +442,7 @@ image sayori glitch:
     "sayori/glitch2.png"
     pause 0.01666
     repeat
-    # 你以为我是 Sayori，Ko no Monika / Yuri Da!
+    # 你以为我是 Sayori，Ko no Monika / Yuri da!
     # 截图选老婆（（（
 
 # 模板赠送：单独调用 glitch1 / glitch2

@@ -15,7 +15,7 @@ define gui.about = _("")
 # 构建名，不要使用中文、数字、空格、分隔符，只使用英文
 define build.name = "DDLCModTempCN"
 
-# 这些不要动
+# 控制设置菜单中的音量设置显示
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = False
@@ -23,28 +23,22 @@ define config.has_voice = False
 # 主菜单 BGM
 define config.main_menu_music = audio.t1
 
-# enter / exiting game menu transitions
-# 不知道是什么qwq
+# 进入和退出游戏菜单时使用的转场
 define config.enter_transition = Dissolve(.2)
 define config.exit_transition = Dissolve(.2)
 
-# This controls the transition effect of DDLC when loading a saved game.
-# By default, this is set to None and you can customize what transition you want to show.
-# If you are unsure about this setting, leave it as is.
-# 不知道是什么qwq
+# 在加载存档后显示的转场
 define config.after_load_transition = None
 
-# This controls the transition effect of DDLC when your mod has ended.
-# Dissolve(.2) sets the transition effect you see.
+# 在故事结束后显示的转场。推荐使用 Dissolve(.2)。
 define config.end_game_transition = Dissolve(.5)
 
-# Controls when dialogue window is displayed:
-#   show - always displayed
-#   hide - only displayed if dialogue is present
-#   auto - hidden before scene statements and shown when dialogue is shown
+# 对话窗显示设置
+#   show - 总是显示
+#   hide - 当要显示对话时才显示
+#   auto - 在 scene 表达式之前隐藏，在对话显示时显示
 #
-# this can be changed with "window <type>" statements
-# 最好别动
+# 使用 "window <type>" 更改
 define config.window = "auto"
 
 # transitions used to show / hide the dialogue window
@@ -63,21 +57,17 @@ default preferences.afm_time = 15
 default preferences.music_volume = 0.75
 default preferences.sfx_volume = 0.75
 
-# persistent data save directory
-# this is different per platform:
-#   Windows: %AAPDATA%\RenPy\
-#   Mac: $HOME/Libary/RenPy/
-#   Linux: $HOME/.renpy/
+# 存档位置
+#   Windows: %appdata%\RenPy\<config.save_directory>
+#   Mac: $HOME/Libary/RenPy/<config.save_directory>
+#   Linux: $HOME/.renpy/<config.save_directory>
 #
 # must be a literal string
-# 存档位置
 define config.save_directory = "DDLCModTempCN"
 
-# icon displayed on taskbar / dock
 # 任务栏图标
 define config.window_icon = "gui/window_icon.png"
 
-# True means we allow skipping, False means not
 # 是否允许跳过
 define config.allow_skipping = True
 
@@ -90,9 +80,8 @@ define config.autosave_on_quit = False
 # Number of autosave slots to use
 define config.autosave_slots = 0
 
-# layers that screens / images / anything can be displayed on. Best not to
-# mess with this
-# 图层，别动
+# 图层。如其名，图像显示的地方
+# 最好别动
 define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
 
 # Other things to not mess with
@@ -101,8 +90,6 @@ define config.predict_statements = 50
 define config.rollback_enabled = config.developer
 define config.menu_clear_layers = ["front"]
 define config.gl_test_image = "white"
-
-
 
 init python:
     if len(renpy.loadsave.location.locations) > 1: del(renpy.loadsave.location.locations[1])
