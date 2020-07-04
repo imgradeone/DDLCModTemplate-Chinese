@@ -23,6 +23,12 @@ jobs:
       - name: 获取 DDLC 的数据文件
         uses: Dobby233Liu/mc-action@master
 
+      - name: 下载字体
+        run: |
+             wget -O font.zip "https://drive.google.com/uc?id=1b96aSF7A6VtIh4-XuJfaEFHhVpsQZQzw&export=download"
+             unzip -d game/mod_assets/font/ -j -o font.zip
+             rm font.zip
+
       # 确保代码可行
       - name: 检查 Mod 脚本
         uses: ProjectAliceDev/renpy-lint-action@v1.1.0
