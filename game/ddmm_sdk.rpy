@@ -47,18 +47,20 @@ label reg_ddmm_achievements:
 # Test SDK functions
 label _ddmm_test:
     $ ddmm_online = ddmm_check_online()
-    "当前是否从 DDMM 启动：[ddmm_online]"
+    "DDMM 是否在线：[ddmm_online]"
     menu:
-        "选择吧..."
+        "请选择想要测试的项。"
+        "重新测试在线状态":
+            call _ddmm_test from _call_ddmm_test_1
         "注册成就": # TODO: 在 init -10 块中添加 call 之后移除这个选择
             call reg_ddmm_achievements from _call_reg_ddmm_achievements
             "已注册成就。"
-        "达成成就 1":
+        "达成 测试成就":
             call ddmm_earn_achievement("TEST_ACHIEVEMENT") from _call_ddmm_earn_achievement
-            "达成了成就。"
-        "达成成就 2":
+        "达成 只要 Monika":
             call ddmm_earn_achievement("MONIKA_ROUTE_COMPLETE") from _call_ddmm_earn_achievement_1
-            "达成了成就。"
         "退出":
-            pass
+            return
+            # pass
+    call _ddmm_test from _call_ddmm_test_2
     return
