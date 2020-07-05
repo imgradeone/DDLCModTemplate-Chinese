@@ -13,43 +13,7 @@
 
 如有需要，您也可以自行修改配置文件，以自定义字体，**但请自主承担版权风险**。
 
-### 阿里巴巴 / 阿里巴巴普惠体
-单独下载：https://ics.alibaba.com/project/Hn8mXx 或者 https://alibabafont.taobao.com/ （均需要登录淘宝帐号）
-
-使用字重：Regular
-
-文件存放于 `game/mod_assets/font/alipuhuireg.ttf`
-
-用途：游戏文字主要字体，替代原有的 Aller 字体
-
-### 站酷字体 / 站酷快乐体
-单独下载：https://www.zcool.com.cn/special/zcoolfonts/ （记得转到免费字体区）
-
-文件存放于 `game/mod_assets/font/zcoolkuaile.ttf`
-
-用途：按钮、角色名使用字体
-
-### 杨任东字体 / 杨任东竹石体
-单独下载：关注“杨任东字体”微信公众号，回复 `字体`
-
-使用字重：Regular
-
-文件存放于 `game/mod_assets/font/zhushi.ttf`
-
-用途：设置项字体，替代字体 `y1`（Yuri 的默认写信字体）
-
-### Adobe、Google 等 / 思源宋体
-单独下载：https://source.typekit.com/source-han-serif/cn/
-
-中国大陆用户推荐从 [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/) 按需要的语言（简体中文 / 繁体中文）获取。
-
-使用字重：Regular
-
-语言：简体中文（SC/SimplifiedChinese）
-
-文件存放于 `game/mod_assets/font/sourcehanserif.ttf`
-
-用途：`edited` 文本框风格使用字体（即类似 Natsuki 说 `fxxking monikammmmmmm` 时的样式）
+中文字体详情请查看 [这里](./game/mod_assets/font/README.md)
 
 ## 中文字体包安装
 
@@ -57,21 +21,19 @@
 
 您可以下载懒人专用字体包，下载完后将字体解压到 `game/mod_assets/font` 目录下即可。
 
-您可以从以下地方获取 Mod 模板的中文字体包（v1.0）：
+当前版本字体包：v1.2
+
+对应支持模板 v1.2 版本，不支持模板 v1.0 ~ v1.1
+
+您可以从以下地方获取 Mod 模板的中文字体包（v1.2）：
 
 ### 中国大陆地区用户
 
-[奶牛快传（链接会于 2020-08-31 过期）](https://imgradeone.cowtransfer.com/s/5bebe9222be64e) | [蓝奏云](https://imgradeone.lanzous.com/icxhqqj) | [百度网盘 提取码 6b8z](https://pan.baidu.com/s/1LTv9N1Yfmd3cQsFTAoOSQA) | [城通网盘（仅供赞助用途，实际体验差）](https://ct.imgradeone.xyz/file/24390393-446444253)
-
-<details>
-  <summary>百度网盘用户亦可点击展开扫描小程序码下载</summary>
-
-  ![小程序码](./bdwp-dl-code.png)
-</details>
+[奶牛快传（链接会于 2020-10-01 过期）](https://imgradeone.cowtransfer.com/s/3852906fbdf246) | [蓝奏云](https://imgradeone.lanzous.com/iwq7wec3j7a) | [百度网盘 提取码 hi2j](https://pan.baidu.com/s/1WiO1qD8cI8U1YTEVeVrkuQ) | [城通网盘（仅供赞助用途，实际体验差）](http://ct.imgradeone.xyz/file/24390393-452015477)
 
 ### 其他地区用户
 
-[MEGA（我的 MEGA 流量额可能不足以支撑下载，所以就佛系吧）](https://mega.nz/file/1QwHkTga#N9yvUtQHAvqQ2szeJvhFT3CJdzL7elxfbR4AeFuAcb0) | [MediaFire](https://www.mediafire.com/file/4aciv23rhf5x8kg/font.zip/file) | [Google 云端硬盘](https://drive.google.com/open?id=1b96aSF7A6VtIh4-XuJfaEFHhVpsQZQzw)
+[MediaFire](http://www.mediafire.com/file/6juwd7h0venrg7f/font%25282%2529.zip/file) | [Google 云端硬盘](https://drive.google.com/file/d/1LClyzgxq-les-N5egLXm1aK7ULATDpex/view?usp=sharing) | GitHub (later)
 
 ## 下载 Demo
 
@@ -132,6 +94,8 @@
 Ren'Py 由一系列开源组件构成，它们的开源协议可以在 https://www.renpy.cn/doc/license.html （简体中文）或 https://www.renpy.org/doc/html/license.html （英文）查看。
 
 本模板基于 Monika After Story 团队的 [DDLCModTemplate](https://github.com/Monika-After-Story/DDLCModTemplate)。
+
+本模板属于粉丝作品，遵循 Team Salvato IP Guidelines。
 
 ## 加入社区
 

@@ -594,6 +594,34 @@ After all,
 Not all good times must come to an end."""
     )
 
+    poem_cn_y1 = Poem(
+    author = "yuri",
+    title = "如果这是终界",
+    text = """\
+那种无法控制的感觉，好奇怪啊..."""
+    )
+
+    poem_cn_n1 = Poem(
+    author = "natsuki",
+    title = "纸杯蛋糕",
+    text = """\
+好吃吗？好吃我就再做！"""
+    )
+
+    poem_cn_s1 = Poem(
+    author = "sayori",
+    title = "早餐店",
+    text = """\
+赶着上学，忘记吃早餐了w"""
+    )
+
+    poem_cn_m1 = Poem(
+    author = "monika",
+    title = "感谢",
+    text = """\
+谢谢你来做 Mod 拯救我。"""
+    )
+
 #These are the images used to show a poem
 image paper =  "images/bg/poem.jpg"
 
@@ -668,7 +696,7 @@ style poem_vbar is vscrollbar:
 
 #Styling for each of the authors
 style yuri_text:
-    font "mod_assets/font/zhushi.ttf" #font used packaged with the game
+    font "mod_assets/font/shouzhuo.ttf" #font used packaged with the game
     size 32
     color "#000"
     outlines []
@@ -688,20 +716,20 @@ style yuri_text_3:
     justify True
 
 style natsuki_text:
-    font "gui/font/n1.ttf"
+    font "mod_assets/font/acy.otf"
     size 28
     color "#000"
     outlines []
     line_leading 1
 
 style sayori_text:
-    font "gui/font/s1.ttf"
+    font "mod_assets/font/tegaki.ttf"
     size 34
     color "#000"
     outlines []
 
 style monika_text:
-    font "gui/font/m1.ttf"
+    font "mod_assets/font/nian.otf"
     size 34
     color "#000"
     outlines []
