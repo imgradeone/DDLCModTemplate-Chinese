@@ -102,6 +102,7 @@
 1. ~~绝赞咕咕咕~~
 1. 默认在 `/characters` 文件夹下保留所有 `.chr` 文件，全角色厨的福利
 1. 首次启动 Mod 时加入“不同意”选项
+1. Doki Doki Mod Manager 联动
 
 ## 注意事项
 
@@ -127,3 +128,11 @@
 
 本模板采用 [Sayo-nika 的 GitHub Action](https://github.com/Sayo-nika/quickstart-actions) 进行远程 Mod 构建，在此致谢。
 
+本 Mod 模板需要使用 Ren'Py。Ren'Py 包含自由软件许可中的一些许可证，包括 GNU 宽通用公共许可证。  
+Ren'Py 由一系列开源组件构成，它们的开源协议可以在 https://www.renpy.cn/doc/license.html （简体中文）或 https://www.renpy.org/doc/html/license.html （英文）查看。
+
+本模板基于 Monika After Story 团队的 [DDLCModTemplate](https://github.com/Monika-After-Story/DDLCModTemplate)。
+
+## 加入社区
+
+[Telegram 频道](https://t.me/DDLCModCN)
