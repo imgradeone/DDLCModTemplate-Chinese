@@ -25,7 +25,7 @@ jobs:
 
       - name: 下载字体
         run: |
-             wget -O font.zip "https://drive.google.com/uc?id=1b96aSF7A6VtIh4-XuJfaEFHhVpsQZQzw&export=download"
+             wget -O font.zip "https://drive.google.com/u/0/uc?export=download&id=1LClyzgxq-les-N5egLXm1aK7ULATDpex"
              unzip -d game/mod_assets/font/ -j -o font.zip
              rm font.zip
 
