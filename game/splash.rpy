@@ -338,7 +338,8 @@ label after_load:
         scene black
         "存档无法加载。"
         "您是不是想作弊？XD"
-        
+        show monika 1a at t11 zorder 1
+        m "[player]，您真可笑。"
 
         $ renpy.utter_restart()
     return

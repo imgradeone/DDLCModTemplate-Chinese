@@ -6,7 +6,7 @@
 
 当前版本字体包：v1.2
 
-对应支持 v1.2 版本，不支持 v1.0 ~ v1.1
+对应支持 v1.2 版本，v1.0 ~ v1.1 更新后需重新下载字体包
 
 ## 阿里巴巴 / 阿里巴巴普惠体
 单独下载：https://ics.alibaba.com/project/Hn8mXx 或者 https://alibabafont.taobao.com/ （均需要登录淘宝帐号）
