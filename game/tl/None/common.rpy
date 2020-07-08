@@ -8,6 +8,65 @@ translate None strings:
     old "Page %s"
     new "第 %s 页"
 
+    old "Are you sure you want to skip unseen dialogue to the next choice?"
+    new "您确定要直接跳转到下一个选择项，忽略未读对话吗？"
+
+    old "{#weekday}Monday"
+    new "{#weekday}星期一"
+
+
+    old "{#weekday}Tuesday"
+    new "{#weekday}星期二"
+
+
+    old "{#weekday}Wednesday"
+    new "{#weekday}星期三"
+
+
+    old "{#weekday}Thursday"
+    new "{#weekday}星期四"
+
+
+    old "{#weekday}Friday"
+    new "{#weekday}星期五"
+
+
+    old "{#weekday}Saturday"
+    new "{#weekday}星期六"
+
+
+    old "{#weekday}Sunday"
+    new "{#weekday}星期日"
+
+
+    old "{#weekday_short}Mon"
+    new "{#weekday_short}周一"
+
+
+    old "{#weekday_short}Tue"
+    new "{#weekday_short}周二"
+
+
+    old "{#weekday_short}Wed"
+    new "{#weekday_short}周三"
+
+
+    old "{#weekday_short}Thu"
+    new "{#weekday_short}周四"
+
+
+    old "{#weekday_short}Fri"
+    new "{#weekday_short}周五"
+
+
+    old "{#weekday_short}Sat"
+    new "{#weekday_short}周六"
+
+
+    old "{#weekday_short}Sun"
+    new "{#weekday_short}周日"
+
+
 translate None strings:
 
     # renpy/common/00gltest.rpy:50

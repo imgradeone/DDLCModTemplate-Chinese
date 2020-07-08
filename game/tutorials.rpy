@@ -420,7 +420,8 @@ label tutorial_route_p4:
     m 1a "上一次我们终于向 Mod 里加入了背景。"
     m "但是 Mod 里连个像样的 BGM 也没有..."
     m "这真的很枯燥啊。"
-    m ""
+    m "所以，咱们动动手加一个吧！"
+    m "还是打开 meet_monika.rpy，"
 
     # m "Hi again, [player]~"
     # m "Today, I’m going to teach you how to make dialogue in Ren’Py."

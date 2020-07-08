@@ -43,8 +43,9 @@ label _reg_achievements:
     python:
         ddmm_register_achievement("TEST_ACHIEVEMENT", "测试成就", "可以从教程菜单获得")
         ddmm_register_achievement("MONIKA_ROUTE_COMPLETE", "只要 Monika", "完成 Monika 路线的编程")
-        achievements.register("测试成就")
-        achievements.register("只要 Monika", 9, 1)
+        achievement.register("测试成就")
+        achievement.register("只要 Monika")
+    
     return
 
 # Test SDK functions
@@ -60,11 +61,14 @@ label _ddmm_test:
             call _reg_achievements from _call__reg_achievements
             "已注册成就。"
         "达成 测试成就":
-            call ddmm_earn_achievement("TEST_ACHIEVEMENT") from _call_ddmm_earn_achievement
+            $ ddmm_earn_achievement("TEST_ACHIEVEMENT")
+        "判断测试成就状态（原生）":
+            $ ifnot = achievement.has("测试成就")
+            m "状态：[ifnot]"
         "测试成就 (Ren'Py)":
             $ achievement.grant("测试成就")
         "达成 只要 Monika":
-            call ddmm_earn_achievement("MONIKA_ROUTE_COMPLETE") from _call_ddmm_earn_achievement_1
+            $ ddmm_earn_achievement("MONIKA_ROUTE_COMPLETE")
         "退出":
             return
             # pass
