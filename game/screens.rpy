@@ -869,7 +869,7 @@ screen file_slots(title):
 
                 spacing gui.page_spacing
 
-                #textbutton _("<") action FilePagePrevious(max=9, wrap=True)
+                textbutton _("<") action FilePagePrevious()
 
                 #textbutton _("{#auto_page}A") action FilePage("auto")
 
@@ -879,7 +879,7 @@ screen file_slots(title):
                 for page in range(1, 10):
                     textbutton "[page]" action FilePage(page)
 
-                #textbutton _(">") action FilePageNext(max=9, wrap=True)
+                textbutton _(">") action FilePageNext()
 
 
 style page_label is gui_label
