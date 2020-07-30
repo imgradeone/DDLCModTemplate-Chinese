@@ -319,7 +319,7 @@ translate None strings:
 
     # renpy/common/00action_file.rpy:587
     old "Quick save complete."
-    new "快速存档。"
+    new "快速存档传送点生成完毕！遇到问题可以通过底部的“快速读档”一键返回该存档点哦！"
 
 
 translate None strings:
