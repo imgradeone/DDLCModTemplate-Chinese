@@ -1,11 +1,12 @@
-#label monika_route:
-#    
-#    stop music fadeout 2.0
-#    play music t2
-#    
-#    scene bg residential_day
-#    with dissolve_scene_full
-#    
-#    mc "It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika."
-#    
-#    return
+# label meet_monika:
+#     stop music fadeout 2.0
+#     play music t2
+
+#     scene bg residential_day
+#     with dissolve_scene_full
+
+#     mc "DDLC 太好玩了！"
+#     y "就是啊，Monika 多可爱啊！"
+   
+   
+#     return

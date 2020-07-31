@@ -224,15 +224,15 @@ label tutorial_route_p2:
     show yuri 3y7 at t22 zorder 2 
     show monika at t21 zorder 2
     y "嘿，不带你这么玩的！"
-    m 1l "..."
-    m "emm..."
+    m 1m "..."
+    m 1n "emm..."
     m "Yuri..."
     m "我只是教 [player] 做 Mod 而已啊..."
     y "..."
     y 1 "..."
     y eyesfull "好吧，我就当无事发生。"
     m "不是..."
-    m "你为什么要用这种来自三次元的眼神来看我，还有面前的玩家..."
+    m "你为什么要用这种来自三次元的眼神来看我，还有屏幕前的玩家..."
     m 5b "你把人家 [player] 吓到了！"
     show monika at t11 zorder 1
     menu:
@@ -241,7 +241,7 @@ label tutorial_route_p2:
             pass
     show monika at t21 zorder 2
     y 1 "..."
-    show yuri 4c at h22 zorder 2
+    show yuri 4e at h22 zorder 2
     y "啊！"
     y "抱歉...无意冒犯..."
     show yuri at thide
@@ -372,9 +372,9 @@ label tutorial_route_p3:
     m 1a "这是 Natsuki 的储物柜，里面放着她的漫画。"
     m "你可以用 scene bg closet 切换到这里。"
     scene bg bedroom
-    show monika 1l at t11 zorder 2
+    show monika 1m at t11 zorder 2
     with wipeleft
-    m 1l "啊哈...现在是你家的卧室。"
+    m 1m "啊哈...现在是你家的卧室。"
     m "你可以用 scene bg bedroom 切换到这里。"
     scene bg house
     show monika 1a at t11 zorder 2
@@ -412,61 +412,191 @@ label tutorial_route_p3:
     return
 
 label tutorial_route_p4:
-    # TODO: 角色神态
     show monika 5a zorder 2 at t11
 
     m "欢迎回来，[player]！"
     m 1b "好久不见，甚是想念！"
     m 1a "上一次我们终于向 Mod 里加入了背景。"
-    m "但是 Mod 里连个像样的 BGM 也没有..."
-    m "这真的很枯燥啊。"
-    m "所以，咱们动动手加一个吧！"
+    m 1o "但是 Mod 里连个像样的 BGM 也没有..."
+    m 1q "这真的很枯燥啊。"
+    m 2 "所以，咱们动动手加一个吧！"
     m "还是打开 meet_monika.rpy，"
+    m "在 label 行和之前的背景行之间，输入："
+    m " \ \ \ stop music fadeout 2.0"
+    m " \ \ \ play music t2"
+    m "保存文件，启动工程。"
 
-    # m "Hi again, [player]~"
-    # m "Today, I’m going to teach you how to make dialogue in Ren’Py."
-    # m 1a "Although you already know, don’t you? We already wrote dialogue after all."
-    # m 2a "First, open monika_route_script.rpy and replace ' \ \ \ mc 'Let's listen to the music.' by the following line:"
-    # m "' \ \ \ mc 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
-    # m "Save the file and launch the game."
-    # m 4a "As you surely expected, the main character now says 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
-    # m 4j "Ehehe~ My route is finally being made!"
-    # m 3a "Let’s look at the line you wrote. 'mc' is a nickname for main character. By writing 'mc' before the sentence inside quotation marks, the character speaking will be the main character."
-    # m "Try replacing the line you wrote by ' n 'Just think of Monika from now on.'."
-    # m 2a "..."
-    # m 4b "See? Natsuki now tells you what you should have been doing since the beginning."
-    # m "You should listen to her, [player]. Ehehe~"
-    # m 4a "Now instead of writing ' n 'Just think of Monika from now on.', write 'y 'Natsuki and I are too messed up for someone as wonderful as you.'"
-    # m "Play the game and as you can see..."
-    # m 3b "Now it’s Yuri who finally realized that I’m the best one for you."
+    stop music fadeout 2.0
+    play music t2
 
-    # show monika 5a zorder 2 at t11
+    m "这时...{w=1.0}{nw}"
+    show monika at t21 zorder 2
+    show sayori 1k zorder 2 at t22
+    s "..."
+    show sayori at f22
+    s 1l "嗨！"
+    s 5 "好像..."
+    show monika at f21
+    show sayori at t22
+    m "是不是想到和 [player] 共度美好时光的日常了？"
+    show sayori 5b at f22
+    show monika at t21
+    s "呃呵呵~"
+    show sayori lhide
+    hide sayori
+    show monika 2 at t11
+    m "所以，启动工程并新开游戏后会播放 Ohayou Sayori! 这首 BGM。"
+    stop music fadeout 2.0
+    play music t3
 
-    # menu:
-    #     m "You think so, right?"
-    #     "Yes":
-    #         pass
-    #     "Yes":
-    #         pass
+    m "接下来，我也会告诉你游戏内置了哪些 BGM。"
+    m "如果你需要使用某个 BGM，你只需要把 play music t2 中的 t2 改成相应的标签就行了。"
+    m "如果你听完了这首 BGM，点击屏幕上的“继续”按钮以切换到下一首。"
+    m "那么下面是 BGM 时间！"
 
-    # m "I knew you were a sweetheart~ Thank you my love."
-    # m 1a "Ahaha, we drifted a bit...So I was saying that you need to specify two things to write a dialogue in Ren’Py."
-    # m 3a "First you need to specify who is speaking. You can do it with the keyword 'mc', 'y', 'n', 's' and 'm'. I’m sure you can guess who is who."
-    # m "Instead of using keyword, you can directly type the name of the person speaking. For example, try writing ' 'Player' 'Please be with me forever Monika.''."
-    # m 2a "Did you do it?"
-    # m 5a "Of course, I will stay with you forever."
-    # m 2b "Besides the name of the speaker, you need to write the sentence they will say. The sentence should be between quotation marks."
-    # m 4b "One last thing. If you want to write special characters such as \\ or ' in the sentence, you need to put \\ before them."
-    # m 1b "Alright, that’s all for dialogue!"
-    # m "Pretty simple, right? Ren’Py was made so that anyone can make visual novel after all. Even beginners like us can pick it up quickly."
-    # m 2a "Before you save the file, replace the line of dialogue by -"
-    # m "' \ \ \ mc 'It has been four days since I joined the Literature Club. Today is Saturday and I finally decided to confess my feeling to Monika.'."
-    # m "Like usual, check that monika_route_script.rpy is exactly like T4.rpy inside the monika_route_answer folder."
-    # m 4b "Okay [player]! You now know how to make a scene, add music, and make dialogue. The only things missing are character pictures and choices."
-    # m "We’ll see how to make choices in the next tutorial."
-    # m 4a "The recent tutorials have been pretty easy so far but the next one will be harder."
-    # m 5a "See you soon!"
+    stop music fadeout 2.0
+    play music t1
+    menu:
+        m "t1 \nDoki Doki Literature Club!"
+        "继续":
+            pass
+    
+    stop music fadeout 2.0
+    play music t2
+    menu:
+        m "t2 \nOhayou Sayori!"
+        "继续":
+            pass
 
+    stop music fadeout 2.0
+    play music t3
+    menu:
+        m "t3 \nMain Theme"
+        "继续":
+            pass
+    
+    stop music fadeout 2.0
+    play music t4
+    menu:
+        m "t4 \nDreams of Love and Literature"
+        "继续":
+            pass
+
+    stop music fadeout 2.0
+    play music t5
+    menu:
+        m "t5 \nOkay Everyone!"
+        "继续":
+            pass
+    stop music fadeout 2.0
+    play music tmonika
+    menu:
+        m "tmonika \nOkay Everyone! - Monika"
+        "继续":
+            pass
+    stop music fadeout 2.0
+    play music tsayori
+    menu:
+        m "tsayori \nOkay Everyone! - Sayori"
+        "继续":
+            pass
+    stop music fadeout 2.0
+    play music tnatsuki
+    menu:
+        m "tnatsuki \nOkay Everyone! - Natsuki"
+        "继续":
+            pass
+    stop music fadeout 2.0
+    play music tyuri
+    menu:
+        m "tyuri \nOkay Everyone! - Yuri"
+        "继续":
+            pass
+
+    stop music fadeout 2.0
+    play music t6
+    menu:
+        m "t6 \nPlay With Me"
+        "继续":
+            pass
+
+    stop music fadeout 2.0
+    play music t7
+    menu:
+        m "t7 \nPoem Panic"
+        "继续":
+            pass
+
+    stop music fadeout 2.0
+    play music t8
+    menu:
+        m "t8 \nDaijoubu!"
+        "继续":
+            pass
+
+    stop music fadeout 2.0
+    play music t9
+    menu:
+        m "t9 \nMy Feelings"
+        "继续":
+            pass
+    
+    stop music fadeout 2.0
+    play music t10
+    menu:
+        m "t10 \nMy Confession"
+        "继续":
+            pass
+
+    stop music fadeout 2.0
+    play music m1
+    menu:
+        m "m1 \nJust Monika."
+        "继续":
+            pass
+
+    stop music fadeout 2.0
+    play music mend
+    menu:
+        m "mend \nI Still Love You"
+        "继续":
+            pass
+
+    stop music fadeout 2.0
+    m "那么正常的音乐，我们已经播放完了。"
+    m 1o "其实 DDLC 里面还有一些有点恐怖的音乐，"
+    m "按你们的话来讲，“阴间”音乐。"
+    menu:
+        m "你还要继续听下去吗？"
+
+        "继续":
+            pass
+        "不，跳过":
+            jump tutorial_route_p4_end
+    
+    m 1q "好的。"
+    m "那么，准备好吧..."
+    m "暗黑音乐马上开始..."
+    stop music fadeout 2.0
+    play music td
+    menu:
+        m "td \nSayo-nara"
+        "继续":
+            pass
+    stop music fadeout 2.0
+    play music t6g
+    menu:
+        m "t6g \n爆炸版 Play With Me"
+        "继续":
+            pass
+    stop music fadeout 2.0
+    m "算了，我也不能过度剧透这种恐怖音乐。"
+label tutorial_route_p4_end:
+    play music t3
+    m 5 "那么这一关就到这里结束了~"
+    m "如果你对这些标签感兴趣的话，可以查看 advanced_scripts 文件夹里的 definitions.rpy。"
+    m "里面也指定了 BGM 的标签哦！"
+    m "放松一下，准备下一关吧！"
     return
 
 label tutorial_route_p5:
