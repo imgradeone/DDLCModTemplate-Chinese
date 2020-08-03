@@ -1,13 +1,10 @@
 # Entry point
 label start:
 
-    # ID of this playtrhoguh
     $ anticheat = persistent.anticheat
 
-    # keep track of chapter
     $ chapter = 0
 
-    # if they quit during a pause, we have to set _dismiss_pause to false again
     $ _dismiss_pause = config.developer
 
     # 可以修改女主的名字
