@@ -4,18 +4,16 @@
 init -10 python:
     import urllib2, json
     ddmm_rpc_url = "http://127.0.0.1:41420/"
-
-    def ddmm_check_online():
-        try:
-            request = urllib2.Request(ddmm_rpc_url, json.dumps({"method": "ping"}))
-            urllib2.urlopen(request).read()
-            return True
-        except:
-            return False
-        return False
+    ddmm_online = False
+    try:
+        request = urllib2.Request(ddmm_rpc_url, json.dumps({"method": "ping"}))
+        urllib2.urlopen(request).read()
+        ddmm_online = True
+    except:
+        ddmm_online = False
 
     def ddmm_make_request(payload):
-        if ddmm_check_online():
+        if ddmm_online:
             request = urllib2.Request(ddmm_rpc_url, json.dumps(payload))
             urllib2.urlopen(request).read()
 
@@ -51,7 +49,6 @@ label _reg_achievements:
 # Test SDK functions
 # Ren'Py 测试有限
 label _ddmm_test:
-    $ ddmm_online = ddmm_check_online()
     "DDMM 是否在线：[ddmm_online]"
     menu:
         "请选择想要测试的项。"

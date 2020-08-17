@@ -69,6 +69,10 @@ translate None strings:
 
 translate None strings:
 
+    old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
+    new "本程序包含了由数个许可证授权的免费软件，包括 MIT 许可证和 GNU 宽松通用公共许可证。完整软件列表及源代码链接，请{a=https://www.renpy.org/l/license}访问此处{/a}。"
+
+
     # renpy/common/00gltest.rpy:50
     old "Graphics Acceleration"
     new "图形加速"

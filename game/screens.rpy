@@ -44,7 +44,7 @@ style input:
     color gui.accent_color
 
 style hyperlink_text:
-    color gui.accent_color
+    color "#fa82b6"
     hover_color gui.hover_color
     hover_underline True
 
@@ -473,7 +473,7 @@ screen navigation():
 
             textbutton _("设置") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
 
-            #textbutton _("About") action ShowMenu("about")
+            textbutton _("关于") action ShowMenu("about")
 
             if renpy.variant("pc"):
 
@@ -559,7 +559,7 @@ screen main_menu():
         add "menu_art_m"
         add "menu_fade"
 
-    key "K_ESCAPE" action Quit(confirm=False)
+    key "K_ESCAPE" action Quit(confirm=True)
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -746,24 +746,24 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("关于"), scroll="viewport"):
 
         style_prefix "about"
 
         vbox:
 
             label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+            text _("版本 [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("基于 {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only]。\n\nDoki Doki Literature Club! ©2017 Team Salvato\n[renpy.license!t]")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
-define gui.about = ""
+# define gui.about = "本 Mod 是粉丝作品，与 Team Salvato 无关，原版 DDLC 可以在 {a=https://ddlc.moe}https://ddlc.moe{/a} 获取。"
 
 
 style about_label is gui_label

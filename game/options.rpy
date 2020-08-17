@@ -7,10 +7,10 @@ define config.name = "DDLC 中文 Mod 模板"
 define gui.show_name = False
 
 # 版本号
-define config.version = "1.2.0"
+define config.version = "1.3.0"
 
 # text placed on about screen
-define gui.about = _("")
+define gui.about = _("本 Mod 是粉丝作品，与 Team Salvato 无关，原版 DDLC 可以在 {a=https://ddlc.moe}https://ddlc.moe{/a} 获取。\nMod 分发请遵循 {a=https://teamsalvato.com/ip-guidelines/}Team Salvato IP Guidelines{/a}。")
 
 # 构建名，不要使用中文、数字、空格、分隔符，只使用英文
 define build.name = "DDLCModTempCN"
@@ -145,6 +145,7 @@ init python:
     # folder / files to put in archives
     build.classify("game/mod_assets/**", "mod_assets")
     build.classify("game/gui/**", "mod_assets") # issue #1
+    build.classify("game/images/**", "mod_assets") # issue #1
     build.classify("game/submods/**", "submods")
     build.classify('game/**.rpyc', "scripts")
     build.classify('game/advanced_scripts/**', "scripts")
