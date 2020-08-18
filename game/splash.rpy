@@ -14,7 +14,8 @@ init python:
 
     splash_messages = [
         "请多多支持 Dan 鸽www",
-        "Monika 在盯着你的粪代码。（笑）"
+        "Monika 在盯着你的粪代码。（笑）",
+        "Monika 保佑你，开发 Mod 不遇一个 unexpection！"
     ]
 
 
@@ -307,7 +308,6 @@ label splashscreen:
     show white
     $ persistent.ghost_menu = False
     $ splash_message = splash_message_default
-    $ config.main_menu_music = audio.t1
     $ renpy.music.play(config.main_menu_music)
     # Team Salvato Logo，不需要的话可以删除下面三行
     show intro with Dissolve(0.5, alpha=True)
@@ -339,7 +339,10 @@ label after_load:
         "存档无法加载。"
         "您是不是想作弊？XD"
         show monika 1a at t11 zorder 1
-        m "[player]，您真可笑。"
+        if persistent.playername == "":
+            m "您真可笑。"
+        else:
+            m "[persistent.playername]，您真可笑。"
 
         $ renpy.utter_restart()
     return
@@ -368,7 +371,6 @@ label autoload:
     jump expression persistent.autoload
 
 label before_main_menu:
-    $ config.main_menu_music = audio.t1
     return
 
 label quit:

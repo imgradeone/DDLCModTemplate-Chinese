@@ -9,8 +9,9 @@ define gui.show_name = False
 # 版本号
 define config.version = "1.3.0"
 
-# text placed on about screen
-define gui.about = _("本 Mod 是粉丝作品，与 Team Salvato 无关，原版 DDLC 可以在 {a=https://ddlc.moe}https://ddlc.moe{/a} 获取。\nMod 分发请遵循 {a=https://teamsalvato.com/ip-guidelines/}Team Salvato IP Guidelines{/a}。")
+# 在这里写上你的 Mod 简介吧！
+define gui.about = _("""本 Mod 是粉丝作品，与 Team Salvato 无关，应在通关原版游戏后再进行游玩。原版 DDLC 可以在 {a=https://ddlc.moe}https://ddlc.moe{/a} 获取。
+Mod 分发请遵循 {a=https://teamsalvato.com/ip-guidelines/}Team Salvato IP Guidelines{/a}。""")
 
 # 构建名，不要使用中文、数字、空格、分隔符，只使用英文
 define build.name = "DDLCModTempCN"

@@ -1,0 +1,5 @@
+（停止音乐，2.0 秒淡出）
+（背景 residential_day，使用 dissolve_scene_full 转场效果）
+（播放音乐 t2）
+
+（coming soon）

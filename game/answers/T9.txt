@@ -24,7 +24,7 @@
 #        
 #    elif meeting_place == "my_house":
 #        scene bg house
-#        with wipeleft_scene
+#        with wipeleft_scene    
 #        
 #    stop music fadeout 2.0
 #    play music t2

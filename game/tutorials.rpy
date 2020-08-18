@@ -8,7 +8,7 @@ init python:
         (_("第 2 关：第一句对话"),"tutorial_route_p2"),
         (_("第 3 关：背景也要丰富"),"tutorial_route_p3"),
         (_("第 4 关：没有 BGM 的 Mod 是没有灵魂的"),"tutorial_route_p4"),
-        (_("Route Part 5, Menu"),"tutorial_route_p5"),
+        (_("第 5 关：令人恼火的选择时间（未完成）"),"tutorial_route_p5"), #TODO
         (_("Route Part 6, Logic Statement"),"tutorial_route_p6"),
         (_("Route Part 7, Sprite"),"tutorial_route_p7"),
         (_("Route Part 8, Position"),"tutorial_route_p8"),
@@ -159,9 +159,9 @@ label tutorial_route_p1:
     m 1h "因为我没有能直接调用 Ren'Py 的超能力，所以你一定要跟紧我啊！"
     m "首先，我也知道你已经跟着 README 一步步做了。"
     m "那么，给你的工程文件夹命名吧！我们这里以 \"Forever Life\" 为例。"
-    m 2a "接下来，你可以直接把 'tutorial.rpy' 和 'tutorial.rpyc' 删掉了。它们只是这个教程的组成部分，接下来用不到。当然，你也可以留着。"
+    m 2a "你可以直接把 'tutorial.rpy' 和 'tutorial.rpyc' 删掉了。它们只是这个教程的组成部分，接下来用不到。当然，你也可以留着。"
     m 3a "接下来用你最爱的编辑器打开 'script.rpy' 这个文件。"
-    m "跳转到第 22 行。你应该可以看到我贴心的注释。接下来，你只需要改动第 26 - 29 行，也就是注释包住的地方。"
+    m "跳转到第 22 行。你应该可以看到我贴心的注释。接下来，你只需要改动第 23 - 26 行，也就是注释包住的地方。"
     m "接下来，删掉这几行，然后新开一行。你可能需要再打 4 个空格。"
     m "如果你使用 VS Code，那么它应该就已经把 4 个空格的缩进整好了。实在没有，可以按 Tab 键补全。"
     m "输入：\n' \ \ \ call meet_monika'\n（不要把引号也打进去）"
@@ -263,51 +263,11 @@ label tutorial_route_p2:
     m 1a "如果敲久了 Ren'Py 的代码，你会发现 Ren'Py 其实很简单。"
     m "毕竟 Ren'Py 就是希望让每个人都能制作属于自己的视觉小说。"
     m 5 "所以像我这种新人也可以很快上手 Ren'Py 啦~"
-    m "好的，现在你已经学会制作一个十分初级的 Mod 了。"
+    m 2 "好的，现在你已经学会制作一个十分初级的 Mod 了。"
     m "可是 Mod 里缺了好多东西，比如音乐、角色、背景。这还不是视觉小说应该有的亚子呢。"
     m "别慌，后面我们会慢慢加的。"
     m 3k "不过，接下来的东西就很有挑战性了！"
     m "没事，消化一下，下一关见！"
-
-    # m "Hi again [player]!"
-    # m 1a "If the last part was a bit too hard, don’t worry, this part is easier."
-    # m "Like last time, I’ll tell you what to do and then I’ll explain, okay?"
-    # m 4a "First open monika_route_script.rpy."
-    # m "Between the first line and 'return', add the line \n' \ \ \ stop music fadeout 2.0'"
-    # m "Then add the line ' play music t2'."
-    # m "Finally, add the line \n' \ \ \ mc 'Let's listen to the music.''"
-    # m 2a "Check that all lines bellow 'label monika_route:' are aligned and that 'return' is the last line."
-    # m "Try to launch the game with Ren’Py and see what happens..."
-    # m 2c "..."
-    # m 1c "Does it work? If everything goes well, you should be listening to Sayori’s main theme."
-    # m 3a "There’s just one dialogue, so if you click one time, you go to the main menu because of the 'return' keyword."
-    # m 3b "Okay, time to explain what happened!"
-    # m 3a "Let’s look at ' \ \ \ stop music fadeout 2.0'. Before you click New Game, you can hear the music of the main menu, right? "
-    # m "But when you click New Game, the music stops progressively."
-    # m 4a "That’s due to 'stop music fadeout 2.0'. 'stop music' tells the current music to stop. 'fadeout 2.0' makes it so the current music completely becomes silent in 2 seconds."
-    # m 4b "'fadeout' isn’t necessary but smooth transitions are much more pleasant, aren’t they?"
-    # m 4a "The next line ' \ \ \ play music t2' tells the game to play the music named 't2'. You’re surely wondering what’s 't2'. 't2' refers to Sayori theme, 'Ohayou Sayori!'."
-    # m 3a "Besides Ohayou Sayori, there are many other songs. But each one is labeled by their own nickname."
-    # m "You can see the list of every music with their nickname in definitions.rpy"
-    # m "You can find definitions.rpy inside the folder advanced_scripts which should be in the DDLC Mod Template's directory."
-    # m 2a "Try finding it and then open it."
-    # m "Find the lines beginning by 'define audio'. This is where each music gets assigned a nickname."
-    # m "For example, in the case of the main theme, its nickname is 't1'. In the case of Confession, its nickname is 't10'."
-    # m 5a "Can you now guess what happens if you type 'play music t1' instead of 'play music t2'?"
-    # m 1k "Confession is played instead of Ohayou Sayori!"
-    # m 2a "Instead of using nickname, you can directly write the path of the music."
-    # m "Try writing 'play music '<loop 4.499>bgm/2.ogg'' instead of 'play music t2'."
-    # m 2b "See? Ohayou Sayori! is played. Try one last thing for me okay? Write ''<from 50.0>bgm/credits.ogg'' instead of ''<loop 4.499>bgm/2.ogg''."
-    # m 5a "Have you already heard this song?"
-    # m 1b "This is the song I wrote just for you. I really hope you like it. I worked very hard on it you know."
-    # m 1e "..."
-    # m 4a "The last line you wrote, ' \ \ \ mc 'Let's listen to the music.', makes the main character says 'Let's listen to the music.'. I’ll explain how dialogue works later so bear with me okay?"
-    # m 2a "Alright, before finishing this tutorial, replace ''play <from 50.0>bgm/credits.ogg'' by 'play music t2'."
-    # m "Verify you wrote exactly the same lines as in the file t2.rpy which is inside monika_route_answer."
-    # m 1b "Congratulation! You now know how to stop and play music~"
-    # m "Next time, we’ll see how to add a background."
-    # m 5a "See you soon!"
-
     return
 
 label tutorial_route_p3:
@@ -601,72 +561,143 @@ label tutorial_route_p4_end:
     return
 
 label tutorial_route_p5:
+    $ choosed_again = False
+    show monika 4f zorder 2 at t11
+    m "你还记得当初面对一大排选择时的惊慌失措..."
+    m "...忐忑不安..."
+    m 4e "...还有那份惊喜吗？"
+    m 5 "但现在，你可以忘却这一切了！"
+    m 2 "这一次，我们来自己做一个选择菜单！"
+    m "选择，其实算是互动游戏和视觉小说的核心。"
+    m "你的选择，就会影响游戏的走向。"
+    m "最后的结局是 Good End，还是 Bad End，都取决于选择。"
+    m 1m "但是，Dan 鸽似乎没有去刻意强调选项的重要性..."
+    m 1r "因为就算你周末选择去帮助 Yuri 或是 Natsuki，一周目的结局..."
+    m "..."
+    m 1q "就算你选择接受 Yuri 的告白...又或者是不接受..."
+    m "...现实都是那样。"
+    m 1m "...对不起，扯远了。"
+    m 1 "之前你做的选择都不重要！"
+    m "现在这里是 Mod 俱乐部，你可以自己更改世界！"
+    m 2b "那么，说回菜单吧。"
+    m "首先，给一个示例吧。"
 
-    show monika 4a zorder 2 at t11
+    menu favoritefood:
+        m "你喜欢吃什么？"
 
-    m "This time, I’ll explain how to make choices."
-    m "For example..."
+        "纸杯蛋糕":
+            show natsuki 1a at l31 zorder 2
+            n "！！！"
+            n 5z "果然，还是我做的纸杯蛋糕好吃！"
+            m 1k "确实呢，我也尝过！"
+            n 5t "这就是 Pro！"
+            n "感谢夸奖！"
+            show natsuki at lhide
+            hide natsuki
+        "曲奇饼干":
+            show sayori 1n at l31 zorder 2
+            s "哦？"
+            s 4r "是饼干！！！"
+            s "我也爱吃曲奇饼！！！"
+            m 2k "其实曲奇饼蛮好吃的，对吧？"
+            show sayori at lhide
+            hide sayori
+        "乌龙茶（事喝的）":
+            show yuri 3d at l31 zorder 2
+            y "那么我可以考虑多整点乌龙茶了！"
+            y 3u "emmm..."
+            m 2m "没事，其实大家可以一起品茶的！"
+            show yuri at lhide
+            hide yuri
 
-    call tutorial_route_p5_favorite_color from _call_tutorial_route_p5_favorite_color
-
-    m 2k "What a coincidence! It's also my favorite color!"
-    m 2b "It's the color of my eyes."
-    m 5a "Aren't we a perfect match?"
-    m "Ehehe~"
-    m 3a "As you can see, I gave you several choices and you picked one of them."
-    m "That’s what I’m going to teach you."
-    m 4a "Like every time, open monika_route_script.rpy and between 'return' and the last line before it,-"
-    m "- add ' \ \ \ menu:', jump a line and then enter below \n' \ \ \ \ \ \ \ \ mc 'I told her to meet me...''. Be careful, this time, there are eight spaces."
-    m "Write just under \n' \ \ \ \ \ \ 'At the literature club room':' and then \n' \ \ \ \ \ \ \ $ meeting_place = 'club_room''."
-    m 4b "Type \n' \ \ \ \ \ \ 'In front of my house':' and under it \n' \ \ \ \ \ \ \ $ meeting_place = 'my_house'."
-    m 4a "Finally, jump a line and add ' \ \ \ mc 'I can't wait to meet her!''."
-    m 2a "Try to play the game."
-    m "If it doesn’t work, there’s surely an indentation error."
-    m 5a "I can’t help you from here, but you can check T5.rpy for the answers. You know where it is, right?"
-    m 4b "Okay, the lines you wrote made the game offers two choices. The two choices are preceded by an explanative sentence, 'I told her to meet me...'."
-    m "You can specify who says this sentence by adding a nickname like 'mc' before it. It’s just like a dialogue. What’s important is that this sentence is written before any choice."
-    m 3a "Contrary to the explanative sentence, the choices mustn’t be preceded by a nickname. They should be enclosed in quotation marks. Just after the closing quotation mark, there must be a ':' ."
-    m "After ':, the next lines should have one more indent than the choice. It means these lines will be read if the player selects that choice."
-    m 3b "I’ll give more explanation about the meaning of indents in the next tutorial."
-    m 3a "In our case, the next line after the first choice is \n' \ \ \ \ \ \ \ $ meeting_place = 'club_room'."
-    m 2a "Take a good look at this line."
-    m 3b "Until now, I referred 'mc', 'bg residential' and 't2' as nickname. But that’s not really the correct word. They are actually what we call variable."
-    m "Variable in coding is a very important concept. They have many forms and do many things. They can be ‘nicknames’ or they can be numbers or more complicated structures."
-    m 1a "A full Python tutorial would be necessary to explain everything but...for now, I will only teach what’s necessary to make a DDLC mod, okay?"
-    m 1c "I myself don’t know Python and Ren’Py all that well after all..."
-    m 3a "'meeting_place' is like the variables we saw before. It refers to a name, in more exact terms, a string (of characters): 'club_room'."
-    m "Its default value is None which means it doesn’t exist."
-    m 3e "Hold on a second? How can it not exist, you say?"
-    m 1a "Well before you define it, the variable doesn’t exist. But if you later try to use it, for example in a conditional statement, the variable will be ‘created’ and its value will be None."
-    m "It’s alright if you don’t understand it yet. Variable, conditional statement and None will become clearer in my next lecture."
-    m 4b "Let’s go back to the meaning of ' $ meeting_place = 'club_room'. Here we create the variable 'meeting_place' and assign it the string 'club_room'."
-    m 4m "The '$' in front of it is to tell Ren’Py the line is a Python line. Um..., I can’t really explain why we need to do that if you don’t know python yet..."
-    m 4a "Just remember that you need to add '$' when you want to assign a variable a value that way"
-    m "Regarding the second choice, the structure is the same. The only difference is that the value of 'meeting_place' will be 'my_house' if the player selects the second choice."
-    m "After the second choice, the game executes the line ' \ \ \ mc 'I can't wait to meet her!''."
-    m 1a "For now it doesn’t look like the choices did anything. But we actually assigned 'meeting_place' either 'club_room' or 'my_house'."
-    m 3a "We have to wait until the next tutorial to see how we can use the variable 'meeting_place'."
-    m 3b "Alright, I’m sorry to leave hanging like that I believe we need to take a little break."
-    m "If you want though, I would more than happy to begin the next part right away!"
-    m 5a "Just click Part 6!"
-
-    return
-
-label tutorial_route_p5_favorite_color:
-
+    m 5 "其实，你刚刚选择的食物，就引出了一个剧情！"
+    
+    if choosed_again:
+        m "而你刚刚也尝试了一个不同的选项！"
+        m "剧情也跟着改变了！"
+    
     menu:
-        m "What is your favorite color?"
-        "Sky Blue":
+        m "那么要不要再去试试别的选项？"
 
-            jump tutorial_route_p5_favorite_color
-        "Amethyst Purple":
-            jump tutorial_route_p5_favorite_color
-        "Emerald Green":
-            return
-        "Candy Pink":
-            jump tutorial_route_p5_favorite_color
+        "要！":
+            show monika 2b
+            $ choosed_again = True
+            jump favoritefood
+        "不用了。":
+            pass
 
-            m " Are you ready? We are going to ramp up the difficulty."
+    m "这就是一个菜单。"
+    m "想写一个选项菜单，其实很方便。"
+    m "接下来，回到 meet_monika.rpy 这个文件。"
+    m "不过，这一次，为了贴合“Meet Monika”这个主题，剧情需要大改。"
+    m 2m "剧本的话，因为这里是教程..."
+    m "让你去写的话，可能有点刁难..."
+    m 2b "所以我已经写好了剧本！"
+    m "去看看工程文件夹 /game/scripts_for_tutorial 里面的 meet_monika_T5.txt 和 hint.md 文件吧。"
+    m "那里会告诉你，需要安排什么剧情和交互。"
+    call screen dialog("内容暂未完成，待补充",Return())
+    return
+#     m "This time, I’ll explain how to make choices."
+#     m "For example..."
+
+#     call tutorial_route_p5_favorite_color from _call_tutorial_route_p5_favorite_color
+
+#     m 2k "What a coincidence! It's also my favorite color!"
+#     m 2b "It's the color of my eyes."
+#     m 5a "Aren't we a perfect match?"
+#     m "Ehehe~"
+#     m 3a "As you can see, I gave you several choices and you picked one of them."
+#     m "That’s what I’m going to teach you."
+#     m 4a "Like every time, open monika_route_script.rpy and between 'return' and the last line before it,-"
+#     m "- add ' \ \ \ menu:', jump a line and then enter below \n' \ \ \ \ \ \ \ \ mc 'I told her to meet me...''. Be careful, this time, there are eight spaces."
+#     m "Write just under \n' \ \ \ \ \ \ 'At the literature club room':' and then \n' \ \ \ \ \ \ \ $ meeting_place = 'club_room''."
+#     m 4b "Type \n' \ \ \ \ \ \ 'In front of my house':' and under it \n' \ \ \ \ \ \ \ $ meeting_place = 'my_house'."
+#     m 4a "Finally, jump a line and add ' \ \ \ mc 'I can't wait to meet her!''."
+#     m 2a "Try to play the game."
+#     m "If it doesn’t work, there’s surely an indentation error."
+#     m 5a "I can’t help you from here, but you can check T5.rpy for the answers. You know where it is, right?"
+#     m 4b "Okay, the lines you wrote made the game offers two choices. The two choices are preceded by an explanative sentence, 'I told her to meet me...'."
+#     m "You can specify who says this sentence by adding a nickname like 'mc' before it. It’s just like a dialogue. What’s important is that this sentence is written before any choice."
+#     m 3a "Contrary to the explanative sentence, the choices mustn’t be preceded by a nickname. They should be enclosed in quotation marks. Just after the closing quotation mark, there must be a ':' ."
+#     m "After ':, the next lines should have one more indent than the choice. It means these lines will be read if the player selects that choice."
+#     m 3b "I’ll give more explanation about the meaning of indents in the next tutorial."
+#     m 3a "In our case, the next line after the first choice is \n' \ \ \ \ \ \ \ $ meeting_place = 'club_room'."
+#     m 2a "Take a good look at this line."
+#     m 3b "Until now, I referred 'mc', 'bg residential' and 't2' as nickname. But that’s not really the correct word. They are actually what we call variable."
+#     m "Variable in coding is a very important concept. They have many forms and do many things. They can be ‘nicknames’ or they can be numbers or more complicated structures."
+#     m 1a "A full Python tutorial would be necessary to explain everything but...for now, I will only teach what’s necessary to make a DDLC mod, okay?"
+#     m 1c "I myself don’t know Python and Ren’Py all that well after all..."
+#     m 3a "'meeting_place' is like the variables we saw before. It refers to a name, in more exact terms, a string (of characters): 'club_room'."
+#     m "Its default value is None which means it doesn’t exist."
+#     m 3e "Hold on a second? How can it not exist, you say?"
+#     m 1a "Well before you define it, the variable doesn’t exist. But if you later try to use it, for example in a conditional statement, the variable will be ‘created’ and its value will be None."
+#     m "It’s alright if you don’t understand it yet. Variable, conditional statement and None will become clearer in my next lecture."
+#     m 4b "Let’s go back to the meaning of ' $ meeting_place = 'club_room'. Here we create the variable 'meeting_place' and assign it the string 'club_room'."
+#     m 4m "The '$' in front of it is to tell Ren’Py the line is a Python line. Um..., I can’t really explain why we need to do that if you don’t know python yet..."
+#     m 4a "Just remember that you need to add '$' when you want to assign a variable a value that way"
+#     m "Regarding the second choice, the structure is the same. The only difference is that the value of 'meeting_place' will be 'my_house' if the player selects the second choice."
+#     m "After the second choice, the game executes the line ' \ \ \ mc 'I can't wait to meet her!''."
+#     m 1a "For now it doesn’t look like the choices did anything. But we actually assigned 'meeting_place' either 'club_room' or 'my_house'."
+#     m 3a "We have to wait until the next tutorial to see how we can use the variable 'meeting_place'."
+#     m 3b "Alright, I’m sorry to leave hanging like that I believe we need to take a little break."
+#     m "If you want though, I would more than happy to begin the next part right away!"
+#     m 5a "Just click Part 6!"
+
+#     return
+
+# label tutorial_route_p5_favorite_color:
+
+#     menu:
+#         m "What is your favorite color?"
+#         "Sky Blue":
+
+#             jump tutorial_route_p5_favorite_color
+#         "Amethyst Purple":
+#             jump tutorial_route_p5_favorite_color
+#         "Emerald Green":
+#             return
+#         "Candy Pink":
+#             jump tutorial_route_p5_favorite_color
 
 label tutorial_route_p6:
 
@@ -1048,8 +1079,8 @@ label tutorial_route_adv_hkb:
     return
 
 label tutorial_route_adv_edited:
-
-    m "咕~"
+    show monika 2 at t11
+    m "Edited 风格的文本，在原游戏中侧重于突出游戏代码被篡改。"
 
     return
 
