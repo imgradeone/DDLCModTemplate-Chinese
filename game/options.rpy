@@ -146,7 +146,8 @@ init python:
     # folder / files to put in archives
     build.classify("game/mod_assets/**", "mod_assets")
     build.classify("game/gui/**", "mod_assets") # issue #1
-    build.classify("game/images/**", "mod_assets") # issue #1
+    build.classify("game/images/**", "mod_assets")
+    build.classify("game/extensions/**", "extensions")
     build.classify("game/submods/**", "submods")
     build.classify('game/**.rpyc', "scripts")
     build.classify('game/advanced_scripts/**', "scripts")

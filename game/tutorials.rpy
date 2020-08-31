@@ -13,7 +13,8 @@ init python:
         (_("Route Part 7, Sprite"),"tutorial_route_p7"),
         (_("Route Part 8, Position"),"tutorial_route_p8"),
         (_("Route Part 9, Ending"),"tutorial_route_p9"),
-        (_("来点高级点的！"),"tutorial_route_adv")
+        (_("来点高级点的！"),"tutorial_route_adv"),
+        (_("DokiMod 素材 / 补丁库插件开发指导"),"tutorial_route_extensions")
     ]
 
 # TODO: 中文版教程
@@ -1454,3 +1455,35 @@ label tutorial_route_adv_poemgame_txgrid:
     return
 
 
+label tutorial_route_extensions:
+    # advanced scripts just because
+    python:
+        ext_items = [
+            ("插件规范", "tutorial_route_extensions_guidelines")
+        ]
+
+    m 5a "欢迎您参与 DokiMod 素材 / 补丁库的开发！"
+    m 3a "接下来我们将开始了解如何开发一个插件，以供其他开发者下载。"
+    m "同时，我们也将学习插件开发规范。"
+
+label tutorial_route_extensions_repeat:
+
+    show monika 3a at tcommon(950)
+    window show
+    $ renpy.say(m, "你想尝试些什么？", interact=False)
+
+    call screen tutorial_choice(ext_items)
+    window auto
+
+    if _return == False:
+        return
+
+    show monika at t11
+
+    call expression _return from _call_expression_1
+
+    jump tutorial_route_extensions_repeat
+
+label tutorial_route_extensions_guidelines:
+    m 1n "插件系统暂未完工，请稍等一下。"
+    return

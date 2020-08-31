@@ -205,7 +205,7 @@ label example_chapter:
     m 5 "而且 Atom 是 Ren'Py 7 官方推荐的编辑器哦！您可以 {a=https://atom.io/}点击这里{/a} 下载 Atom。"
     m 3a "如果你实在讨厌微软，却又喜欢 VS Code，你可以尝试社区的 VSCodium。您可以 {a=https://vscodium.com/}点击这里{/a} 下载 VSCodium。"
     m 1b "最后，再强调一下，你可以使用 任何 编辑器。"
-    m "{s}但是，使用的编辑器不恰当，小心被谴责哦！（逃）{/s}"# 我说的是那个在自家论坛开抵制自家编辑器板块的那个 XD #donhonmsl
+    m "{s}但是，使用的编辑器不恰当，小心被谴责哦！（逃）{/s}"# 我说的是那个在自家论坛开抵制自家编辑器板块的那个 XD
 
     m 1a "其实我刚刚问你的那些问题，不会影响到接下来的教程..."
     m 2b "但是，我知道你要做什么类型的 Mod 了。"
@@ -218,4 +218,3 @@ label example_chapter:
     jump tutorial_selection
 
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

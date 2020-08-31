@@ -677,6 +677,33 @@ screen poem(currentpoem, paper="paper"):
 
     #use quick_menu
 
+screen poem_en(currentpoem, paper="paper"):
+    style_prefix "poem"
+    vbox:
+        add paper
+    viewport id "vp":
+        child_size (710, None) #Subwindow size for showing text
+        mousewheel True #make scrollable
+        draggable True
+        vbox:
+            null height 40
+            #Text style is determine by the author
+            if currentpoem.author == "yuri":
+                if currentpoem.yuri_2:
+                    text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text_en"
+                elif currentpoem.yuri_3:
+                    text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text_3_en"
+                else:
+                    text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text_en"
+            elif currentpoem.author == "sayori":
+                text "[currentpoem.title]\n\n[currentpoem.text]" style "sayori_text_en"
+            elif currentpoem.author == "natsuki":
+                text "[currentpoem.title]\n\n[currentpoem.text]" style "natsuki_text_en"
+            elif currentpoem.author == "monika":
+                text "[currentpoem.title]\n\n[currentpoem.text]" style "monika_text_en"
+            null height 100
+    vbar value YScrollValue(viewport="vp") style "poem_vbar"
+
 #Basic styling for all poems
 style poem_vbox:
     xalign 0.5
@@ -701,11 +728,12 @@ style yuri_text:
     color "#000"
     outlines []
 
-style yuri_text_2:
-    font "gui/font/y2.ttf"
-    size 40
-    color "#000"
-    outlines []
+# style yuri_text_2:
+#     font "gui/font/y2.ttf"
+#     size 40
+#     color "#000"
+#     outlines []
+# y2.ttf 未被使用
 
 style yuri_text_3:
     font "gui/font/y3.ttf"
@@ -714,6 +742,7 @@ style yuri_text_3:
     outlines []
     kerning -8
     justify True
+# y3.ttf 暂无中文替代
 
 style natsuki_text:
     font "mod_assets/font/acy.otf"
@@ -734,6 +763,47 @@ style monika_text:
     color "#000"
     outlines []
 
+style yuri_text_en:
+    font "gui/font/y1.ttf" #font used packaged with the game
+    size 32
+    color "#000"
+    outlines []
+
+# style yuri_text_2:
+#     font "gui/font/y2.ttf"
+#     size 40
+#     color "#000"
+#     outlines []
+# y2.ttf 未被使用
+
+style yuri_text_3_en:
+    font "gui/font/y3.ttf"
+    size 18
+    color "#000"
+    outlines []
+    kerning -8
+    justify True
+
+style natsuki_text_en:
+    font "gui/font/n1.ttf"
+    size 28
+    color "#000"
+    outlines []
+    line_leading 1
+
+style sayori_text_en:
+    font "gui/font/s1.ttf"
+    size 34
+    color "#000"
+    outlines []
+
+style monika_text_en:
+    font "gui/font/m1.ttf"
+    size 34
+    color "#000"
+    outlines []
+
+
 #This defines the function that shows the poem with the following variables
 #    poem - String as the key key for the poem being shown
 #    music - Boolean to play music
@@ -742,7 +812,7 @@ style monika_text:
 #    img - the image to show in the background, used for if a character can be seen behind the paper
 #    where - The location of the image showm
 #    paper - Use a special paper, like for Yuri's madness poem
-label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, where=i11, paper=None):
+label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, where=i11, paper=None, chinese=True):
     #If no poem key is given, just go back
     if poem == None:
         return
@@ -761,12 +831,20 @@ label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, w
     window hide
 
     #Show the background paper
-    if paper:
-        show screen poem(poem, paper=paper)
-        with Dissolve(1)
+    if chinese:
+        if paper:
+            show screen poem(poem, paper=paper)
+            with Dissolve(1)
+        else:
+            show screen poem(poem)
+            with Dissolve(1)
     else:
-        show screen poem(poem)
-        with Dissolve(1)
+        if paper:
+            show screen poem_en(poem, paper=paper)
+            with Dissolve(1)
+        else:
+            show screen poem_en(poem)
+            with Dissolve(1)
     $ pause()
 
     #Show an optional character in the background

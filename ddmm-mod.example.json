@@ -3,6 +3,6 @@
     "description": "Mod 介绍",
     "author": "Mod 作者",
     "uses_sdk": false,
-    "discord": "discordID#1234",
+    "discord": "yarnpkg（Discord 服务器链接）",
     "website": "https://example.org"
 }
