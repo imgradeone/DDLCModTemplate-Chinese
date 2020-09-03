@@ -1343,7 +1343,7 @@ define _dismiss_pause = config.developer
 ###### Persistent Variables ######
 # These values are automatically loaded/saved on game start and exit.
 # These exist across all saves
-
+define gui.system_font = u'mod_assets/font/alipuhuireg.ttf'
 default persistent.playername = ""
 default player = persistent.playername
 default persistent.playthrough = 0

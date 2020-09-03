@@ -252,60 +252,72 @@ translate None strings:
     old "Joystick Mapping"
     new "手柄映射"
 
-# translate None strings:
+translate None strings:
 
 
-    # # renpy/common/_errorhandling.rpym:408
-    # old "An exception has occurred."
-    # new "发生一个异常状况。"
+    # renpy/common/_errorhandling.rpym:538
+    old "Open"
+    new "打开"
 
-    # # renpy/common/_errorhandling.rpym:434
-    # old "Rollback"
-    # new "回滚一行"
+    # renpy/common/_errorhandling.rpym:540
+    old "Opens the traceback.txt file in a text editor."
+    new "在文本编辑器中打开追溯报告（traceback.txt）。"
 
-    # # renpy/common/_errorhandling.rpym:436
-    # old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
-    # new "尝试回滚到先前的状态，使您可以存盘或者选择不同选项。"
+    # renpy/common/_errorhandling.rpym:577
+    old "An exception has occurred."
+    new "发生了异常。"
 
-    # # renpy/common/_errorhandling.rpym:439
-    # old "Ignore"
-    # new "忽略错误"
+    # renpy/common/_errorhandling.rpym:597
+    old "Rollback"
+    new "回滚"
 
-    # # renpy/common/_errorhandling.rpym:441
-    # old "Ignores the exception, allowing you to continue. This often leads to additional errors."
-    # new "忽略异常，让您可以继续。但这通常会带来更多的问题。"
+    # renpy/common/_errorhandling.rpym:599
+    old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
+    new "尝试回滚到先前的状态，使您可以存档或者选择不同选项。"
 
-    # # renpy/common/_errorhandling.rpym:444
-    # old "Reload"
-    # new "重新加载"
+    # renpy/common/_errorhandling.rpym:602
+    old "Ignore"
+    new "忽略"
 
-    # # renpy/common/_errorhandling.rpym:446
-    # old "Reloads the game from disk, saving and restoring game state if possible."
-    # new "从硬盘重载游戏，请您储存游戏状态。"
+    # renpy/common/_errorhandling.rpym:606
+    old "Ignores the exception, allowing you to continue."
+    new "忽略异常，让您可以继续。"
 
-    # # renpy/common/_errorhandling.rpym:448
-    # old "Open Traceback"
-    # new "打开日志"
+    # renpy/common/_errorhandling.rpym:608
+    old "Ignores the exception, allowing you to continue. This often leads to additional errors."
+    new "忽略异常，让您可以继续。但这通常会引起更多错误。"
 
-    # # renpy/common/_errorhandling.rpym:450
-    # old "Opens the traceback.txt file in a text editor."
-    # new "在文本编辑器中打开日志（traceback.txt）。"
+    # renpy/common/_errorhandling.rpym:612
+    old "Reload"
+    new "重新加载"
 
-    # # renpy/common/_errorhandling.rpym:456
-    # old "Quits the game."
-    # new "离开游戏。"
+    # renpy/common/_errorhandling.rpym:614
+    old "Reloads the game from disk, saving and restoring game state if possible."
+    new "从硬盘重新加载游戏，尝试保存和恢复游戏状态。"
 
-    # # renpy/common/_errorhandling.rpym:483
-    # old "Parsing the script failed."
-    # new "解析脚本失败。"
+    # renpy/common/_errorhandling.rpym:617
+    old "Console"
+    new "控制台"
 
-    # # renpy/common/_errorhandling.rpym:510
-    # old "Open Parse Errors"
-    # new "开启解析错误"
+    # renpy/common/_errorhandling.rpym:619
+    old "Opens a console to allow debugging the problem."
+    new "打开控制台，允许您对问题进行调试。"
 
-    # # renpy/common/_errorhandling.rpym:512
-    # old "Opens the errors.txt file in a text editor."
-    # new "在文本编辑器中打开解析错误档案（errors.txt）。"
+    # renpy/common/_errorhandling.rpym:629
+    old "Quits the game."
+    new "退出游戏。"
+
+    # renpy/common/_errorhandling.rpym:629
+    old "Quits"
+    new "退出"
+
+    # renpy/common/_errorhandling.rpym:653
+    old "Parsing the script failed."
+    new "解析脚本失败。"
+
+    # renpy/common/_errorhandling.rpym:679
+    old "Opens the errors.txt file in a text editor."
+    new "在文本编辑器中打开解析错误文件（errors.txt）。"
 
 
 translate None strings:
