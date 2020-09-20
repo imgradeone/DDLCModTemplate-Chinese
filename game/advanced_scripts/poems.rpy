@@ -851,8 +851,12 @@ label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, w
     if img:
         $ renpy.hide(poem.author)
         $ renpy.show(img, at_list=[where])
-    hide screen poem
-    with Dissolve(.5)
+    if chinese:
+        hide screen poem
+        with Dissolve(.5)
+    else:
+        hide screen poem_en
+        with Dissolve(.5)
     window auto
     #After the poem is done, switch back to regular version of Okay, Everyone!
     if music and revert_music:

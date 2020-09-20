@@ -9,9 +9,9 @@ label example_chapter:
     m "...[player]？"
 
     show monika 1 zorder 2 at t11
-    m "你来了？"
+    m "你终于来了！"
 
-    show monika 1b zorder 2 at t11
+    show monika 5 zorder 2 at t11
     m "欢迎来到新开张的 Mod 俱乐部！"
 
     show monika 3 zorder 2 at t11
