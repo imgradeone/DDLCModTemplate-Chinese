@@ -1003,7 +1003,7 @@ label tutorial_route_adv:
             ("Poemgame（测试）", "tutorial_route_adv_poemgame"),
             ("Monika，请喊出我的电脑用户名！", "tutorial_route_adv_current"),
             ("DDMM SDK 测试（实验中）", "_ddmm_test"),
-            ("DDLC 中文 Mod 模板 Staff", "credits_example"),
+            ("DDLC 中文 Mod 模板 Staff（开发中）", "credits_example"),
             ("诗歌字体测试", "poemtest")
         ]
 
