@@ -636,7 +636,8 @@ label tutorial_route_p5:
     m 2b "所以我已经写好了剧本！"
     m "去看看工程文件夹 /game/scripts_for_tutorial 里面的 meet_monika_T5.txt 和 hint.md 文件吧。"
     m "那里会告诉你，需要安排什么剧情和交互。"
-    call screen dialog("内容暂未完成，待补充",Return())
+    m "这回，我们就直接说怎么写一个选项菜单吧。"
+    m "在你的脚本文件里输入以下内容："
     return
 #     m "This time, I’ll explain how to make choices."
 #     m "For example..."
