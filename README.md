@@ -23,17 +23,7 @@
 
 当前版本字体包：v1.2
 
-对应支持模板 v1.2 版本，不支持模板 v1.0 ~ v1.1
-
-您可以从以下地方获取 Mod 模板的中文字体包（v1.2）：
-
-### 中国大陆地区用户
-
-[奶牛快传（链接会于 2020-10-01 过期）](https://imgradeone.cowtransfer.com/s/3852906fbdf246) | [蓝奏云](https://imgradeone.lanzous.com/iwq7wec3j7a) | [百度网盘 提取码 hi2j](https://pan.baidu.com/s/1WiO1qD8cI8U1YTEVeVrkuQ) | [城通网盘（仅供赞助用途，实际体验差）](http://ct.imgradeone.xyz/file/24390393-452015477)
-
-### 其他地区用户
-
-[MediaFire](http://www.mediafire.com/file/6juwd7h0venrg7f/font%25282%2529.zip/file) | [Google 云端硬盘](https://drive.google.com/file/d/1LClyzgxq-les-N5egLXm1aK7ULATDpex/view?usp=sharing) | GitHub (later)
+请在 https://dokimod.cn/moddev/fontdl.html 获取字体包。
 
 ## 下载 Demo
 
