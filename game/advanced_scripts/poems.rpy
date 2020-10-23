@@ -20,6 +20,16 @@ init python:
             self.yuri_3 = yuri_3
 
 #Define all of the poems
+
+# 诗歌模板
+#     poem_template = Poem(
+#     author = "yuri", # yuri / natsuki / sayori / monika
+#     title = "诗歌标题",
+#     yuri_3 = False, # 指定是否为 Yuri 的极致草书，前提是诗歌作者 author = "yuri"
+#     text = """\
+# 这里写诗歌内容"""
+#     )
+
     poem_y1 = Poem(
     author = "yuri",
     title = "Ghost Under the Light",

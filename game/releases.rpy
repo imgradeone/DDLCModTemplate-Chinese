@@ -4,18 +4,20 @@ label releases:
     m 1 "新版本的 Mod 模板追加了一些新功能，让你事半功倍！"
     m "接下来，我们将带你了解新的特性。"
     show monika at t22
-    show yuri 1y8 at t21
+    show yuri 1hisui at t21
     m "1. 全新的 Yuri 表情"
     m 1l "虽然可能会让你想到一些不太妙的事情..."
     m 2b "但是，方便 Mod 作者大大们的开发才是我们的宗旨！"
-    y 1hisui "..."
+    y "..."
     y "为什么迫害我？？？"
     m 1l "..."
     show yuri at thide
     hide yuri
     show monika at t11
     m "算了，玩笑开到这里！"
-    m "您现在可以通过 yuri 1y8、2y8、3y8、1hisui、2hisui、3hisui 来调用新表情。"
+    m "您现在可以通过 yuri 1hisui、2hisui、3hisui 来调用新表情。"
+    m "之前的 y8 系列已经移动到 DokiMod 的社区角色神态包插件了。"
+    m "要不{a=https://github.com/DokiMod/dokimod-extension-community-emotion-pack}去看看{/a}？"
     m 2 "2. 文件结构优化，支持原生 Ren'Py 工程结构"
     m 1j "现在，你可以把需要的图片资源放到 images 和 gui 文件夹，不用一股脑塞进 mod_assets 文件夹了！"
     m 2 "3. Mod 关于页面"
