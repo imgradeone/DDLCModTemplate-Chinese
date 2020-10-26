@@ -7,7 +7,7 @@ define config.name = "DDLC 中文 Mod 模板"
 define gui.show_name = False
 
 # 版本号
-define config.version = "1.3.0"
+define config.version = "1.3.1-dev"
 
 # 在这里写上你的 Mod 简介吧！
 define gui.about = _("""这里是写简介的地方。在 options.rpy 里写上你的 Mod 简介吧！""")

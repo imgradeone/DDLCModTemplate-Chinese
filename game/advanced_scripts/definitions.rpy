@@ -79,6 +79,7 @@ define audio.t9g = "<loop 1.532>bgm/9g.ogg" # My Feelings 207% 速版本
 define audio.t10 = "<loop 5.861>bgm/10.ogg" # My Confession
 define audio.t10y = "<loop 0>bgm/10-yuri.ogg" # Yuri：我要死了版 My Confession
 define audio.td = "<loop 36.782>bgm/d.ogg" # Sayo-nara 晴 天 娃 娃
+define audio.td2 = "<from 4.5 loop 36.782>bgm/d.ogg"
 
 define audio.m1 = "<loop 0>bgm/m1.ogg" # Just Monika - Just Monika.
 define audio.mend = "<loop 6.424>bgm/monika-end.ogg" # I Still Love You - 你个死直娘贼，居然刀了 Monika，哼唧（（（

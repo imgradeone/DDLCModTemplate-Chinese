@@ -861,6 +861,7 @@ label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, w
     if img:
         $ renpy.hide(poem.author)
         $ renpy.show(img, at_list=[where])
+    
     if chinese:
         hide screen poem
         with Dissolve(.5)
