@@ -336,8 +336,8 @@ label after_load:
     if anticheat != persistent.anticheat:
         stop music
         scene black
-        "存档无法加载。"
-        "您是不是想作弊？XD"
+        "存档加载失败。"
+        "您是不是想作弊呢？"
         show monika 1a at t11 zorder 1
         if persistent.playername == "":
             m "您真可笑。"
