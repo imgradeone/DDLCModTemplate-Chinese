@@ -251,7 +251,7 @@ label splashscreen:
             scene black
             "你似乎删除了 firstrun 文件，并且我们发现还有之前的存档。"
             menu:
-                "是否删除存档并重置游戏？"
+                "是否删除存档并重置游戏？该操作不可撤销。"
                 "是的，删除存档":
                     "正在删除存档...{nw}"
                     python:

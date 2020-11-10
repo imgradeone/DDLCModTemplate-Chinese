@@ -759,7 +759,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("基于 {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only]。\n\nDoki Doki Literature Club! ©2017 Team Salvato\n\n本 Mod 是粉丝作品，与 Team Salvato 无关，原版 DDLC 可以在 {a=https://ddlc.moe}https://ddlc.moe{/a} 获取。\n\n使用 DDLC 中文 Mod 模板 v1.3 制作。\n\n[renpy.license!t]")
+            text _("Doki Doki Literature Club! ©2017 Team Salvato\n\n本 Mod 是粉丝作品，与 Team Salvato 无关，原版 DDLC 可以在 {a=https://ddlc.moe}https://ddlc.moe{/a} 获取。\n\n[renpy.license!t]")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
