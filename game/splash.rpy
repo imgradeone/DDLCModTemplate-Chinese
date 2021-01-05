@@ -280,8 +280,8 @@ label splashscreen:
         pause 1.0
 
         "[config.name] 是 Doki Doki Literature Club 的粉丝 Mod，与 Team Salvato 无关。"
-        "本 mod 理应在通关原游戏后再进行游玩，因此本 mod 包含大量剧透。"
-        "要游玩本 mod，需要原版 Doki Doki Literature Club 的文件。您可以在 https://ddlc.moe 或者 Steam 免费获取。"
+        "本 mod 理应在通关原游戏后再进行游玩，因此本 Mod 包含剧透。"
+        "要游玩本 Mod，需要原版 Doki Doki Literature Club 的文件。您可以在 https://ddlc.moe 或者 Steam 免费获取。"
 
         menu:
             "如果继续游玩 [config.name] 将视为你已经通关原游戏，并接受任何剧透内容。"
