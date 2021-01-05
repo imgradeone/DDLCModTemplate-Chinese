@@ -280,7 +280,7 @@ label splashscreen:
         pause 1.0
 
         "[config.name] 是 Doki Doki Literature Club 的粉丝 Mod，与 Team Salvato 无关。"
-        "本 mod 理应在通关原游戏后再进行游玩，因此本 Mod 包含剧透。"
+        "本 Mod 理应在通关原游戏后再进行游玩，因此本 Mod 包含剧透。"
         "要游玩本 Mod，需要原版 Doki Doki Literature Club 的文件。您可以在 https://ddlc.moe 或者 Steam 免费获取。"
 
         menu:
@@ -304,7 +304,59 @@ label splashscreen:
         jump autoload
 
     $ config.allow_skipping = False
-
+    ## 好东西
+    ## Sayori Early Death Easter Egg
+    # if s_kill_early:
+    #     show black
+    #     play music "bgm/s_kill_early.ogg"
+    #     $ pause(1.0)
+    #     show end with dissolve_cg
+    #     $ pause(3.0)
+    #     scene white
+    #     show expression "images/cg/s_kill_early.png":
+    #         yalign -0.05
+    #         xalign 0.25
+    #         dizzy(1.0, 4.0, subpixel=False)
+    #     show white as w2:
+    #         choice:
+    #             ease 0.25 alpha 0.1
+    #         choice:
+    #             ease 0.25 alpha 0.125
+    #         choice:
+    #             ease 0.25 alpha 0.15
+    #         choice:
+    #             ease 0.25 alpha 0.175
+    #         choice:
+    #             ease 0.25 alpha 0.2
+    #         choice:
+    #             ease 0.25 alpha 0.225
+    #         choice:
+    #             ease 0.25 alpha 0.25
+    #         choice:
+    #             ease 0.25 alpha 0.275
+    #         choice:
+    #             ease 0.25 alpha 0.3
+    #         pass
+    #         choice:
+    #             pass
+    #         choice:
+    #             0.25
+    #         choice:
+    #             0.5
+    #         choice:
+    #             0.75
+    #         repeat
+    #     show noise:
+    #         alpha 0.1
+    #     with Dissolve(1.0)
+    #     show expression Text("Now everyone can be happy.", style="sayori_text"):
+    #         xalign 0.8
+    #         yalign 0.5
+    #         alpha 0.0
+    #         600
+    #         linear 60 alpha 0.5
+    #     pause
+    #     $ renpy.quit()
     show white
     $ persistent.ghost_menu = False
     $ splash_message = splash_message_default
