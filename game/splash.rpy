@@ -289,13 +289,43 @@ label splashscreen:
                 pass
             "我不同意，退出。":
                 $ renpy.quit()
-
+        $ persistent.first_run = True
         scene tos2
         with Dissolve(1.5)
         pause 1.0
         scene white
-
         $ persistent.first_run = True
+
+    ## Controls where Sayori Kill Early Starts Up.
+    ## Commented out for mod safety reasons.
+    # python:
+    #     s_kill_early = None
+    #     if persistent.playthrough == 0:
+    #         try: renpy.file("../characters/sayori.chr")
+    #         except: s_kill_early = True
+    #     if not s_kill_early:
+    #         if persistent.playthrough <= 2 and persistent.playthrough != 0:
+    #             try: renpy.file("../characters/monika.chr")
+    #             except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
+    #         if persistent.playthrough <= 1 or persistent.playthrough == 4:
+    #             try: renpy.file("../characters/natsuki.chr")
+    #             except: open(config.basedir + "/characters/natsuki.chr", "wb").write(renpy.file("natsuki.chr").read())
+    #             try: renpy.file("../characters/yuri.chr")
+    #             except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
+    #         if persistent.playthrough == 4:
+    #             try: renpy.file("../characters/sayori.chr")
+    #             except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
+
+
+    # Controls Special Poems at random on startup
+    if not persistent.special_poems:
+        python hide:
+            persistent.special_poems = [0,0,0]
+            a = range(1,12)
+            for i in range(3):
+                b = renpy.random.choice(a)
+                persistent.special_poems[i] = b
+                a.remove(b)
 
     python:
         basedir = config.basedir.replace('\\', '/')
@@ -304,7 +334,23 @@ label splashscreen:
         jump autoload
 
     $ config.allow_skipping = False
-    ## 好东西
+
+    ## Commented out for mod safety reasons.
+    ## Shows the ghost menu if the user is lucky to roll it
+    # if persistent.playthrough == 2 and not persistent.seen_ghost_menu and renpy.random.randint(0, 63) == 0:
+    #     show black
+    #     $ config.main_menu_music = audio.ghostmenu
+    #     $ persistent.seen_ghost_menu = True
+    #     $ persistent.ghost_menu = True
+    #     $ renpy.music.play(config.main_menu_music)
+    #     $ pause(1.0)
+    #     show end with dissolve_cg
+    #     $ pause(3.0)
+    #     $ config.allow_skipping = True
+    #     return
+
+
+    ## Commented out for mod safety reasons.
     ## Sayori Early Death Easter Egg
     # if s_kill_early:
     #     show black
@@ -378,6 +424,35 @@ label warningscreen:
     hide intro
     show warning
     pause 3.0
+
+## If Monika.chr is deleted, this would play instead of the regular Chapter 1
+## From Script-CH0.rpy
+## Commented out for mod safety reasons.
+# label ch0_kill:
+#     $ s_name = "Sayori"
+#     show sayori 1b zorder 2 at t11
+#     s "..."
+#     s "..."
+#     s "W-What..."
+#     s 1g "..."
+#     s "This..."
+#     s "What is this...?"
+#     s "Oh no..."
+#     s 1u "No..."
+#     s "This can't be it."
+#     s "This can't be all there is."
+#     s 4w "What is this?"
+#     s "What am I?"
+#     s "Make it stop!"
+#     s "PLEASE MAKE IT STOP!"
+
+#     $ delete_character("sayori")
+#     $ delete_character("natsuki")
+#     $ delete_character("yuri")
+#     $ delete_character("monika")
+#     $ renpy.quit()
+#     return
+
 
 label after_load:
     $ config.allow_skipping = allow_skipping

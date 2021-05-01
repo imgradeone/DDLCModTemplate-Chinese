@@ -68,7 +68,7 @@ define config.save_directory = "DDLCModTempCN"
 # 任务栏图标
 define config.window_icon = "gui/window_icon.png"
 
-# 是否允许跳过
+# 是否允许快进
 define config.allow_skipping = True
 
 # True means we can autosave, false means not
