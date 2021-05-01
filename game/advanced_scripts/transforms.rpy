@@ -84,6 +84,10 @@ transform leftin(x=640, z=0.80):
     xcenter -300 yoffset 0 yanchor 1.0 ypos 1.03 zoom z*1.00 alpha 1.00 subpixel True
     easein .25 xcenter x
 
+transform rightin(x=640, z=0.80):
+    xcenter 2000 yoffset 0 yanchor 1.0 ypos 1.03 zoom z*1.00 alpha 1.00 subpixel True
+    easein .25 xcenter x
+
 #Used when hiding sprites with dissolve to mirror the show effect
 transform thide(z=0.80):
     subpixel True
@@ -95,6 +99,10 @@ transform lhide:
     subpixel True
     on hide:
         easeout .25 xcenter -300
+transform rhide:
+    subpixel True
+    on hide:
+        easeout .25 xcenter 2000
 
 
 #Normal positioning and animation, based on number of characters on screen
@@ -273,6 +281,29 @@ transform l22:
     leftin(880)
 transform l11:
     leftin(640)
+
+# Makes the character fly in from the right
+transform r41:
+    rightin(200)
+transform r42:
+    rightin(493)
+transform r43:
+    rightin(786)
+transform r44:
+    rightin(1080)
+transform r31:
+    rightin(240)
+transform r32:
+    rightin(640)
+transform r33:
+    rightin(1040)
+transform r21:
+    rightin(400)
+transform r22:
+    rightin(880)
+transform r11:
+    rightin(640)
+
 
 ########
 ##Speacial transitions for scenechanges and such
