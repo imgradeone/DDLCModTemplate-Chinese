@@ -1,33 +1,54 @@
 # 部分注释参照 https://github.com/GanstaKingofSA/DDLCModTemplate2.0
 
-# 在这里命名你的 Mod
+## 目前中文 Mod 模板的版本为 1.3.1-dev，基于原版模板的 1.1.2 版本改造。
+## 如果你需要向别人提及模板版本，建议把这两个都放上去。
+## 不要修改、删除这段注释。
+
+# 这里可以为你的 Mod 命名。
+# 把 "DDLC 中文 Mod 模板" 改成你的 Mod 名字（比如 "我永远喜欢 Sayori"）
 define config.name = "DDLC 中文 Mod 模板"
 
-# 在主界面展示项目名、版本号 (True or False)
+# 这里可以控制是否在游戏主菜单展示 Mod 名字及版本号。
+# 一般情况下可以打开以与原游戏区分，但如果 Mod 名字太长，建议改为 False
 define gui.show_name = False
 
-# 版本号
+# 这里可以输入版本号。如果你的 Mod 版本很多，那这时版本号会很有用。
+# 如果你刚刚开始，那么建议把版本号设为 "1.0"
 define config.version = "1.3.1-dev"
 
-# 在这里写上你的 Mod 简介吧！
+# 这里是在“关于”页显示的 Mod 介绍文字。
+# 由于我们重新启用了关于界面，你可以在这里写点介绍。
 define gui.about = _("""这里是写简介的地方。在 options.rpy 里写上你的 Mod 简介吧！""")
 
-# 构建名，不要使用中文、数字、空格、分隔符，只使用英文
+# 这是 Ren'Py SDK 会读取的构建名。
+# 构建名只能使用 ASCII 字符，因此只能使用英文字母，不能有空格、数字、下划线。
+# 例：Sayori Is The Best → SayoriIsTheBest
 define build.name = "DDLCModTempCN"
 
 # 控制设置菜单中的音量设置显示
+# 音效，建议保留为 True
 define config.has_sound = True
+
+# 背景音乐，建议保留为 True
 define config.has_music = True
+
+# 语音，如果 Mod 有语音则为 True，否则为 False
 define config.has_voice = False
 
-# 主菜单 BGM
+# 这里控制主菜单的背景音乐。
+# audio.t1 是 Doki Doki Literature Club 的主菜单音乐。
+# 如果你想修改，那么把 "t1" 改成其他已定义的 BGM。
 define config.main_menu_music = audio.t1
 
-# 进入和退出游戏菜单时使用的转场
+# 这是进入和退出游戏菜单时使用的转场。
+# Dissolve(.2) 相当于转场特效。
+# config.enter_transition 控制进入游戏菜单时使用的转场。
+# config.exit_transition 控制退出游戏菜单 / 返回游戏时使用的转场。
 define config.enter_transition = Dissolve(.2)
 define config.exit_transition = Dissolve(.2)
 
-# 在加载存档后显示的转场
+# 这是加载存档后显示的转场。
+# 默认情况下为 None，你可以自定义转场，但如果不确定，请保留为 None。
 define config.after_load_transition = None
 
 # 在故事结束后显示的转场。推荐使用 Dissolve(.2)。
