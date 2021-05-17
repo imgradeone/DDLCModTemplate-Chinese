@@ -171,7 +171,6 @@ init python:
     build.classify("game/submods/**", "submods")
     build.classify('game/**.rpyc', "scripts")
     build.classify('game/advanced_scripts/**', "scripts")
-    build.classify('game/original_story_scripts/**', "scripts")
 
     # stuff to ignore
     build.classify('**~', None)
