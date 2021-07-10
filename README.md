@@ -1,4 +1,9 @@
 # DDLC 中文 Mod 模板
+
+**注意！！！目前 DDLC 中文 Mod 模板已经发布新版本，功能更稳定。旧 Mod 模板随时可能停止维护。**
+
+**请您在 [这里](https://github.com/imgradeone/DDLCModTemplate-Chinese-next) 下载新版本的 Mod 模板。**
+
 嘿，你想用中文写 DDLC Mod？**那你来对地方了！**
 
 这里是 DDLC 中文 Mod 模板！本模板基于 Monika After Story 团队的 [DDLCModTemplate](https://github.com/Monika-After-Story/DDLCModTemplate)，并进行了一系列汉化，以及功能追加。使用本模板制作 Mod 时，请遵循 [Team Salvato 的 IP Guidelines](http://teamsalvato.com/ip-guidelines/)。

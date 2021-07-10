@@ -13,7 +13,7 @@
 
 使用字重：Regular
 
-文件存放于 `game/mod_assets/font/alipuhuireg.ttf`
+文件存放于 `game/mod_assets/font/harmonyossans.ttf`
 
 用途：游戏文字主要字体，替代原有的 Aller 字体
 
