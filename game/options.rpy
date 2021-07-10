@@ -1,6 +1,6 @@
 # 部分注释参照 https://github.com/GanstaKingofSA/DDLCModTemplate2.0
 
-## 目前中文 Mod 模板的版本为 1.3.1-dev，基于原版模板的 1.1.2 版本改造。
+## 目前中文 Mod 模板的版本为 1.4.0，基于原版模板的 1.1.2 版本改造。
 ## 如果你需要向别人提及模板版本，建议把这两个都放上去。
 ## 不要修改、删除这段注释。
 
@@ -14,7 +14,7 @@ define gui.show_name = False
 
 # 这里可以输入版本号。如果你的 Mod 版本很多，那这时版本号会很有用。
 # 如果你刚刚开始，那么建议把版本号设为 "1.0"
-define config.version = "1.3.1-dev"
+define config.version = "1.4.0"
 
 # 这里是在“关于”页显示的 Mod 介绍文字。
 # 由于我们重新启用了关于界面，你可以在这里写点介绍。

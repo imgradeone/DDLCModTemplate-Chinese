@@ -1,7 +1,6 @@
 init python:
 
     items = [
-        (_("DDLC 中文 Mod 模板新版特性"),"releases"),
         (_("重播初始介绍"),"example_chapter"),
         (_("序：中文模板特典"),"chinese_mod"),
         (_("第 1 关：从第一个 label 开始"),"tutorial_route_p1"),
